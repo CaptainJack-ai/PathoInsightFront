@@ -28,6 +28,11 @@
 6. 🔗 [Assets](#links)
 7. 🚀 [More](#more)
 
+## ⚠️ Disclaimer
+
+All design credits go to **[Zentry](https://zentry.com/)**. This project is created purely for **educational purposes** and is not intended for commercial use or public deployment.
+
+
 ## 🚨 Tutorial
 
 This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
@@ -440,7 +445,3 @@ detailed explanations, cool features, and exercises to boost your skills. Give i
 <a href="https://jsmastery.pro/next15" target="_blank">
    <img src="https://github.com/user-attachments/assets/b8760e69-1f81-4a71-9108-ceeb1de36741" alt="Project Banner">
 </a>
-
-## Disclaimer
-
-All design credits go to **[Zentry](https://zentry.com/)**. This project is created purely for **educational purposes** and is not intended for commercial use or public deployment.
