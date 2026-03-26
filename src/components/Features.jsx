@@ -90,7 +90,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
               }}
             />
             <TiLocationArrow className="relative z-20" />
-            <p className="relative z-20">coming soon</p>
+            <p className="relative z-20">即将推出</p>
           </div>
         )}
       </div>
@@ -103,12 +103,11 @@ const Features = () => (
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <p className="font-circular-web text-lg text-blue-50">
-          Data and Processing Pipeline
+          数据和处理流程
         </p>
         <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-          PathoInsight focuses on whole slide images, tissue region patches,
-          and clinical metadata to build an end-to-end, reliable diagnostic
-          workflow.
+          PathoInsight 专注于全幻灯片图像、组织区域切片和临床元数据，
+          构建端到端、可信的诊断工作流。
         </p>
       </div>
 
@@ -120,7 +119,7 @@ const Features = () => (
               dat<b>a</b> ingest
             </>
           }
-          description="Collect and standardize pathology slides and metadata from multi-source systems for consistent downstream analysis."
+          description="从多源系统收集和标准化病理切片及元数据，确保下游分析的一致性。"
           isComingSoon
         />
       </BentoTilt>
@@ -134,7 +133,7 @@ const Features = () => (
                 prep<b>r</b>ocess
               </>
             }
-            description="Perform stain normalization, artifact handling, and patch generation to improve model robustness."
+            description="执行染色标准化、伪影处理和切片生成，以提高模型稳健性。"
             isComingSoon
           />
         </BentoTilt>
@@ -147,7 +146,7 @@ const Features = () => (
                 inf<b>e</b>rence
               </>
             }
-            description="Run AI models for lesion detection, tissue classification, and risk scoring on pathology images."
+            description="在病理图像上运行 AI 模型进行病变检测、组织分类和风险评分。"
             isComingSoon
           />
         </BentoTilt>
@@ -160,7 +159,7 @@ const Features = () => (
                 revi<b>e</b>w
               </>
             }
-            description="Deliver visual overlays and explainable outputs to support pathologists in final diagnosis."
+            description="提供视觉叠加层和可解释的输出，以支持病理学家进行最终诊断。"
             isComingSoon
           />
         </BentoTilt>

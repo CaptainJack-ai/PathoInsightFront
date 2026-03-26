@@ -3,22 +3,20 @@ import gsap from "gsap";
 import { Link, useLocation } from "react-router-dom";
 import { useWindowScroll } from "react-use";
 import { useEffect, useRef, useState } from "react";
-import { TiLocationArrow } from "react-icons/ti";
 
-import Button from "./Button";
 import { ROUTE_PATHS } from "../routes/paths";
 
 const navItems = [
-  { label: "Overview", href: "/#overview", type: "route" },
-  { label: "Data", href: "/#data", type: "route" },
-  { label: "Workflow", href: ROUTE_PATHS.WORKFLOW, type: "route" },
-  { label: "About", href: "/#about", type: "route" },
-  { label: "Contact", href: "/#contact", type: "route" },
+  { label: "总览", href: "/#overview", type: "route" },
+  { label: "数据", href: "/#data", type: "route" },
+  { label: "工作流", href: ROUTE_PATHS.WORKFLOW, type: "route" },
+  { label: "关于", href: "/#about", type: "route" },
+  { label: "联系", href: "/#contact", type: "route" },
 ];
 
 const NavBar = () => {
   const { pathname } = useLocation();
-  const isWorkflowPage = pathname === ROUTE_PATHS.WORKFLOW;
+  const isWorkflowPage = pathname.startsWith(ROUTE_PATHS.WORKFLOW);
 
   // State for toggling audio and visual indicator
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
@@ -27,9 +25,12 @@ const NavBar = () => {
   // Refs for audio and navigation container
   const audioElementRef = useRef(null);
   const navContainerRef = useRef(null);
+  const topHoverTimeoutRef = useRef(null);
 
   const { y: currentScrollY } = useWindowScroll();
   const [isNavVisible, setIsNavVisible] = useState(true);
+  const [isWorkflowNavVisible, setIsWorkflowNavVisible] = useState(true);
+  const [isTopHoverActive, setIsTopHoverActive] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   // Toggle audio and visual indicator
@@ -48,30 +49,74 @@ const NavBar = () => {
   }, [isAudioPlaying]);
 
   useEffect(() => {
+    if (isWorkflowPage) return;
+
     if (currentScrollY === 0) {
-      // Topmost position: show navbar without floating-nav
       setIsNavVisible(true);
-      navContainerRef.current.classList.remove("floating-nav");
     } else if (currentScrollY > lastScrollY) {
-      // Scrolling down: hide navbar and apply floating-nav
       setIsNavVisible(false);
-      navContainerRef.current.classList.add("floating-nav");
     } else if (currentScrollY < lastScrollY) {
-      // Scrolling up: show navbar with floating-nav
       setIsNavVisible(true);
-      navContainerRef.current.classList.add("floating-nav");
     }
 
     setLastScrollY(currentScrollY);
-  }, [currentScrollY, lastScrollY]);
+  }, [currentScrollY, isWorkflowPage, lastScrollY]);
 
   useEffect(() => {
+    const onMouseMove = (event) => {
+      if (event.clientY <= 24) {
+        if (topHoverTimeoutRef.current) {
+          window.clearTimeout(topHoverTimeoutRef.current);
+          topHoverTimeoutRef.current = null;
+        }
+        setIsTopHoverActive(true);
+        return;
+      }
+
+      if (topHoverTimeoutRef.current) return;
+
+      topHoverTimeoutRef.current = window.setTimeout(() => {
+        setIsTopHoverActive(false);
+        topHoverTimeoutRef.current = null;
+      }, 3000);
+    };
+
+    window.addEventListener("mousemove", onMouseMove);
+    return () => {
+      if (topHoverTimeoutRef.current) {
+        window.clearTimeout(topHoverTimeoutRef.current);
+      }
+      window.removeEventListener("mousemove", onMouseMove);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isWorkflowPage) {
+      setIsWorkflowNavVisible(true);
+      return;
+    }
+
+    const onWorkflowNavVisibility = (event) => {
+      const visible = Boolean(event?.detail?.visible);
+      setIsWorkflowNavVisible(visible);
+    };
+
+    window.addEventListener("workflow-nav-visibility", onWorkflowNavVisibility);
+
+    return () => {
+      window.removeEventListener("workflow-nav-visibility", onWorkflowNavVisibility);
+    };
+  }, [isWorkflowPage]);
+
+  useEffect(() => {
+    const visible = isTopHoverActive || (isWorkflowPage ? isWorkflowNavVisible : isNavVisible);
+
     gsap.to(navContainerRef.current, {
-      y: isNavVisible ? 0 : -100,
-      opacity: isNavVisible ? 1 : 0,
+      y: visible ? 0 : -100,
+      opacity: visible ? 1 : 0,
       duration: 0.2,
     });
-  }, [isNavVisible]);
+  }, [isNavVisible, isWorkflowNavVisible, isWorkflowPage, isTopHoverActive]);
 
   return (
     <div
@@ -80,16 +125,8 @@ const NavBar = () => {
     >
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between p-4">
-          {/* Logo and Product button */}
-          <div className="flex items-center gap-7">
+          <div className="flex items-center">
             <img src="/img/logo.png" alt="logo" className="w-10" />
-
-            <Button
-              id="product-button"
-              title="Modules"
-              rightIcon={<TiLocationArrow />}
-              containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
-            />
           </div>
 
           {/* Navigation Links and Audio Button */}

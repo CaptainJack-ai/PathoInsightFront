@@ -4,11 +4,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        zentry: ["zentry", "sans-serif"],
-        general: ["general", "sans-serif"],
-        "circular-web": ["circular-web", "sans-serif"],
-        "robert-medium": ["robert-medium", "sans-serif"],
-        "robert-regular": ["robert-regular", "sans-serif"],
+        "noto-sc": ["Noto Serif SC", "serif"],
+        zentry: ["zentry", "Noto Serif SC", "sans-serif"],
+        general: ["general", "Noto Serif SC", "sans-serif"],
+        "circular-web": ["circular-web", "Noto Serif SC", "sans-serif"],
+        "robert-medium": ["robert-medium", "Noto Serif SC", "sans-serif"],
+        "robert-regular": ["robert-regular", "Noto Serif SC", "sans-serif"],
       },
       colors: {
         blue: {
