@@ -49,12 +49,12 @@ const FloatingImage = () => {
     <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
       <div className="flex size-full flex-col items-center py-10 pb-24">
         <p className="font-general text-sm uppercase md:text-[10px]">
-          the multiversal ip world
+          the project vision
         </p>
 
         <div className="relative size-full">
           <AnimatedTitle
-            title="the st<b>o</b>ry of <br /> a hidden real<b>m</b>"
+            title="the w<b>o</b>rkflow of <br /> digital path<b>o</b>logy"
             containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
           />
 
@@ -67,8 +67,8 @@ const FloatingImage = () => {
                   onMouseLeave={handleMouseLeave}
                   onMouseUp={handleMouseLeave}
                   onMouseEnter={handleMouseLeave}
-                  src="/img/entrance.webp"
-                  alt="entrance.webp"
+                  src="/img/patho-story.jpg"
+                  alt="pathology workflow"
                   className="object-contain"
                 />
               </div>
@@ -106,14 +106,14 @@ const FloatingImage = () => {
         <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
             <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
-              Where realms converge, lies Zentry and the boundless pillar.
-              Discover its secrets and shape your fate amidst infinite
-              opportunities.
+              From slide acquisition to AI-assisted interpretation, PathoInsight
+              is designed to reduce diagnostic variance and improve efficiency
+              while keeping pathologists at the center of decision-making.
             </p>
 
             <Button
               id="realm-btn"
-              title="discover prologue"
+              title="see workflow"
               containerClass="mt-5"
             />
           </div>

@@ -103,12 +103,12 @@ const Features = () => (
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <p className="font-circular-web text-lg text-blue-50">
-          Into the Metagame Layer
+          Data and Processing Pipeline
         </p>
         <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-          Immerse yourself in a rich and ever-expanding universe where a vibrant
-          array of products converge into an interconnected overlay experience
-          on your world.
+          PathoInsight focuses on whole slide images, tissue region patches,
+          and clinical metadata to build an end-to-end, reliable diagnostic
+          workflow.
         </p>
       </div>
 
@@ -117,10 +117,10 @@ const Features = () => (
           src="videos/feature-1.mp4"
           title={
             <>
-              radia<b>n</b>t
+              dat<b>a</b> ingest
             </>
           }
-          description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
+          description="Collect and standardize pathology slides and metadata from multi-source systems for consistent downstream analysis."
           isComingSoon
         />
       </BentoTilt>
@@ -131,10 +131,10 @@ const Features = () => (
             src="videos/feature-2.mp4"
             title={
               <>
-                zig<b>m</b>a
+                prep<b>r</b>ocess
               </>
             }
-            description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
+            description="Perform stain normalization, artifact handling, and patch generation to improve model robustness."
             isComingSoon
           />
         </BentoTilt>
@@ -144,10 +144,10 @@ const Features = () => (
             src="videos/feature-3.mp4"
             title={
               <>
-                n<b>e</b>xus
+                inf<b>e</b>rence
               </>
             }
-            description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
+            description="Run AI models for lesion detection, tissue classification, and risk scoring on pathology images."
             isComingSoon
           />
         </BentoTilt>
@@ -157,10 +157,10 @@ const Features = () => (
             src="videos/feature-4.mp4"
             title={
               <>
-                az<b>u</b>l
+                revi<b>e</b>w
               </>
             }
-            description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
+            description="Deliver visual overlays and explainable outputs to support pathologists in final diagnosis."
             isComingSoon
           />
         </BentoTilt>
@@ -168,7 +168,7 @@ const Features = () => (
         <BentoTilt className="bento-tilt_2">
           <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
             <h1 className="bento-title special-font max-w-64 text-black">
-              M<b>o</b>re co<b>m</b>ing s<b>o</b>on.
+              rep<b>o</b>rt and in<b>t</b>egrati<b>o</b>n.
             </h1>
 
             <TiLocationArrow className="m-5 scale-[5] self-end" />
