@@ -106,8 +106,8 @@ const FloatingImage = () => {
         <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
             <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
-              从切片采集到人工智能辅助解释，PathoInsight 的设计目标是减少诊断差异、提高效率，
-              同时让病理学家保持在决策的中心。
+              首页叙事与 Workflow 页面完全对齐：6 个阶段逐步展开，从 WSI 到可下载报告，
+              让病理结论不仅准确，而且过程透明、证据可追溯。
             </p>
 
             <Button

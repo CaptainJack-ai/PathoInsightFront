@@ -38,23 +38,7 @@ export const BentoTilt = ({ children, className = "" }) => {
   );
 };
 
-export const BentoCard = ({ src, title, description, isComingSoon }) => {
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-  const [hoverOpacity, setHoverOpacity] = useState(0);
-  const hoverButtonRef = useRef(null);
-
-  const handleMouseMove = (event) => {
-    if (!hoverButtonRef.current) return;
-    const rect = hoverButtonRef.current.getBoundingClientRect();
-
-    setCursorPosition({
-      x: event.clientX - rect.left,
-      y: event.clientY - rect.top,
-    });
-  };
-
-  const handleMouseEnter = () => setHoverOpacity(1);
-  const handleMouseLeave = () => setHoverOpacity(0);
+export const BentoCard = ({ src, title, description }) => {
 
   return (
     <div className="relative size-full">
@@ -65,34 +49,13 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
         autoPlay
         className="absolute left-0 top-0 size-full object-cover object-center"
       />
-      <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
+      <div className="relative z-10 flex size-full flex-col justify-between p-5 text-black">
         <div>
-          <h1 className="bento-title special-font">{title}</h1>
+          <h1 className="bento-title special-font inline-block rounded-md bg-white/80 px-2 py-1 backdrop-blur-sm">{title}</h1>
           {description && (
-            <p className="mt-3 max-w-64 text-xs md:text-base">{description}</p>
+            <p className="mt-3 max-w-64 rounded-md bg-white/80 px-2 py-1 text-xs md:text-base">{description}</p>
           )}
         </div>
-
-        {isComingSoon && (
-          <div
-            ref={hoverButtonRef}
-            onMouseMove={handleMouseMove}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white/20"
-          >
-            {/* Radial gradient hover effect */}
-            <div
-              className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
-              style={{
-                opacity: hoverOpacity,
-                background: `radial-gradient(100px circle at ${cursorPosition.x}px ${cursorPosition.y}px, #656fe288, #00000026)`,
-              }}
-            />
-            <TiLocationArrow className="relative z-20" />
-            <p className="relative z-20">即将推出</p>
-          </div>
-        )}
       </div>
     </div>
   );
@@ -103,11 +66,11 @@ const Features = () => (
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <p className="font-circular-web text-lg text-blue-50">
-          数据和处理流程
+          Workflow Pipeline
         </p>
         <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-          PathoInsight 专注于全幻灯片图像、组织区域切片和临床元数据，
-          构建端到端、可信的诊断工作流。
+          首页与 Workflow 页面一一对应：从 WSI 上传、病理分类、切片分块到相似检索、
+          报告生成和诊断完成，形成连续的诊断叙事。
         </p>
       </div>
 
@@ -120,7 +83,6 @@ const Features = () => (
             </>
           }
           description="从多源系统收集和标准化病理切片及元数据，确保下游分析的一致性。"
-          isComingSoon
         />
       </BentoTilt>
 
@@ -133,8 +95,7 @@ const Features = () => (
                 prep<b>r</b>ocess
               </>
             }
-            description="执行染色标准化、伪影处理和切片生成，以提高模型稳健性。"
-            isComingSoon
+            description="步骤01-03：完成上传、分类和切片分块，为后续检索与报告准备结构化输入。"
           />
         </BentoTilt>
 
@@ -146,8 +107,7 @@ const Features = () => (
                 inf<b>e</b>rence
               </>
             }
-            description="在病理图像上运行 AI 模型进行病变检测、组织分类和风险评分。"
-            isComingSoon
+            description="步骤04：将高注意力切片与病例库进行匹配，返回相似 WSI 与诊断摘要。"
           />
         </BentoTilt>
 
@@ -159,8 +119,7 @@ const Features = () => (
                 revi<b>e</b>w
               </>
             }
-            description="提供视觉叠加层和可解释的输出，以支持病理学家进行最终诊断。"
-            isComingSoon
+            description="步骤05-06：生成结构化报告并输出最终诊断结果，支持临床复核。"
           />
         </BentoTilt>
 
