@@ -1,10 +1,8 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
-import { TiLocationArrow } from "react-icons/ti";
 import { useEffect, useRef, useState } from "react";
 
-import Button from "./Button";
 import VideoPreview from "./VideoPreview";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -141,31 +139,34 @@ const Hero = () => {
         </div>
 
         <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
-          P<b>A</b>THO
+          insig<b>h</b>t
         </h1>
+
+        <p className="absolute bottom-40 right-5 z-40 max-w-xl text-right text-lg font-robert-regular leading-relaxed text-blue-100 md:bottom-52 md:text-lg">
+          理念与目标：基于专家医生撰写的高质量病例与诊断报告，我们不仅给出结论，
+          更还原结论背后的病理证据与成因。
+          <br />
+          通过可解释的辅助诊断能力，支持医疗资源匮乏地区的医生与机构提升决策质量，
+          推动医疗资源分配更加公平、更加合理。
+        </p>
 
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
             <h1 className="special-font hero-heading text-blue-100">
-              insig<b>h</b>t
+              P<b>A</b>THO
             </h1>
 
-            <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-              PathoInsight：自动化病理切片分析 <br /> 更快、更一致的临床决策支持
+            <p className="mb-5 max-w-md text-lg font-robert-regular leading-relaxed text-blue-100 md:max-w-xl md:text-xl">
+              PathoInsight 六阶段工作流：WSI上传、病理分类、切片分块、相似检索、报告生成、诊断完成。
+              <br />
+              让每一次诊断都可追踪、可解释、可复核。
             </p>
-
-            <Button
-              id="watch-trailer"
-              title="查看项目"
-              leftIcon={<TiLocationArrow />}
-              containerClass="bg-yellow-300 flex-center gap-1"
-            />
           </div>
         </div>
       </div>
 
       <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
-        P<b>A</b>THO
+        insig<b>h</b>t
       </h1>
     </div>
   );
