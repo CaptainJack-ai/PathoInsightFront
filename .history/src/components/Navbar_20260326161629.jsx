@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import gsap from "gsap";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useWindowScroll } from "react-use";
 import { useEffect, useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
@@ -9,17 +9,14 @@ import Button from "./Button";
 import { ROUTE_PATHS } from "../routes/paths";
 
 const navItems = [
-  { label: "Overview", href: "/#overview", type: "route" },
-  { label: "Data", href: "/#data", type: "route" },
+  { label: "Overview", href: "#overview", type: "anchor" },
+  { label: "Data", href: "#data", type: "anchor" },
   { label: "Workflow", href: ROUTE_PATHS.WORKFLOW, type: "route" },
-  { label: "About", href: "/#about", type: "route" },
-  { label: "Contact", href: "/#contact", type: "route" },
+  { label: "About", href: "#about", type: "anchor" },
+  { label: "Contact", href: "#contact", type: "anchor" },
 ];
 
 const NavBar = () => {
-  const { pathname } = useLocation();
-  const isWorkflowPage = pathname === ROUTE_PATHS.WORKFLOW;
-
   // State for toggling audio and visual indicator
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
   const [isIndicatorActive, setIsIndicatorActive] = useState(false);
@@ -95,17 +92,17 @@ const NavBar = () => {
           {/* Navigation Links and Audio Button */}
           <div className="flex h-full items-center">
             <div className="hidden md:block">
-              {navItems.map((item, index) => (
-                <Link
-                  key={index}
-                  to={item.href}
-                  className={clsx("nav-hover-btn", {
-                    "!text-black after:!bg-black": isWorkflowPage,
-                  })}
-                >
-                  {item.label}
-                </Link>
-              ))}
+              {navItems.map((item, index) =>
+                item.type === "route" ? (
+                  <Link key={index} to={item.href} className="nav-hover-btn">
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a key={index} href={item.href} className="nav-hover-btn">
+                    {item.label}
+                  </a>
+                )
+              )}
             </div>
 
             <button
@@ -123,7 +120,6 @@ const NavBar = () => {
                   key={bar}
                   className={clsx("indicator-line", {
                     active: isIndicatorActive,
-                    "!bg-black": isWorkflowPage,
                   })}
                   style={{
                     animationDelay: `${bar * 0.1}s`,

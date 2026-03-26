@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import gsap from "gsap";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useWindowScroll } from "react-use";
 import { useEffect, useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
@@ -17,9 +17,6 @@ const navItems = [
 ];
 
 const NavBar = () => {
-  const { pathname } = useLocation();
-  const isWorkflowPage = pathname === ROUTE_PATHS.WORKFLOW;
-
   // State for toggling audio and visual indicator
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
   const [isIndicatorActive, setIsIndicatorActive] = useState(false);
@@ -96,13 +93,7 @@ const NavBar = () => {
           <div className="flex h-full items-center">
             <div className="hidden md:block">
               {navItems.map((item, index) => (
-                <Link
-                  key={index}
-                  to={item.href}
-                  className={clsx("nav-hover-btn", {
-                    "!text-black after:!bg-black": isWorkflowPage,
-                  })}
-                >
+                <Link key={index} to={item.href} className="nav-hover-btn">
                   {item.label}
                 </Link>
               ))}
@@ -123,7 +114,6 @@ const NavBar = () => {
                   key={bar}
                   className={clsx("indicator-line", {
                     active: isIndicatorActive,
-                    "!bg-black": isWorkflowPage,
                   })}
                   style={{
                     animationDelay: `${bar * 0.1}s`,
