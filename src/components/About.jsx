@@ -30,7 +30,7 @@ const About = () => {
     <div id="about" className="min-h-screen w-screen">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
         <p className="font-general text-sm uppercase md:text-[10px]">
-          Welcome to PathoInsight
+          欢迎来到 PathoInsight
         </p>
 
         <AnimatedTitle
@@ -39,9 +39,9 @@ const About = () => {
         />
 
         <div className="about-subtext">
-          <p>Purpose: Build an automated pipeline for pathology slide processing and diagnosis.</p>
+          <p>目的：为病理切片处理和诊断构建自动化管道。</p>
           <p className="text-gray-500">
-            Philosophy: Human-AI collaboration, reproducible analysis, and clinically interpretable results.
+            理念：人工智能协作、可复现分析和临床可解释的结果。
           </p>
         </div>
       </div>

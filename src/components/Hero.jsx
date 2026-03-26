@@ -151,12 +151,12 @@ const Hero = () => {
             </h1>
 
             <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-              PathoInsight: Automated Pathology Slide Analysis <br /> Faster, More Consistent Clinical Decision Support
+              PathoInsight：自动化病理切片分析 <br /> 更快、更一致的临床决策支持
             </p>
 
             <Button
               id="watch-trailer"
-              title="View Project"
+              title="查看项目"
               leftIcon={<TiLocationArrow />}
               containerClass="bg-yellow-300 flex-center gap-1"
             />

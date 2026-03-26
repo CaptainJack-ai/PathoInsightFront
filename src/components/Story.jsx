@@ -49,7 +49,7 @@ const FloatingImage = () => {
     <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
       <div className="flex size-full flex-col items-center py-10 pb-24">
         <p className="font-general text-sm uppercase md:text-[10px]">
-          the project vision
+          项目愿景
         </p>
 
         <div className="relative size-full">
@@ -106,14 +106,13 @@ const FloatingImage = () => {
         <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
             <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
-              From slide acquisition to AI-assisted interpretation, PathoInsight
-              is designed to reduce diagnostic variance and improve efficiency
-              while keeping pathologists at the center of decision-making.
+              从切片采集到人工智能辅助解释，PathoInsight 的设计目标是减少诊断差异、提高效率，
+              同时让病理学家保持在决策的中心。
             </p>
 
             <Button
               id="realm-btn"
-              title="see workflow"
+              title="查看工作流"
               containerClass="mt-5"
             />
           </div>

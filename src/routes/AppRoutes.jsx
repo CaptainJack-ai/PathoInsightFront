@@ -8,6 +8,7 @@ function AppRoutes() {
     <Routes>
       <Route path={ROUTE_PATHS.HOME} element={<HomePage />} />
       <Route path={ROUTE_PATHS.WORKFLOW} element={<WorkflowPage />} />
+      <Route path={ROUTE_PATHS.WORKFLOW_CASE} element={<WorkflowPage />} />
       <Route path="*" element={<Navigate to={ROUTE_PATHS.HOME} replace />} />
     </Routes>
   );
