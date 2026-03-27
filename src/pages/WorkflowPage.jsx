@@ -13,7 +13,9 @@ const STAGES = [
 ];
 
 const PATCH_DISPLAY_COUNT = 12;
+const VISIBLE_RETRIEVAL_SPAN = 2;
 const getInitialFocusIndex = (count) => Math.floor(count / 2);
+const flowLinksCache = new Map();
 const normalizeFlowAssetPath = (path, caseId) => {
   if (!path || typeof path !== "string") return null;
   if (path.startsWith("http://") || path.startsWith("https://") || path.startsWith("/")) return path;
@@ -29,98 +31,61 @@ const SimilarRetrievalShowcase = ({ stage, caseData }) => {
   const retrievalRef = useRef(null);
   const wheelLockRef = useRef(false);
   const retrievalItems = caseData?.retrievalItems || [];
-  const [similarDiagnosisItems, setSimilarDiagnosisItems] = useState([]);
   const [flowLinks, setFlowLinks] = useState([]);
   const [focusIndex, setFocusIndex] = useState(getInitialFocusIndex(PATCH_DISPLAY_COUNT));
-  const displayRows = Array.from({ length: PATCH_DISPLAY_COUNT }).map((_, idx) => {
-    const flowItem = flowLinks[idx];
-    const diagnosisItem = similarDiagnosisItems[idx];
+  const displayRows = useMemo(
+    () =>
+      Array.from({ length: PATCH_DISPLAY_COUNT }).map((_, idx) => {
+        const flowItem = flowLinks[idx];
 
-    if (flowItem) {
-      const diagnosisSummary = flowItem.diagnosis?.summary || flowItem.diagnosis?.diagnosis_text;
-      const queryPatchImage = normalizeFlowAssetPath(flowItem.query_patch?.image, caseData?.id);
-      const similarWsiImage = normalizeFlowAssetPath(flowItem.similar_wsi?.image, caseData?.id);
-      const similarity = Number(flowItem.retrieved_patch?.similarity);
-      const similarityText = Number.isFinite(similarity) ? similarity.toFixed(3) : "N/A";
+        if (flowItem) {
+          const diagnosisSummary = flowItem.diagnosis?.summary || flowItem.diagnosis?.diagnosis_text;
+          const queryPatchImage = normalizeFlowAssetPath(flowItem.query_patch?.image, caseData?.id);
+          const similarWsiImage = normalizeFlowAssetPath(flowItem.similar_wsi?.image, caseData?.id);
+          const similarity = Number(flowItem.retrieved_patch?.similarity);
+          const similarityText = Number.isFinite(similarity) ? similarity.toFixed(3) : "N/A";
 
-      return {
-        id: `flow-link-${flowItem.index || idx + 1}`,
-        sourcePatchImage: queryPatchImage || `/img/patho-lab-1.jpg`,
-        similarWsiImage: similarWsiImage || "/img/patho-contact-2.jpg",
-        similarCaseTitle: `诊断编号 ${String(flowItem.index || idx + 1).padStart(2, "0")}`,
-        similarReportText:
-          diagnosisSummary ||
-          diagnosisItem?.summary ||
-          diagnosisItem?.diagnosis_text ||
-          `相似病例报告占位 ${idx + 1}：在此填写诊断描述与证据说明。`,
-        retrievedPatchMeta: {
-          caseId: flowItem.retrieved_patch?.case_id || "未知病例",
-          slideId: flowItem.retrieved_patch?.slide_id || "未知切片",
-          similarityText,
-        },
-      };
-    }
-
-    const item = retrievalItems[idx];
-
-    if (item) {
-      return {
-        ...item,
-        similarCaseTitle: diagnosisItem
-          ? `诊断编号 ${String(diagnosisItem.index || idx + 1).padStart(2, "0")}`
-          : item.similarCaseTitle,
-        similarReportText: diagnosisItem?.summary || diagnosisItem?.diagnosis_text || item.similarReportText,
-      };
-    }
-
-    return {
-      id: `retrieval-placeholder-${idx + 1}`,
-      sourcePatchImage: `/img/patho-lab-1.jpg`,
-      sourcePatchPath: `PATCH_PATH_PLACEHOLDER_${idx + 1}`,
-      similarWsiImage: "/img/patho-contact-2.jpg",
-      similarCaseTitle: diagnosisItem
-        ? `诊断编号 ${String(diagnosisItem.index || idx + 1).padStart(2, "0")}`
-        : `相似病例 ${idx + 1}`,
-      similarReportText:
-        diagnosisItem?.summary || diagnosisItem?.diagnosis_text || `相似病例报告占位 ${idx + 1}：在此填写诊断描述与证据说明。`,
-    };
-  });
-
-  useEffect(() => {
-    let cancelled = false;
-    const diagnosisPath = caseData?.similarDiagnosisJson;
-
-    if (!diagnosisPath) {
-      setSimilarDiagnosisItems([]);
-      return () => {
-        cancelled = true;
-      };
-    }
-
-    const loadDiagnosis = async () => {
-      try {
-        const res = await fetch(diagnosisPath);
-        if (!res.ok) throw new Error(`Failed to fetch diagnosis JSON: ${res.status}`);
-
-        const payload = await res.json();
-        const items = Array.isArray(payload) ? payload : Array.isArray(payload?.items) ? payload.items : [];
-
-        if (!cancelled) {
-          setSimilarDiagnosisItems(items.slice(0, PATCH_DISPLAY_COUNT));
+          return {
+            id: `flow-link-${flowItem.index || idx + 1}`,
+            rowIndex: idx,
+            sourcePatchImage: queryPatchImage || `/img/patho-lab-1.jpg`,
+            similarWsiImage: similarWsiImage || "/img/patho-contact-2.jpg",
+            similarCaseTitle: `诊断编号 ${String(flowItem.index || idx + 1).padStart(2, "0")}`,
+            similarReportText: diagnosisSummary || `相似病例报告占位 ${idx + 1}：在此填写诊断描述与证据说明。`,
+            retrievedPatchMeta: {
+              caseId: flowItem.retrieved_patch?.case_id || "未知病例",
+              slideId: flowItem.retrieved_patch?.slide_id || "未知切片",
+              similarityText,
+            },
+          };
         }
-      } catch (error) {
-        if (!cancelled) {
-          setSimilarDiagnosisItems([]);
+
+        const item = retrievalItems[idx];
+
+        if (item) {
+          return {
+            ...item,
+            rowIndex: idx,
+          };
         }
-      }
-    };
 
-    loadDiagnosis();
+        return {
+          id: `retrieval-placeholder-${idx + 1}`,
+          rowIndex: idx,
+          sourcePatchImage: `/img/patho-lab-1.jpg`,
+          sourcePatchPath: `PATCH_PATH_PLACEHOLDER_${idx + 1}`,
+          similarWsiImage: "/img/patho-contact-2.jpg",
+          similarCaseTitle: `相似病例 ${idx + 1}`,
+          similarReportText: `相似病例报告占位 ${idx + 1}：在此填写诊断描述与证据说明。`,
+        };
+      }),
+    [flowLinks, retrievalItems, caseData?.id]
+  );
 
-    return () => {
-      cancelled = true;
-    };
-  }, [caseData?.id, caseData?.similarDiagnosisJson]);
+  const visibleRows = useMemo(
+    () => displayRows.filter((row) => Math.abs(row.rowIndex - focusIndex) <= VISIBLE_RETRIEVAL_SPAN),
+    [displayRows, focusIndex]
+  );
 
   useEffect(() => {
     let cancelled = false;
@@ -135,14 +100,22 @@ const SimilarRetrievalShowcase = ({ stage, caseData }) => {
 
     const loadFlowLinks = async () => {
       try {
+        const cached = flowLinksCache.get(caseId);
+        if (cached) {
+          if (!cancelled) setFlowLinks(cached);
+          return;
+        }
+
         const res = await fetch(`/workflow-cases/${caseId}/flow_data.json`);
         if (!res.ok) throw new Error(`Failed to fetch flow_data: ${res.status}`);
 
         const payload = await res.json();
         const links = Array.isArray(payload?.flow_links) ? payload.flow_links : [];
+        const trimmed = links.slice(0, PATCH_DISPLAY_COUNT);
+        flowLinksCache.set(caseId, trimmed);
 
         if (!cancelled) {
-          setFlowLinks(links.slice(0, PATCH_DISPLAY_COUNT));
+          setFlowLinks(trimmed);
         }
       } catch (error) {
         if (!cancelled) {
@@ -223,21 +196,23 @@ const SimilarRetrievalShowcase = ({ stage, caseData }) => {
 
       <div data-retrieval-scroll="true" ref={retrievalRef} onWheel={onCarouselWheel} className="relative z-10 h-full overflow-visible px-5 pb-6 pt-14 md:px-8">
         <div className="absolute left-1/2 top-1/2 h-[110%] w-full max-w-[1220px] -translate-x-1/2 -translate-y-1/2">
-          {displayRows.map((item, idx) => {
-            const offset = idx - focusIndex;
+          {visibleRows.map((item) => {
+            const offset = item.rowIndex - focusIndex;
             const absOffset = Math.abs(offset);
             const scale = absOffset === 0 ? 1 : absOffset === 1 ? 0.68 : absOffset === 2 ? 0.44 : 0.3;
             const opacity = absOffset === 0 ? 1 : absOffset === 1 ? 0.42 : absOffset === 2 ? 0.18 : 0.08;
-            const blur = absOffset === 0 ? 0 : absOffset === 1 ? 3 : absOffset === 2 ? 10 : 16;
+            const blur = absOffset === 0 ? 0 : absOffset === 1 ? 1.5 : absOffset === 2 ? 4 : 8;
             const translateY = offset * 200;
             const layerBase = 80 - absOffset * 2;
             const zIndex = layerBase + (offset < 0 ? 1 : 0);
+            const isFocused = absOffset === 0;
+            const eagerLoad = absOffset <= 1;
 
             return (
               <article
                 key={item.id}
                 className={`retrieval-card absolute left-1/2 top-1/2 w-full max-w-[1180px] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                  absOffset === 0 ? "is-focused" : ""
+                  isFocused ? "is-focused" : ""
                 }`}
                 style={{
                   transform: `translate(-50%, calc(-50% + ${translateY}px)) scale(${scale})`,
@@ -247,13 +222,16 @@ const SimilarRetrievalShowcase = ({ stage, caseData }) => {
                   pointerEvents: absOffset === 0 ? "auto" : "none",
                 }}
               >
-                <div className="retrieval-shell grid grid-cols-[220px_34px_220px_34px_minmax(0,1fr)] items-center gap-3 rounded-2xl bg-gradient-to-r from-black/72 via-black/62 to-black/52 p-3 shadow-[0_14px_36px_rgba(0,0,0,0.3)] backdrop-blur-sm">
+                <div className="retrieval-shell grid grid-cols-[220px_34px_220px_34px_minmax(0,1fr)] items-center gap-3 rounded-2xl bg-gradient-to-r from-black/72 via-black/62 to-black/52 p-3 shadow-[0_14px_36px_rgba(0,0,0,0.3)]">
                   <div>
-                    <p className="text-[10px] uppercase tracking-wider text-blue-100/75">高注意力切片 {idx + 1}</p>
+                    <p className="text-[10px] uppercase tracking-wider text-blue-100/75">高注意力切片 {item.rowIndex + 1}</p>
                     <img
                       src={item.sourcePatchImage}
-                      alt={`Source attention patch ${idx + 1}`}
+                      alt={`Source attention patch ${item.rowIndex + 1}`}
                       className="mt-2 aspect-square w-full rounded-md object-cover"
+                      loading={eagerLoad ? "eager" : "lazy"}
+                      decoding="async"
+                      fetchPriority={isFocused ? "high" : "low"}
                     />
                   </div>
 
@@ -263,8 +241,11 @@ const SimilarRetrievalShowcase = ({ stage, caseData }) => {
                     <p className="text-[10px] uppercase tracking-wider text-blue-100/75">相似WSI</p>
                     <img
                       src={item.similarWsiImage}
-                      alt={`相似病理 WSI ${idx + 1}`}
+                      alt={`相似病理 WSI ${item.rowIndex + 1}`}
                       className="mt-2 aspect-square w-full rounded-md object-cover"
+                      loading={eagerLoad ? "eager" : "lazy"}
+                      decoding="async"
+                      fetchPriority={isFocused ? "high" : "low"}
                     />
                   </div>
 
