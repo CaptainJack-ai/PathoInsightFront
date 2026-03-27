@@ -4,7 +4,7 @@
   "query_slide_id": "TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552",
   "run_dir": "data/entire project process/runs/TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552_20260327_152300",
   "steps": {
-    "step1_query_upload": "data/dataforFront/HNSC/uploaded.jpg",
+    "step1_query_upload": "data/dataforFront/HNSC/uploaded.webp",
     "step2_classification": "data/entire project process/runs/TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552_20260327_152300/query/prediction.json",
     "step3_query_high_attention": "data/dataforFront/HNSC/high-attention",
     "step4_retrieval_mapping": "data/entire project process/runs/TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552_20260327_152300/similar/top_similar_patches.csv",
@@ -23,7 +23,7 @@
         "x": 31264,
         "y": 28960,
         "attention_score": 10.255911,
-        "image": "data/dataforFront/HNSC/high-attention/patch-1.jpg"
+        "image": "data/dataforFront/HNSC/high-attention/patch-1.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-P3-A6T3-01Z-00-DX1.EC756904-A270-44E1-8935-9B9F6C25AAB6",
@@ -35,7 +35,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552_20260327_152300/similar/patches/sim_0001_TCGA-P3-A6T3-01Z-00-DX1.EC756904-A270-44E1-8935-9B9F6C25AAB6_x35152_y47472_sim0.73186_attn9.89746.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/HNSC/similar-wsi/similar-1.jpg"
+        "image": "data/dataforFront/HNSC/similar-wsi/similar-1.webp"
       },
       "diagnosis": {
         "diagnosis_text": "鳞状细胞癌，肿瘤大小4.50厘米，病理分期为pT3 N2 Mx，淋巴结状态为2/24枚阳性。",
@@ -49,7 +49,7 @@
         "x": 5408,
         "y": 22560,
         "attention_score": 10.129204,
-        "image": "data/dataforFront/HNSC/high-attention/patch-2.jpg"
+        "image": "data/dataforFront/HNSC/high-attention/patch-2.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-DQ-7596-01Z-00-DX1.83133BB5-B039-4D11-A9BC-20B6C70D0BD2",
@@ -61,7 +61,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552_20260327_152300/similar/patches/sim_0011_TCGA-DQ-7596-01Z-00-DX1.83133BB5-B039-4D11-A9BC-20B6C70D0BD2_x61312_y47456_sim0.68739_attn9.22195.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/HNSC/similar-wsi/similar-2.jpg"
+        "image": "data/dataforFront/HNSC/similar-wsi/similar-2.webp"
       },
       "diagnosis": {
         "diagnosis_text": "病理诊断：鳞状细胞癌，低分化。",
@@ -75,7 +75,7 @@
         "x": 84256,
         "y": 29216,
         "attention_score": 10.120303,
-        "image": "data/dataforFront/HNSC/high-attention/patch-3.jpg"
+        "image": "data/dataforFront/HNSC/high-attention/patch-3.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-CN-4736-01Z-00-DX1.883fda2c-82bd-46c1-b220-b9961d8700cc",
@@ -87,7 +87,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552_20260327_152300/similar/patches/sim_0025_TCGA-CN-4736-01Z-00-DX1.883fda2c-82bd-46c1-b220-b9961d8700cc_x118388_y27313_sim0.67231_attn9.56511.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/HNSC/similar-wsi/similar-3.jpg"
+        "image": "data/dataforFront/HNSC/similar-wsi/similar-3.webp"
       },
       "diagnosis": {
         "diagnosis_text": "鳞状细胞癌，G2级，肿瘤大小1.90厘米，病理分期为pT1 Nx Mx。",
@@ -101,7 +101,7 @@
         "x": 9248,
         "y": 26656,
         "attention_score": 10.053384,
-        "image": "data/dataforFront/HNSC/high-attention/patch-4.jpg"
+        "image": "data/dataforFront/HNSC/high-attention/patch-4.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-CQ-5333-01Z-00-DX1.f2c97975-dd7d-4dc9-a1b9-1528184cb8ad",
@@ -113,7 +113,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552_20260327_152300/similar/patches/sim_0050_TCGA-CQ-5333-01Z-00-DX1.f2c97975-dd7d-4dc9-a1b9-1528184cb8ad_x45632_y8720_sim0.65183_attn9.38611.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/HNSC/similar-wsi/similar-4.jpg"
+        "image": "data/dataforFront/HNSC/similar-wsi/similar-4.webp"
       },
       "diagnosis": {
         "diagnosis_text": "鳞状细胞癌，分级G3，肿瘤大小4.00厘米，病理分期pT2 N0 Mx，淋巴结状态0/21枚阳性。",
@@ -127,7 +127,7 @@
         "x": 18464,
         "y": 14880,
         "attention_score": 10.033955,
-        "image": "data/dataforFront/HNSC/high-attention/patch-5.jpg"
+        "image": "data/dataforFront/HNSC/high-attention/patch-5.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-CQ-5329-01Z-00-DX1.a91d3213-383e-4928-9d40-8cf5aecb693d",
@@ -139,7 +139,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552_20260327_152300/similar/patches/sim_0053_TCGA-CQ-5329-01Z-00-DX1.a91d3213-383e-4928-9d40-8cf5aecb693d_x24224_y30576_sim0.65107_attn8.89558.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/HNSC/similar-wsi/similar-5.jpg"
+        "image": "data/dataforFront/HNSC/similar-wsi/similar-5.webp"
       },
       "diagnosis": {
         "diagnosis_text": "鳞状细胞癌，G2级，肿瘤大小2.80厘米，病理分期pT2 N0 Mx，淋巴结状态0/29枚阳性。",
@@ -153,7 +153,7 @@
         "x": 4128,
         "y": 34592,
         "attention_score": 10.026165,
-        "image": "data/dataforFront/HNSC/high-attention/patch-6.jpg"
+        "image": "data/dataforFront/HNSC/high-attention/patch-6.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-CN-6998-01Z-00-DX1.5780b8b9-0a1f-4330-889c-b345b29396b2",
@@ -165,7 +165,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552_20260327_152300/similar/patches/sim_0070_TCGA-CN-6998-01Z-00-DX1.5780b8b9-0a1f-4330-889c-b345b29396b2_x42368_y14752_sim0.63946_attn9.88140.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/HNSC/similar-wsi/similar-6.jpg"
+        "image": "data/dataforFront/HNSC/similar-wsi/similar-6.webp"
       },
       "diagnosis": {
         "diagnosis_text": "鳞状细胞癌，G2级，肿瘤大小5.00厘米，pT3 N0 Mx，淋巴结0/1枚阳性。",
@@ -179,7 +179,7 @@
         "x": 40480,
         "y": 9760,
         "attention_score": 10.008504,
-        "image": "data/dataforFront/HNSC/high-attention/patch-7.jpg"
+        "image": "data/dataforFront/HNSC/high-attention/patch-7.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-CQ-7069-01Z-00-DX1.227CEB7F-4265-42F5-B313-DB07484B51A8",
@@ -191,7 +191,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552_20260327_152300/similar/patches/sim_0085_TCGA-CQ-7069-01Z-00-DX1.227CEB7F-4265-42F5-B313-DB07484B51A8_x12992_y27698_sim0.63464_attn9.66386.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/HNSC/similar-wsi/similar-7.jpg"
+        "image": "data/dataforFront/HNSC/similar-wsi/similar-7.webp"
       },
       "diagnosis": {
         "diagnosis_text": "鳞状细胞癌，G2级，肿瘤大小2.20厘米，pT0 N0 Mx，淋巴结0/28枚阳性。",
@@ -205,7 +205,7 @@
         "x": 8992,
         "y": 26144,
         "attention_score": 9.996704,
-        "image": "data/dataforFront/HNSC/high-attention/patch-8.jpg"
+        "image": "data/dataforFront/HNSC/high-attention/patch-8.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-CQ-A4C7-01Z-00-DX1.491FFBCB-ABD0-4D58-8CE7-A9E141A46DE5",
@@ -217,7 +217,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552_20260327_152300/similar/patches/sim_0108_TCGA-CQ-A4C7-01Z-00-DX1.491FFBCB-ABD0-4D58-8CE7-A9E141A46DE5_x25776_y24464_sim0.62854_attn9.45522.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/HNSC/similar-wsi/similar-8.jpg"
+        "image": "data/dataforFront/HNSC/similar-wsi/similar-8.webp"
       },
       "diagnosis": {
         "diagnosis_text": "鳞状细胞癌，G3级，肿瘤大小4.50厘米，pT0 N0 Mx，淋巴结1/25枚阳性。",
@@ -231,7 +231,7 @@
         "x": 39712,
         "y": 9504,
         "attention_score": 9.990073,
-        "image": "data/dataforFront/HNSC/high-attention/patch-9.jpg"
+        "image": "data/dataforFront/HNSC/high-attention/patch-9.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-P3-A6T3-01Z-00-DX1.EC756904-A270-44E1-8935-9B9F6C25AAB6",
@@ -243,7 +243,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552_20260327_152300/similar/patches/sim_0002_TCGA-P3-A6T3-01Z-00-DX1.EC756904-A270-44E1-8935-9B9F6C25AAB6_x35920_y42608_sim0.70922_attn9.52019.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/HNSC/similar-wsi/similar-9.jpg"
+        "image": "data/dataforFront/HNSC/similar-wsi/similar-9.webp"
       },
       "diagnosis": {
         "diagnosis_text": "鳞状细胞癌，肿瘤大小4.50厘米，病理分期为pT3 N2 Mx，淋巴结状态为2/24枚阳性。",
@@ -257,7 +257,7 @@
         "x": 77578,
         "y": 6368,
         "attention_score": 9.976198,
-        "image": "data/dataforFront/HNSC/high-attention/patch-10.jpg"
+        "image": "data/dataforFront/HNSC/high-attention/patch-10.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-DQ-7596-01Z-00-DX1.83133BB5-B039-4D11-A9BC-20B6C70D0BD2",
@@ -269,7 +269,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552_20260327_152300/similar/patches/sim_0017_TCGA-DQ-7596-01Z-00-DX1.83133BB5-B039-4D11-A9BC-20B6C70D0BD2_x137424_y63506_sim0.67873_attn9.13310.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/HNSC/similar-wsi/similar-10.jpg"
+        "image": "data/dataforFront/HNSC/similar-wsi/similar-10.webp"
       },
       "diagnosis": {
         "diagnosis_text": "病理诊断：鳞状细胞癌，低分化。",
@@ -283,7 +283,7 @@
         "x": 72224,
         "y": 39200,
         "attention_score": 9.961787,
-        "image": "data/dataforFront/HNSC/high-attention/patch-11.jpg"
+        "image": "data/dataforFront/HNSC/high-attention/patch-11.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-CN-4736-01Z-00-DX1.883fda2c-82bd-46c1-b220-b9961d8700cc",
@@ -295,7 +295,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552_20260327_152300/similar/patches/sim_0027_TCGA-CN-4736-01Z-00-DX1.883fda2c-82bd-46c1-b220-b9961d8700cc_x66002_y23009_sim0.67112_attn9.57724.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/HNSC/similar-wsi/similar-11.jpg"
+        "image": "data/dataforFront/HNSC/similar-wsi/similar-11.webp"
       },
       "diagnosis": {
         "diagnosis_text": "鳞状细胞癌，G2级，肿瘤大小1.90厘米，病理分期为pT1 Nx Mx。",
@@ -309,7 +309,7 @@
         "x": 44064,
         "y": 9760,
         "attention_score": 9.957659,
-        "image": "data/dataforFront/HNSC/high-attention/patch-12.jpg"
+        "image": "data/dataforFront/HNSC/high-attention/patch-12.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-CQ-5329-01Z-00-DX1.a91d3213-383e-4928-9d40-8cf5aecb693d",
@@ -321,7 +321,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552_20260327_152300/similar/patches/sim_0059_TCGA-CQ-5329-01Z-00-DX1.a91d3213-383e-4928-9d40-8cf5aecb693d_x15264_y34416_sim0.64587_attn9.41247.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/HNSC/similar-wsi/similar-12.jpg"
+        "image": "data/dataforFront/HNSC/similar-wsi/similar-12.webp"
       },
       "diagnosis": {
         "diagnosis_text": "鳞状细胞癌，G2级，肿瘤大小2.80厘米，病理分期pT2 N0 Mx，淋巴结状态0/29枚阳性。",

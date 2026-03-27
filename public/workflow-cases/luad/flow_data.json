@@ -4,7 +4,7 @@
   "query_slide_id": "TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde",
   "run_dir": "data/entire project process/runs/TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde_20260327_121012",
   "steps": {
-    "step1_query_upload": "data/dataforFront/LUAD/uploaded.jpg",
+    "step1_query_upload": "data/dataforFront/LUAD/uploaded.webp",
     "step2_classification": "data/entire project process/runs/TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde_20260327_121012/query/prediction.json",
     "step3_query_high_attention": "data/dataforFront/LUAD/high-attention",
     "step4_retrieval_mapping": "data/entire project process/runs/TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde_20260327_121012/similar/top_similar_patches.csv",
@@ -23,7 +23,7 @@
         "x": 28352,
         "y": 56736,
         "attention_score": 9.814813,
-        "image": "data/dataforFront/LUAD/high-attention/patch-1.jpg"
+        "image": "data/dataforFront/LUAD/high-attention/patch-1.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29",
@@ -35,7 +35,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde_20260327_121012/similar/patches/sim_0001_TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29_x19200_y33024_sim0.54400_attn9.74797.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUAD/similar-wsi/similar-1.jpg"
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-1.webp"
       },
       "diagnosis": {
         "diagnosis_text": "肿瘤大小为3.50厘米。",
@@ -49,7 +49,7 @@
         "x": 28352,
         "y": 56480,
         "attention_score": 9.77363,
-        "image": "data/dataforFront/LUAD/high-attention/patch-2.jpg"
+        "image": "data/dataforFront/LUAD/high-attention/patch-2.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-77-7338-01A-01-BS1.654045da-6384-4961-ac15-6afb85bf073b",
@@ -61,7 +61,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde_20260327_121012/similar/patches/sim_0003_TCGA-77-7338-01A-01-BS1.654045da-6384-4961-ac15-6afb85bf073b_x26032_y9088_sim0.51891_attn8.14019.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUAD/similar-wsi/similar-2.jpg"
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-2.webp"
       },
       "diagnosis": {
         "diagnosis_text": "淋巴结状态：N0。",
@@ -75,7 +75,7 @@
         "x": 25504,
         "y": 4704,
         "attention_score": 8.883927,
-        "image": "data/dataforFront/LUAD/high-attention/patch-3.jpg"
+        "image": "data/dataforFront/LUAD/high-attention/patch-3.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-90-6837-01A-01-TS1.69f0e959-69ae-49a7-906a-870c2e3c4553",
@@ -87,7 +87,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde_20260327_121012/similar/patches/sim_0005_TCGA-90-6837-01A-01-TS1.69f0e959-69ae-49a7-906a-870c2e3c4553_x38912_y1248_sim0.51370_attn7.21106.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUAD/similar-wsi/similar-3.jpg"
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-3.webp"
       },
       "diagnosis": {
         "diagnosis_text": "胸壁切缘（冰冻切片），切除：中分化，肿瘤大小 2.20 厘米，pT3 pN0 pMx，淋巴结 0/15 枚阳性。",
@@ -101,7 +101,7 @@
         "x": 25248,
         "y": 6240,
         "attention_score": 8.382377,
-        "image": "data/dataforFront/LUAD/high-attention/patch-4.jpg"
+        "image": "data/dataforFront/LUAD/high-attention/patch-4.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-22-4604-01Z-00-DX1.C398D192-8564-42AB-89B8-461F0830D8A1",
@@ -113,7 +113,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde_20260327_121012/similar/patches/sim_0023_TCGA-22-4604-01Z-00-DX1.C398D192-8564-42AB-89B8-461F0830D8A1_x90800_y47920_sim0.48916_attn10.15919.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUAD/similar-wsi/similar-4.jpg"
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-4.webp"
       },
       "diagnosis": {
         "diagnosis_text": "浸润性癌，组织学分级3级，肿瘤大小4.50厘米。",
@@ -127,7 +127,7 @@
         "x": 18368,
         "y": 53408,
         "attention_score": 7.943854,
-        "image": "data/dataforFront/LUAD/high-attention/patch-5.jpg"
+        "image": "data/dataforFront/LUAD/high-attention/patch-5.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-43-8115-01A-01-BS1.9ddf5647-9e2b-4f20-b6f6-4e22bb7798a8",
@@ -139,7 +139,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde_20260327_121012/similar/patches/sim_0042_TCGA-43-8115-01A-01-BS1.9ddf5647-9e2b-4f20-b6f6-4e22bb7798a8_x12384_y10976_sim0.47530_attn9.67333.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUAD/similar-wsi/similar-5.jpg"
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-5.webp"
       },
       "diagnosis": {
         "diagnosis_text": "A. 左肺下叶，切除标本：低分化癌，肿瘤大小 3.50 厘米，病理分期 pT2a N1，淋巴结 6/28 枚阳性。",
@@ -153,7 +153,7 @@
         "x": 22432,
         "y": 3936,
         "attention_score": 7.790716,
-        "image": "data/dataforFront/LUAD/high-attention/patch-6.jpg"
+        "image": "data/dataforFront/LUAD/high-attention/patch-6.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-56-8082-01Z-00-DX1.f0056ce7-58cf-4fc7-b249-ddeadeafafb3",
@@ -165,7 +165,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde_20260327_121012/similar/patches/sim_0081_TCGA-56-8082-01Z-00-DX1.f0056ce7-58cf-4fc7-b249-ddeadeafafb3_x14947_y3328_sim0.46298_attn10.08679.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUAD/similar-wsi/similar-6.jpg"
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-6.webp"
       },
       "diagnosis": {
         "diagnosis_text": "肿瘤大小为5.50厘米，病理分期为pT2b N0，淋巴结检查结果为0/1枚阳性。",
@@ -179,7 +179,7 @@
         "x": 25792,
         "y": 65440,
         "attention_score": 7.3744864,
-        "image": "data/dataforFront/LUAD/high-attention/patch-7.jpg"
+        "image": "data/dataforFront/LUAD/high-attention/patch-7.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29",
@@ -191,7 +191,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde_20260327_121012/similar/patches/sim_0002_TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29_x19200_y33792_sim0.52104_attn10.19164.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUAD/similar-wsi/similar-7.jpg"
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-7.webp"
       },
       "diagnosis": {
         "diagnosis_text": "肿瘤大小为3.50厘米。",
@@ -205,7 +205,7 @@
         "x": 28096,
         "y": 58272,
         "attention_score": 7.1782045,
-        "image": "data/dataforFront/LUAD/high-attention/patch-8.jpg"
+        "image": "data/dataforFront/LUAD/high-attention/patch-8.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-77-7338-01A-01-BS1.654045da-6384-4961-ac15-6afb85bf073b",
@@ -217,7 +217,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde_20260327_121012/similar/patches/sim_0004_TCGA-77-7338-01A-01-BS1.654045da-6384-4961-ac15-6afb85bf073b_x42928_y12928_sim0.51416_attn10.03591.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUAD/similar-wsi/similar-8.jpg"
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-8.webp"
       },
       "diagnosis": {
         "diagnosis_text": "淋巴结状态：N0。",
@@ -231,7 +231,7 @@
         "x": 24224,
         "y": 5984,
         "attention_score": 7.080752,
-        "image": "data/dataforFront/LUAD/high-attention/patch-9.jpg"
+        "image": "data/dataforFront/LUAD/high-attention/patch-9.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-90-6837-01A-01-TS1.69f0e959-69ae-49a7-906a-870c2e3c4553",
@@ -243,7 +243,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde_20260327_121012/similar/patches/sim_0020_TCGA-90-6837-01A-01-TS1.69f0e959-69ae-49a7-906a-870c2e3c4553_x39936_y4576_sim0.49059_attn6.73112.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUAD/similar-wsi/similar-9.jpg"
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-9.webp"
       },
       "diagnosis": {
         "diagnosis_text": "胸壁切缘（冰冻切片），切除：中分化，肿瘤大小 2.20 厘米，pT3 pN0 pMx，淋巴结 0/15 枚阳性。",
@@ -257,7 +257,7 @@
         "x": 26304,
         "y": 54432,
         "attention_score": 6.580396,
-        "image": "data/dataforFront/LUAD/high-attention/patch-10.jpg"
+        "image": "data/dataforFront/LUAD/high-attention/patch-10.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-22-4604-01Z-00-DX1.C398D192-8564-42AB-89B8-461F0830D8A1",
@@ -269,7 +269,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde_20260327_121012/similar/patches/sim_0029_TCGA-22-4604-01Z-00-DX1.C398D192-8564-42AB-89B8-461F0830D8A1_x91824_y49712_sim0.48332_attn10.10306.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUAD/similar-wsi/similar-10.jpg"
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-10.webp"
       },
       "diagnosis": {
         "diagnosis_text": "浸润性癌，组织学分级3级，肿瘤大小4.50厘米。",
@@ -283,7 +283,7 @@
         "x": 26304,
         "y": 61344,
         "attention_score": 6.4974213,
-        "image": "data/dataforFront/LUAD/high-attention/patch-11.jpg"
+        "image": "data/dataforFront/LUAD/high-attention/patch-11.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-43-8115-01A-01-BS1.9ddf5647-9e2b-4f20-b6f6-4e22bb7798a8",
@@ -295,7 +295,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde_20260327_121012/similar/patches/sim_0056_TCGA-43-8115-01A-01-BS1.9ddf5647-9e2b-4f20-b6f6-4e22bb7798a8_x11872_y10720_sim0.47017_attn10.13528.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUAD/similar-wsi/similar-11.jpg"
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-11.webp"
       },
       "diagnosis": {
         "diagnosis_text": "A. 左肺下叶，切除标本：低分化癌，肿瘤大小 3.50 厘米，病理分期 pT2a N1，淋巴结 6/28 枚阳性。",
@@ -309,7 +309,7 @@
         "x": 23488,
         "y": 69536,
         "attention_score": 6.455283,
-        "image": "data/dataforFront/LUAD/high-attention/patch-12.jpg"
+        "image": "data/dataforFront/LUAD/high-attention/patch-12.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-56-8082-01Z-00-DX1.f0056ce7-58cf-4fc7-b249-ddeadeafafb3",
@@ -321,7 +321,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde_20260327_121012/similar/patches/sim_0121_TCGA-56-8082-01Z-00-DX1.f0056ce7-58cf-4fc7-b249-ddeadeafafb3_x14691_y2560_sim0.45047_attn9.65093.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUAD/similar-wsi/similar-12.jpg"
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-12.webp"
       },
       "diagnosis": {
         "diagnosis_text": "肿瘤大小为5.50厘米，病理分期为pT2b N0，淋巴结检查结果为0/1枚阳性。",

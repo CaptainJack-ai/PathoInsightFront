@@ -4,7 +4,7 @@
   "query_slide_id": "TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4",
   "run_dir": "data/entire project process/runs/TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4_20260327_154123",
   "steps": {
-    "step1_query_upload": "data/dataforFront/LUSC/uploaded.jpg",
+    "step1_query_upload": "data/dataforFront/LUSC/uploaded.webp",
     "step2_classification": "data/entire project process/runs/TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4_20260327_154123/query/prediction.json",
     "step3_query_high_attention": "data/dataforFront/LUSC/high-attention",
     "step4_retrieval_mapping": "data/entire project process/runs/TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4_20260327_154123/similar/top_similar_patches.csv",
@@ -23,7 +23,7 @@
         "x": 18880,
         "y": 44513,
         "attention_score": 10.287097,
-        "image": "data/dataforFront/LUSC/high-attention/patch-1.jpg"
+        "image": "data/dataforFront/LUSC/high-attention/patch-1.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29",
@@ -35,7 +35,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4_20260327_154123/similar/patches/sim_0001_TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29_x17664_y30976_sim0.72947_attn10.00776.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUSC/similar-wsi/similar-1.jpg"
+        "image": "data/dataforFront/LUSC/similar-wsi/similar-1.webp"
       },
       "diagnosis": {
         "diagnosis_text": "肿瘤大小为3.50厘米。",
@@ -49,7 +49,7 @@
         "x": 17344,
         "y": 42977,
         "attention_score": 10.282123,
-        "image": "data/dataforFront/LUSC/high-attention/patch-2.jpg"
+        "image": "data/dataforFront/LUSC/high-attention/patch-2.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-77-7338-01A-01-BS1.654045da-6384-4961-ac15-6afb85bf073b",
@@ -61,7 +61,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4_20260327_154123/similar/patches/sim_0123_TCGA-77-7338-01A-01-BS1.654045da-6384-4961-ac15-6afb85bf073b_x27312_y4224_sim0.64854_attn10.15485.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUSC/similar-wsi/similar-2.jpg"
+        "image": "data/dataforFront/LUSC/similar-wsi/similar-2.webp"
       },
       "diagnosis": {
         "diagnosis_text": "淋巴结状态：N0。",
@@ -75,7 +75,7 @@
         "x": 16320,
         "y": 42465,
         "attention_score": 10.19748,
-        "image": "data/dataforFront/LUSC/high-attention/patch-3.jpg"
+        "image": "data/dataforFront/LUSC/high-attention/patch-3.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-56-8082-01Z-00-DX1.f0056ce7-58cf-4fc7-b249-ddeadeafafb3",
@@ -87,7 +87,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4_20260327_154123/similar/patches/sim_0169_TCGA-56-8082-01Z-00-DX1.f0056ce7-58cf-4fc7-b249-ddeadeafafb3_x15459_y3072_sim0.63544_attn7.95158.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUSC/similar-wsi/similar-3.jpg"
+        "image": "data/dataforFront/LUSC/similar-wsi/similar-3.webp"
       },
       "diagnosis": {
         "diagnosis_text": "肿瘤大小为5.50厘米，病理分期为pT2b N0，淋巴结检查结果为0/1枚阳性。",
@@ -101,7 +101,7 @@
         "x": 82368,
         "y": 49633,
         "attention_score": 10.160223,
-        "image": "data/dataforFront/LUSC/high-attention/patch-4.jpg"
+        "image": "data/dataforFront/LUSC/high-attention/patch-4.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-22-4604-01Z-00-DX1.C398D192-8564-42AB-89B8-461F0830D8A1",
@@ -113,7 +113,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4_20260327_154123/similar/patches/sim_0175_TCGA-22-4604-01Z-00-DX1.C398D192-8564-42AB-89B8-461F0830D8A1_x90800_y47920_sim0.63387_attn10.15919.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUSC/similar-wsi/similar-4.jpg"
+        "image": "data/dataforFront/LUSC/similar-wsi/similar-4.webp"
       },
       "diagnosis": {
         "diagnosis_text": "浸润性癌，组织学分级3级，肿瘤大小4.50厘米。",
@@ -127,7 +127,7 @@
         "x": 82624,
         "y": 49633,
         "attention_score": 10.158634,
-        "image": "data/dataforFront/LUSC/high-attention/patch-5.jpg"
+        "image": "data/dataforFront/LUSC/high-attention/patch-5.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29",
@@ -139,7 +139,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4_20260327_154123/similar/patches/sim_0002_TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29_x18432_y33536_sim0.72498_attn10.06378.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUSC/similar-wsi/similar-5.jpg"
+        "image": "data/dataforFront/LUSC/similar-wsi/similar-5.webp"
       },
       "diagnosis": {
         "diagnosis_text": "肿瘤大小为3.50厘米。",
@@ -153,7 +153,7 @@
         "x": 82624,
         "y": 49377,
         "attention_score": 10.150095,
-        "image": "data/dataforFront/LUSC/high-attention/patch-6.jpg"
+        "image": "data/dataforFront/LUSC/high-attention/patch-6.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-77-7338-01Z-00-DX1.52f2f410-a5cb-47e8-a4f9-242616a21e8e",
@@ -165,7 +165,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4_20260327_154123/similar/patches/sim_0183_TCGA-77-7338-01Z-00-DX1.52f2f410-a5cb-47e8-a4f9-242616a21e8e_x57346_y41136_sim0.63246_attn10.13453.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUSC/similar-wsi/similar-6.jpg"
+        "image": "data/dataforFront/LUSC/similar-wsi/similar-6.webp"
       },
       "diagnosis": {
         "diagnosis_text": "淋巴结状态：N0。",
@@ -179,7 +179,7 @@
         "x": 82880,
         "y": 49633,
         "attention_score": 10.005111,
-        "image": "data/dataforFront/LUSC/high-attention/patch-7.jpg"
+        "image": "data/dataforFront/LUSC/high-attention/patch-7.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29",
@@ -191,7 +191,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4_20260327_154123/similar/patches/sim_0003_TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29_x11008_y37120_sim0.72302_attn10.24463.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUSC/similar-wsi/similar-7.jpg"
+        "image": "data/dataforFront/LUSC/similar-wsi/similar-7.webp"
       },
       "diagnosis": {
         "diagnosis_text": "肿瘤大小为3.50厘米。",
@@ -205,7 +205,7 @@
         "x": 81600,
         "y": 44769,
         "attention_score": 9.984046,
-        "image": "data/dataforFront/LUSC/high-attention/patch-8.jpg"
+        "image": "data/dataforFront/LUSC/high-attention/patch-8.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29",
@@ -217,7 +217,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4_20260327_154123/similar/patches/sim_0004_TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29_x18688_y34048_sim0.72250_attn10.09058.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUSC/similar-wsi/similar-8.jpg"
+        "image": "data/dataforFront/LUSC/similar-wsi/similar-8.webp"
       },
       "diagnosis": {
         "diagnosis_text": "肿瘤大小为3.50厘米。",
@@ -231,7 +231,7 @@
         "x": 20928,
         "y": 44513,
         "attention_score": 9.978472,
-        "image": "data/dataforFront/LUSC/high-attention/patch-9.jpg"
+        "image": "data/dataforFront/LUSC/high-attention/patch-9.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29",
@@ -243,7 +243,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4_20260327_154123/similar/patches/sim_0005_TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29_x19200_y33792_sim0.71983_attn10.19164.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUSC/similar-wsi/similar-9.jpg"
+        "image": "data/dataforFront/LUSC/similar-wsi/similar-9.webp"
       },
       "diagnosis": {
         "diagnosis_text": "肿瘤大小为3.50厘米。",
@@ -257,7 +257,7 @@
         "x": 16064,
         "y": 42721,
         "attention_score": 9.936241,
-        "image": "data/dataforFront/LUSC/high-attention/patch-10.jpg"
+        "image": "data/dataforFront/LUSC/high-attention/patch-10.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29",
@@ -269,7 +269,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4_20260327_154123/similar/patches/sim_0006_TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29_x47104_y22272_sim0.71130_attn9.87566.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUSC/similar-wsi/similar-10.jpg"
+        "image": "data/dataforFront/LUSC/similar-wsi/similar-10.webp"
       },
       "diagnosis": {
         "diagnosis_text": "肿瘤大小为3.50厘米。",
@@ -283,7 +283,7 @@
         "x": 14528,
         "y": 41697,
         "attention_score": 9.921327,
-        "image": "data/dataforFront/LUSC/high-attention/patch-11.jpg"
+        "image": "data/dataforFront/LUSC/high-attention/patch-11.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29",
@@ -295,7 +295,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4_20260327_154123/similar/patches/sim_0007_TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29_x20736_y40192_sim0.71014_attn9.30257.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUSC/similar-wsi/similar-11.jpg"
+        "image": "data/dataforFront/LUSC/similar-wsi/similar-11.webp"
       },
       "diagnosis": {
         "diagnosis_text": "肿瘤大小为3.50厘米。",
@@ -309,7 +309,7 @@
         "x": 17344,
         "y": 42209,
         "attention_score": 9.911674,
-        "image": "data/dataforFront/LUSC/high-attention/patch-12.jpg"
+        "image": "data/dataforFront/LUSC/high-attention/patch-12.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29",
@@ -321,7 +321,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4_20260327_154123/similar/patches/sim_0008_TCGA-85-7844-01Z-00-DX1.9035209b-75ae-4c9b-8edf-5851af490f29_x13824_y39168_sim0.70995_attn9.08126.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/LUSC/similar-wsi/similar-12.jpg"
+        "image": "data/dataforFront/LUSC/similar-wsi/similar-12.webp"
       },
       "diagnosis": {
         "diagnosis_text": "肿瘤大小为3.50厘米。",

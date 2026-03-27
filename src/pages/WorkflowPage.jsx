@@ -5,11 +5,11 @@ import { useGSAP } from "@gsap/react";
 import { WORKFLOW_CASES } from "../data/workflowCases";
 
 const STAGES = [
-  { id: "uploaded", title: "WSI上传", subtitle: "医生提交全切片图像", badge: "步骤 01", fallbackImage: "/img/patho-about.jpg" },
-  { id: "classifying", title: "病理分类", subtitle: "模型预测病理类型", badge: "步骤 02", fallbackImage: "/img/patho-story.jpg" },
-  { id: "patching", title: "切片分块", subtitle: "将WSI切分为多个小块", badge: "步骤 03", fallbackImage: "/img/patho-lab-1.jpg" },
-  { id: "retrieving_similar", title: "相似检索", subtitle: "检索相似病理切片与报告", badge: "步骤 04", fallbackImage: "/img/patho-contact-2.jpg" },
-  { id: "generating_report", title: "报告生成", subtitle: "生成最终诊断报告", badge: "步骤 05", fallbackImage: "/img/patho-lab-2.jpg" },
+  { id: "uploaded", title: "WSI上传", subtitle: "医生提交全切片图像", badge: "步骤 01", fallbackImage: "/img/patho-about.webp" },
+  { id: "classifying", title: "病理分类", subtitle: "模型预测病理类型", badge: "步骤 02", fallbackImage: "/img/patho-story.webp" },
+  { id: "patching", title: "切片分块", subtitle: "将WSI切分为多个小块", badge: "步骤 03", fallbackImage: "/img/patho-lab-1.webp" },
+  { id: "retrieving_similar", title: "相似检索", subtitle: "检索相似病理切片与报告", badge: "步骤 04", fallbackImage: "/img/patho-contact-2.webp" },
+  { id: "generating_report", title: "报告生成", subtitle: "生成最终诊断报告", badge: "步骤 05", fallbackImage: "/img/patho-lab-2.webp" },
 ];
 
 const PATCH_DISPLAY_COUNT = 12;
@@ -48,8 +48,8 @@ const SimilarRetrievalShowcase = ({ stage, caseData }) => {
           return {
             id: `flow-link-${flowItem.index || idx + 1}`,
             rowIndex: idx,
-            sourcePatchImage: queryPatchImage || `/img/patho-lab-1.jpg`,
-            similarWsiImage: similarWsiImage || "/img/patho-contact-2.jpg",
+              sourcePatchImage: queryPatchImage || `/img/patho-lab-1.webp`,
+            similarWsiImage: similarWsiImage || "/img/patho-contact-2.webp",
             similarCaseTitle: `诊断编号 ${String(flowItem.index || idx + 1).padStart(2, "0")}`,
             similarReportText: diagnosisSummary || `相似病例报告占位 ${idx + 1}：在此填写诊断描述与证据说明。`,
             retrievedPatchMeta: {
@@ -72,9 +72,9 @@ const SimilarRetrievalShowcase = ({ stage, caseData }) => {
         return {
           id: `retrieval-placeholder-${idx + 1}`,
           rowIndex: idx,
-          sourcePatchImage: `/img/patho-lab-1.jpg`,
+          sourcePatchImage: `/img/patho-lab-1.webp`,
           sourcePatchPath: `PATCH_PATH_PLACEHOLDER_${idx + 1}`,
-          similarWsiImage: "/img/patho-contact-2.jpg",
+          similarWsiImage: "/img/patho-contact-2.webp",
           similarCaseTitle: `相似病例 ${idx + 1}`,
           similarReportText: `相似病例报告占位 ${idx + 1}：在此填写诊断描述与证据说明。`,
         };
@@ -407,11 +407,11 @@ const StageShowcase = ({ stage, caseData }) => {
 
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/28 to-transparent" />
 
-            <div className="absolute inset-x-0 bottom-8 top-14 z-10 flex items-center justify-center px-6 md:top-12">
-              <div className="grid w-full max-w-5xl grid-cols-2 gap-3 md:grid-cols-4">
+            <div className="absolute inset-x-0 bottom-6 top-14 z-10 flex items-center justify-center overflow-hidden px-4 md:bottom-8 md:px-6 md:top-12">
+              <div className="grid w-full max-w-3xl grid-cols-4 gap-2 md:max-w-4xl md:gap-3">
                 {displayPatches.map((img, idx) => (
-                  <div key={`patch-${img}`} className="highlight-patch-card rounded-xl border border-white/30 bg-black/65 p-1.5 shadow-[0_8px_30px_rgba(0,0,0,0.3)]">
-                    <img src={img} alt={`高注意力切片 ${idx + 1}`} className="h-20 w-full rounded-md object-cover md:h-24" />
+                  <div key={`patch-${img}`} className="highlight-patch-card aspect-square overflow-hidden rounded-lg border border-white/30 bg-black/65 p-1 shadow-[0_8px_30px_rgba(0,0,0,0.3)] md:rounded-xl md:p-1.5">
+                    <img src={img} alt={`高注意力切片 ${idx + 1}`} className="size-full rounded-md object-cover" loading="lazy" decoding="async" />
                   </div>
                 ))}
               </div>
