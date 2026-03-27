@@ -4,12 +4,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "noto-sc": ["Noto Serif SC", "serif"],
-        zentry: ["zentry", "Noto Serif SC", "sans-serif"],
-        general: ["general", "Noto Serif SC", "sans-serif"],
-        "circular-web": ["circular-web", "Noto Serif SC", "sans-serif"],
-        "robert-medium": ["robert-medium", "Noto Serif SC", "sans-serif"],
-        "robert-regular": ["robert-regular", "Noto Serif SC", "sans-serif"],
+        "noto-sc": ["PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Heiti SC", "sans-serif"],
+        zentry: ["zentry", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Heiti SC", "sans-serif"],
+        general: ["general", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Heiti SC", "sans-serif"],
+        "circular-web": ["circular-web", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Heiti SC", "sans-serif"],
+        "robert-medium": ["robert-medium", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Heiti SC", "sans-serif"],
+        "robert-regular": ["robert-regular", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Heiti SC", "sans-serif"],
       },
       colors: {
         blue: {

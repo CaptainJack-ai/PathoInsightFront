@@ -1,5 +1,4 @@
 @import url("https://fonts.cdnfonts.com/css/general-sans");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -9,7 +8,7 @@ body {
   width: 100dvw;
   overflow-x: hidden;
   background-color: #dfdff0;
-  font-family: "General Sans", "Noto Serif SC", sans-serif;
+  font-family: "General Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Heiti SC", sans-serif;
 }
 
 @layer base {

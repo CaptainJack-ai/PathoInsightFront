@@ -1,0 +1,7 @@
+{
+  "tcga_label": "TCGA-HNSC",
+  "short_code": "HNSC",
+  "query_wsi": "/data3/pathoinsight/code/download_script/data/tcga_pairs-full/TCGA-HNSC/TCGA-BA-5152/wsi/TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552.svs",
+  "query_slide_id": "TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552",
+  "run_dir": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552_20260327_152300"
+}

@@ -10,21 +10,58 @@ const STAGES = [
   { id: "patching", title: "切片分块", subtitle: "将WSI切分为多个小块", badge: "步骤 03", fallbackImage: "/img/patho-lab-1.jpg" },
   { id: "retrieving_similar", title: "相似检索", subtitle: "检索相似病理切片与报告", badge: "步骤 04", fallbackImage: "/img/patho-contact-2.jpg" },
   { id: "generating_report", title: "报告生成", subtitle: "生成最终诊断报告", badge: "步骤 05", fallbackImage: "/img/patho-lab-2.jpg" },
-  { id: "done", title: "诊断完成", subtitle: "展示最终临床诊断结果", badge: "步骤 06", fallbackImage: "/img/patho-lab-3.jpg" },
 ];
 
 const PATCH_DISPLAY_COUNT = 12;
 const getInitialFocusIndex = (count) => Math.floor(count / 2);
+const normalizeFlowAssetPath = (path, caseId) => {
+  if (!path || typeof path !== "string") return null;
+  if (path.startsWith("http://") || path.startsWith("https://") || path.startsWith("/")) return path;
+
+  if (path.startsWith("data/dataforFront/")) {
+    return path.replace(/^data\/dataforFront\/[^/]+\//, `/workflow-cases/${caseId}/`);
+  }
+
+  return `/${path.replace(/^\.\//, "")}`;
+};
 
 const SimilarRetrievalShowcase = ({ stage, caseData }) => {
   const retrievalRef = useRef(null);
   const wheelLockRef = useRef(false);
   const retrievalItems = caseData?.retrievalItems || [];
   const [similarDiagnosisItems, setSimilarDiagnosisItems] = useState([]);
+  const [flowLinks, setFlowLinks] = useState([]);
   const [focusIndex, setFocusIndex] = useState(getInitialFocusIndex(PATCH_DISPLAY_COUNT));
   const displayRows = Array.from({ length: PATCH_DISPLAY_COUNT }).map((_, idx) => {
-    const item = retrievalItems[idx];
+    const flowItem = flowLinks[idx];
     const diagnosisItem = similarDiagnosisItems[idx];
+
+    if (flowItem) {
+      const diagnosisSummary = flowItem.diagnosis?.summary || flowItem.diagnosis?.diagnosis_text;
+      const queryPatchImage = normalizeFlowAssetPath(flowItem.query_patch?.image, caseData?.id);
+      const similarWsiImage = normalizeFlowAssetPath(flowItem.similar_wsi?.image, caseData?.id);
+      const similarity = Number(flowItem.retrieved_patch?.similarity);
+      const similarityText = Number.isFinite(similarity) ? similarity.toFixed(3) : "N/A";
+
+      return {
+        id: `flow-link-${flowItem.index || idx + 1}`,
+        sourcePatchImage: queryPatchImage || `/img/patho-lab-1.jpg`,
+        similarWsiImage: similarWsiImage || "/img/patho-contact-2.jpg",
+        similarCaseTitle: `诊断编号 ${String(flowItem.index || idx + 1).padStart(2, "0")}`,
+        similarReportText:
+          diagnosisSummary ||
+          diagnosisItem?.summary ||
+          diagnosisItem?.diagnosis_text ||
+          `相似病例报告占位 ${idx + 1}：在此填写诊断描述与证据说明。`,
+        retrievedPatchMeta: {
+          caseId: flowItem.retrieved_patch?.case_id || "未知病例",
+          slideId: flowItem.retrieved_patch?.slide_id || "未知切片",
+          similarityText,
+        },
+      };
+    }
+
+    const item = retrievalItems[idx];
 
     if (item) {
       return {
@@ -84,6 +121,42 @@ const SimilarRetrievalShowcase = ({ stage, caseData }) => {
       cancelled = true;
     };
   }, [caseData?.id, caseData?.similarDiagnosisJson]);
+
+  useEffect(() => {
+    let cancelled = false;
+    const caseId = caseData?.id;
+
+    if (!caseId) {
+      setFlowLinks([]);
+      return () => {
+        cancelled = true;
+      };
+    }
+
+    const loadFlowLinks = async () => {
+      try {
+        const res = await fetch(`/workflow-cases/${caseId}/flow_data.json`);
+        if (!res.ok) throw new Error(`Failed to fetch flow_data: ${res.status}`);
+
+        const payload = await res.json();
+        const links = Array.isArray(payload?.flow_links) ? payload.flow_links : [];
+
+        if (!cancelled) {
+          setFlowLinks(links.slice(0, PATCH_DISPLAY_COUNT));
+        }
+      } catch (error) {
+        if (!cancelled) {
+          setFlowLinks([]);
+        }
+      }
+    };
+
+    loadFlowLinks();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [caseData?.id]);
 
   useGSAP(
     () => {
@@ -198,7 +271,12 @@ const SimilarRetrievalShowcase = ({ stage, caseData }) => {
                   <div className="text-center font-general text-xs uppercase text-blue-100/70">-&gt;</div>
 
                   <div className="min-h-[12rem] rounded-xl bg-black/45 p-3">
-                    <p className="text-[10px] uppercase tracking-wider text-blue-100/80">相似病例诊断</p>
+                    <p className="text-[10px] uppercase tracking-wider text-blue-100/80">检索证据链（右侧）</p>
+                    <div className="mt-2 rounded-lg border border-white/15 bg-black/40 px-2.5 py-2 text-[10px] text-blue-100/85">
+                      <p>相似度: {item.retrievedPatchMeta?.similarityText || "N/A"}</p>
+                      <p className="mt-1 truncate">Case: {item.retrievedPatchMeta?.caseId || "未知病例"}</p>
+                      <p className="mt-1 truncate">Slide: {item.retrievedPatchMeta?.slideId || "未知切片"}</p>
+                    </div>
                     <p className="mt-2 text-xs text-blue-100/95">{item.similarCaseTitle}</p>
                     <p className="mt-2 text-[11px] text-blue-100/75">{item.similarReportText}</p>
                   </div>

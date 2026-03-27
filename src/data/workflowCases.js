@@ -19,10 +19,6 @@ const makeStageContent = (caseName) => ({
     panelTitle: "占位：报告生成输入",
     panelDescription: `${caseName} 的结构化输入占位：类型 + 高注意力切片 + 证据报告。`,
   },
-  done: {
-    panelTitle: "占位：最终诊断报告",
-    panelDescription: `${caseName} 的最终诊断占位：可替换为真实报告文本。`,
-  },
 });
 
 const makePatchHighlightPaths = (id) =>
@@ -41,7 +37,6 @@ const makeCase = (id, name, classificationLabel = "CLASS_PLACEHOLDER", options =
       patching: `/workflow-cases/${id}/patching.jpg`,
       retrieving_similar: `/workflow-cases/${id}/retrieving_similar.jpg`,
       generating_report: `/workflow-cases/${id}/generating_report.jpg`,
-      done: `/workflow-cases/${id}/done.jpg`,
     },
     patchHighlights,
     retrievalItems: Array.from({ length: 12 }).map((_, idx) => ({
@@ -52,23 +47,25 @@ const makeCase = (id, name, classificationLabel = "CLASS_PLACEHOLDER", options =
       similarCaseTitle: `相似病例 ${idx + 1}`,
       similarReportText: `相似病例报告占位 ${idx + 1}：在此填写诊断描述与证据说明。`,
     })),
-    similarDiagnosisJson: options.similarDiagnosisJson || null,
+    similarDiagnosisJson: `/workflow-cases/${id}/similar-diagnosis/similar-diagnosis.json`,
     reportPdf: `/workflow-cases/${id}/report/diagnosis-report.pdf`,
     stageContent: makeStageContent(name),
   };
 };
 
+const CASE_DEFINITIONS = [
+  { id: "brca", name: "乳腺癌", classificationLabel: "TCGA-BRCA" },
+  { id: "coad", name: "结肠腺癌", classificationLabel: "TCGA-COAD" },
+  { id: "gbm", name: "胶质母细胞瘤", classificationLabel: "TCGA-GBM" },
+  { id: "hnsc", name: "头颈鳞癌", classificationLabel: "TCGA-HNSC" },
+  { id: "kirc", name: "肾透明细胞癌", classificationLabel: "TCGA-KIRC" },
+  { id: "luad", name: "肺腺癌", classificationLabel: "TCGA-LUAD" },
+  { id: "lusc", name: "肺鳞癌", classificationLabel: "TCGA-LUSC" },
+  { id: "prad", name: "前列腺腺癌", classificationLabel: "TCGA-PRAD" },
+  { id: "read", name: "直肠腺癌", classificationLabel: "TCGA-READ" },
+  { id: "stad", name: "胃腺癌", classificationLabel: "TCGA-STAD" },
+];
+
 export const WORKFLOW_CASES = [
-  makeCase("lung-adenocarcinoma", "肺腺癌", "肺腺癌"),
-  makeCase("breast-idc", "乳腺浸润性导管癌", "乳腺浸润性导管癌", {
-    similarDiagnosisJson: "/workflow-cases/breast-idc/similar-diagnosis/similar-diagnosis.json",
-  }),
-  makeCase("colorectal-adenocarcinoma", "结直肠腺癌", "结直肠腺癌"),
-  makeCase("gastric-adenocarcinoma", "胃腺癌", "胃腺癌"),
-  makeCase("hepatocellular-carcinoma", "肝细胞癌", "肝细胞癌"),
-  makeCase("renal-clear-cell", "肾透明细胞癌", "肾透明细胞癌"),
-  makeCase("prostate-adenocarcinoma", "前列腺腺癌", "前列腺腺癌"),
-  makeCase("thyroid-papillary", "甲状腺乳头状癌", "甲状腺乳头状癌"),
-  makeCase("cervical-squamous", "宫颈鳞状细胞癌", "宫颈鳞状细胞癌"),
-  makeCase("glioblastoma", "胶质母细胞瘤", "胶质母细胞瘤"),
+  ...CASE_DEFINITIONS.map((item) => makeCase(item.id, item.name, item.classificationLabel)),
 ];

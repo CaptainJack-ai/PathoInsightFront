@@ -1,0 +1,7 @@
+{
+  "tcga_label": "TCGA-LUSC",
+  "short_code": "LUSC",
+  "query_wsi": "/data3/pathoinsight/code/download_script/data/tcga_pairs-full/TCGA-LUSC/TCGA-18-3419/wsi/TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4.svs",
+  "query_slide_id": "TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4",
+  "run_dir": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-18-3419-01Z-00-DX1.69597BCF-2D4E-4D9B-B4E8-C03137445AF4_20260327_154123"
+}

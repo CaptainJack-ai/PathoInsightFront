@@ -51,9 +51,9 @@ export const BentoCard = ({ src, title, description }) => {
       />
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-black">
         <div>
-          <h1 className="bento-title special-font inline-block rounded-md bg-white/80 px-2 py-1 backdrop-blur-sm">{title}</h1>
+          <h1 className="bento-title special-font inline-block">{title}</h1>
           {description && (
-            <p className="mt-3 max-w-64 rounded-md bg-white/80 px-2 py-1 text-xs md:text-base">{description}</p>
+            <p className="mt-3 max-w-64 text-xs md:text-base">{description}</p>
           )}
         </div>
       </div>
@@ -70,7 +70,7 @@ const Features = () => (
         </p>
         <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
           首页与 Workflow 页面一一对应：从 WSI 上传、病理分类、切片分块到相似检索、
-          报告生成和诊断完成，形成连续的诊断叙事。
+          报告生成，形成连续的诊断叙事。
         </p>
       </div>
 

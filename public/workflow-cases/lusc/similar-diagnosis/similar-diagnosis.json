@@ -1,0 +1,65 @@
+{
+  "caseId": "lusc-case",
+  "items": [
+    {
+      "index": 1,
+      "diagnosis_text": "肿瘤大小为3.50厘米。",
+      "summary": "肿瘤大小为3.50厘米。"
+    },
+    {
+      "index": 2,
+      "diagnosis_text": "淋巴结状态：N0。",
+      "summary": "淋巴结状态为阴性（N0）。"
+    },
+    {
+      "index": 3,
+      "diagnosis_text": "肿瘤大小为5.50厘米，病理分期为pT2b N0，淋巴结检查结果为0/1枚阳性。",
+      "summary": "肿瘤大小为5.50厘米，病理分期为pT2b N0，淋巴结状态为0/1枚阳性。"
+    },
+    {
+      "index": 4,
+      "diagnosis_text": "浸润性癌，组织学分级3级，肿瘤大小4.50厘米。",
+      "summary": "诊断为浸润性癌，组织学分级为3级，肿瘤大小为4.50厘米。"
+    },
+    {
+      "index": 5,
+      "diagnosis_text": "肿瘤大小为3.50厘米。",
+      "summary": "肿瘤大小为3.50厘米。"
+    },
+    {
+      "index": 6,
+      "diagnosis_text": "淋巴结状态：N0。",
+      "summary": "淋巴结状态为阴性（N0）。"
+    },
+    {
+      "index": 7,
+      "diagnosis_text": "肿瘤大小为3.50厘米。",
+      "summary": "肿瘤大小为3.50厘米。"
+    },
+    {
+      "index": 8,
+      "diagnosis_text": "肿瘤大小为3.50厘米。",
+      "summary": "肿瘤大小为3.50厘米。"
+    },
+    {
+      "index": 9,
+      "diagnosis_text": "肿瘤大小为3.50厘米。",
+      "summary": "肿瘤大小为3.50厘米。"
+    },
+    {
+      "index": 10,
+      "diagnosis_text": "肿瘤大小为3.50厘米。",
+      "summary": "肿瘤大小为3.50厘米。"
+    },
+    {
+      "index": 11,
+      "diagnosis_text": "肿瘤大小为3.50厘米。",
+      "summary": "肿瘤大小为3.50厘米。"
+    },
+    {
+      "index": 12,
+      "diagnosis_text": "肿瘤大小为3.50厘米。",
+      "summary": "肿瘤大小为3.50厘米。"
+    }
+  ]
+}

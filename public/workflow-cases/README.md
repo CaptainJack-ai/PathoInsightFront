@@ -4,75 +4,49 @@ Place each pathology case assets under:
 
 - `public/workflow-cases/<case-id>/`
 
-The current case ids are:
+The current case ids (aligned with dataforFront) are:
 
-- `lung-adenocarcinoma`
-- `breast-idc`
-- `colorectal-adenocarcinoma`
-- `gastric-adenocarcinoma`
-- `hepatocellular-carcinoma`
-- `renal-clear-cell`
-- `prostate-adenocarcinoma`
-- `thyroid-papillary`
-- `cervical-squamous`
-- `glioblastoma`
+- `brca`
+- `coad`
+- `gbm`
+- `hnsc`
+- `kirc`
+- `luad`
+- `lusc`
+- `prad`
+- `read`
+- `stad`
 
-Required image names per case:
+Required files per case:
 
 - `uploaded.jpg`
 - `classifying.jpg`
 - `patching.jpg`
 - `retrieving_similar.jpg`
 - `generating_report.jpg`
-- `done.jpg`
-
-Required high-attention patch images for the patching animation:
-
-- `high-attention/patch-1.jpg`
-- `high-attention/patch-2.jpg`
-- `high-attention/patch-3.jpg`
-- `high-attention/patch-4.jpg`
-- `high-attention/patch-5.jpg`
-- `high-attention/patch-6.jpg`
-- `high-attention/patch-7.jpg`
-- `high-attention/patch-8.jpg`
-- `high-attention/patch-9.jpg`
-- `high-attention/patch-10.jpg`
-- `high-attention/patch-11.jpg`
-- `high-attention/patch-12.jpg`
-
-Required similar WSI thumbnails for retrieval stage:
-
-- `similar-wsi/similar-1.jpg`
-- `similar-wsi/similar-2.jpg`
-- `similar-wsi/similar-3.jpg`
-- `similar-wsi/similar-4.jpg`
-- `similar-wsi/similar-5.jpg`
-- `similar-wsi/similar-6.jpg`
-- `similar-wsi/similar-7.jpg`
-- `similar-wsi/similar-8.jpg`
-- `similar-wsi/similar-9.jpg`
-- `similar-wsi/similar-10.jpg`
-- `similar-wsi/similar-11.jpg`
-- `similar-wsi/similar-12.jpg`
-
-Required PDF report for report generation stage:
-
+- `high-attention/patch-1.jpg` ~ `high-attention/patch-12.jpg`
+- `similar-wsi/similar-1.jpg` ~ `similar-wsi/similar-12.jpg`
+- `similar-diagnosis/similar-diagnosis.json`
 - `report/diagnosis-report.pdf`
+- `flow_data.json`
+- `source_meta.json`
+
+Flow rendering notes:
+
+- Step 4 retrieval uses `flow_data.json -> flow_links` as the source of truth.
+- Paths in `flow_data.json` are normalized at runtime to `/workflow-cases/<case-id>/...`.
 
 Example:
 
-- `public/workflow-cases/lung-adenocarcinoma/uploaded.jpg`
-- `public/workflow-cases/lung-adenocarcinoma/classifying.jpg`
-- `public/workflow-cases/lung-adenocarcinoma/done.jpg`
-- `public/workflow-cases/lung-adenocarcinoma/high-attention/patch-1.jpg`
-- `public/workflow-cases/lung-adenocarcinoma/high-attention/patch-5.jpg`
-- `public/workflow-cases/lung-adenocarcinoma/similar-wsi/similar-1.jpg`
-- `public/workflow-cases/lung-adenocarcinoma/similar-wsi/similar-5.jpg`
-- `public/workflow-cases/lung-adenocarcinoma/report/diagnosis-report.pdf`
+- `public/workflow-cases/luad/uploaded.jpg`
+- `public/workflow-cases/luad/high-attention/patch-1.jpg`
+- `public/workflow-cases/luad/similar-wsi/similar-1.jpg`
+- `public/workflow-cases/luad/similar-diagnosis/similar-diagnosis.json`
+- `public/workflow-cases/luad/report/diagnosis-report.pdf`
+- `public/workflow-cases/luad/flow_data.json`
 
 Tips:
 
 - Recommended ratio: 16:9 or wider.
 - Recommended width: >= 1600px for crisp desktop rendering.
-- Keep file names lowercase and exact.
+- Keep case ids lowercase and exact.

@@ -1,0 +1,65 @@
+{
+  "caseId": "gbm-case",
+  "items": [
+    {
+      "index": 1,
+      "diagnosis_text": "参见特殊染色报告。WHO分级IV级。淋巴结状态N0。",
+      "summary": "该报告涉及一例WHO分级为IV级的高级别肿瘤，淋巴结状态为N0（未见转移）。"
+    },
+    {
+      "index": 2,
+      "diagnosis_text": "胶质母细胞瘤，WHO 4级，肿瘤大小1.20厘米。",
+      "summary": "诊断为胶质母细胞瘤（WHO 4级），肿瘤大小为1.20厘米。"
+    },
+    {
+      "index": 3,
+      "diagnosis_text": "脑，右额叶，切除标本：广泛凝固性坏死。",
+      "summary": "右额叶脑组织病理检查显示广泛凝固性坏死，未提及肿瘤性病变、分级、分期及分子标志物状态。"
+    },
+    {
+      "index": 4,
+      "diagnosis_text": "根据提供的文本，仅包含不完整的片段 'if different). | M1'，这似乎是某个病理报告摘要的结尾部分，可能表示存在远处转移（M1）。由于缺乏上下文，无法进行有效的清洗和修正。完整的病理报告应包含癌症类型、分级、肿瘤大小、病理分期、淋巴结状态及生物标志物状态等关键信息。",
+      "summary": "文本不完整，仅提示可能存在远处转移（M1），但无法确定癌症类型、分级、肿瘤大小、病理分期、淋巴结状态及ER/PR/HER2状态。"
+    },
+    {
+      "index": 5,
+      "diagnosis_text": "No diagnosis text found for case_id=TCGA-15-1447",
+      "summary": "No diagnosis text found for case_id=TCGA-15-1447"
+    },
+    {
+      "index": 6,
+      "diagnosis_text": "Glioblastoma Multiforme",
+      "summary": "癌症类型为胶质母细胞瘤（Glioblastoma Multiforme）。"
+    },
+    {
+      "index": 7,
+      "diagnosis_text": "您提供的文本片段 'if different).' 不包含任何可识别的病理报告内容。它看起来是一个不完整的句子片段，可能来自某个文档的脚注或条件说明，但无法从中提取任何病理诊断信息。",
+      "summary": "提供的文本片段不构成病理报告，无法提取癌症类型、分级、肿瘤大小、病理分期、淋巴结状态或ER/PR/HER2状态等关键信息。"
+    },
+    {
+      "index": 8,
+      "diagnosis_text": "参见特殊染色报告。WHO分级IV级。淋巴结状态N0。",
+      "summary": "该报告涉及一例WHO分级为IV级的高级别肿瘤，淋巴结状态为N0（未见转移）。"
+    },
+    {
+      "index": 9,
+      "diagnosis_text": "脑，右额叶，切除标本：广泛凝固性坏死。",
+      "summary": "右额叶脑组织病理检查显示广泛凝固性坏死，未提及肿瘤性病变、分级、分期及分子标志物状态。"
+    },
+    {
+      "index": 10,
+      "diagnosis_text": "胶质母细胞瘤，WHO 4级，肿瘤大小1.20厘米。",
+      "summary": "诊断为胶质母细胞瘤（WHO 4级），肿瘤大小为1.20厘米。"
+    },
+    {
+      "index": 11,
+      "diagnosis_text": "No diagnosis text found for case_id=TCGA-15-1447",
+      "summary": "No diagnosis text found for case_id=TCGA-15-1447"
+    },
+    {
+      "index": 12,
+      "diagnosis_text": "Glioblastoma Multiforme",
+      "summary": "癌症类型为胶质母细胞瘤（Glioblastoma Multiforme）。"
+    }
+  ]
+}

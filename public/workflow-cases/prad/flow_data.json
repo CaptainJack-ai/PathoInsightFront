@@ -1,0 +1,333 @@
+{
+  "code": "PRAD",
+  "tcga_label": "TCGA-PRAD",
+  "query_slide_id": "TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07",
+  "run_dir": "data/entire project process/runs/TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_20260327_121957",
+  "steps": {
+    "step1_query_upload": "data/dataforFront/PRAD/uploaded.jpg",
+    "step2_classification": "data/entire project process/runs/TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_20260327_121957/query/prediction.json",
+    "step3_query_high_attention": "data/dataforFront/PRAD/high-attention",
+    "step4_retrieval_mapping": "data/entire project process/runs/TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_20260327_121957/similar/top_similar_patches.csv",
+    "step4_case_summary": "data/entire project process/runs/TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_20260327_121957/similar/top_similar_cases.csv",
+    "step5_report": "data/dataforFront/PRAD/report/diagnosis-report.pdf"
+  },
+  "counts": {
+    "patch_count": 12,
+    "similar_wsi_count": 12,
+    "diagnosis_item_count": 12
+  },
+  "flow_links": [
+    {
+      "index": 1,
+      "query_patch": {
+        "x": 42629,
+        "y": 31936,
+        "attention_score": 9.6013155,
+        "image": "data/dataforFront/PRAD/high-attention/patch-1.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-HC-7079-01A-01-TS1.2e112c76-4fa4-4a7a-a68e-745bb3fea37a",
+        "case_id": "TCGA-HC-7079",
+        "x": 20384,
+        "y": 19008,
+        "similarity": 0.74089205,
+        "attention_score": 2.0187036991119385,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_20260327_121957/similar/patches/sim_0001_TCGA-HC-7079-01A-01-TS1.2e112c76-4fa4-4a7a-a68e-745bb3fea37a_x20384_y19008_sim0.74089_attn2.01870.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/PRAD/similar-wsi/similar-1.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "盆腔淋巴结清扫：四枚良性增生淋巴结。肿瘤大小 1.00 厘米。病理分期 pT3a N0 Mx。",
+        "summary": "该病理报告显示肿瘤大小为 1.00 厘米，病理分期为 pT3a N0 Mx，淋巴结状态为 0/4 枚阳性（良性增生）。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 2,
+      "query_patch": {
+        "x": 42117,
+        "y": 26560,
+        "attention_score": 9.27542,
+        "image": "data/dataforFront/PRAD/high-attention/patch-2.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-CH-5754-01Z-00-DX1.4dae6511-baa2-4472-b625-a41c9c95dec8",
+        "case_id": "TCGA-CH-5754",
+        "x": 59929,
+        "y": 15328,
+        "similarity": 0.7312933,
+        "attention_score": 6.216253757476807,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_20260327_121957/similar/patches/sim_0002_TCGA-CH-5754-01Z-00-DX1.4dae6511-baa2-4472-b625-a41c9c95dec8_x59929_y15328_sim0.73129_attn6.21625.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/PRAD/similar-wsi/similar-2.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "前列腺：双侧前列腺低分化腺癌，累及整个腺体。低分化。可见神经侵犯。淋巴结1/6枚阳性。",
+        "summary": "诊断为双侧前列腺低分化腺癌，累及整个腺体，可见神经侵犯，淋巴结转移（1/6枚阳性）。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 3,
+      "query_patch": {
+        "x": 7616,
+        "y": 29952,
+        "attention_score": 9.274926,
+        "image": "data/dataforFront/PRAD/high-attention/patch-3.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-G9-6494-01A-01-TS1.ddd3134e-1c27-406c-a6ef-7178c1144bbe",
+        "case_id": "TCGA-G9-6494",
+        "x": 26640,
+        "y": 14848,
+        "similarity": 0.7302172,
+        "attention_score": 4.725098609924316,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_20260327_121957/similar/patches/sim_0003_TCGA-G9-6494-01A-01-TS1.ddd3134e-1c27-406c-a6ef-7178c1144bbe_x26640_y14848_sim0.73022_attn4.72510.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/PRAD/similar-wsi/similar-3.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "右侧盆腔淋巴结，切除：高级别（Grade 4），肿瘤大小1.20厘米，病理分期为pT4 N0 Mx，淋巴结状态为0/3枚阳性。",
+        "summary": "高级别（Grade 4）肿瘤，大小为1.20厘米，病理分期为pT4 N0 Mx，淋巴结状态为0/3枚阳性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 4,
+      "query_patch": {
+        "x": 9920,
+        "y": 17152,
+        "attention_score": 9.061609,
+        "image": "data/dataforFront/PRAD/high-attention/patch-4.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-HC-8259-11A-01-TS1.d1fff645-517b-40e5-836b-170bf9ed098a",
+        "case_id": "TCGA-HC-8259",
+        "x": 38944,
+        "y": 9024,
+        "similarity": 0.72570753,
+        "attention_score": 4.968169689178467,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_20260327_121957/similar/patches/sim_0006_TCGA-HC-8259-11A-01-TS1.d1fff645-517b-40e5-836b-170bf9ed098a_x38944_y9024_sim0.72571_attn4.96817.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/PRAD/similar-wsi/similar-4.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "前列腺，根治性前列腺切除术标本：病理分期为 pT2a Nx。",
+        "summary": "患者为前列腺癌，病理分期为 pT2a Nx。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 5,
+      "query_patch": {
+        "x": 23232,
+        "y": 49152,
+        "attention_score": 8.904309,
+        "image": "data/dataforFront/PRAD/high-attention/patch-5.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-EJ-8468-01A-01-BS1.628354fd-d7ba-4ece-94f0-5c06260c2bc6",
+        "case_id": "TCGA-EJ-8468",
+        "x": 33280,
+        "y": 27472,
+        "similarity": 0.6901209,
+        "attention_score": 7.547124862670898,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_20260327_121957/similar/patches/sim_0054_TCGA-EJ-8468-01A-01-BS1.628354fd-d7ba-4ece-94f0-5c06260c2bc6_x33280_y27472_sim0.69012_attn7.54712.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/PRAD/similar-wsi/similar-5.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "病理分级为4级，病理分期为pT3a N0 Mx，淋巴结状态为0/13枚阳性。",
+        "summary": "该病例为高级别（Grade 4）肿瘤，病理分期为pT3a N0 Mx，肿瘤较大（pT3a），无淋巴结转移（0/13枚阳性）。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 6,
+      "query_patch": {
+        "x": 9920,
+        "y": 39936,
+        "attention_score": 8.853545,
+        "image": "data/dataforFront/PRAD/high-attention/patch-6.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-G9-6342-01A-01-BS1.5f4e5513-6cb0-4a36-81a6-a1345829224d",
+        "case_id": "TCGA-G9-6342",
+        "x": 19952,
+        "y": 17344,
+        "similarity": 0.68660146,
+        "attention_score": 10.154842376708984,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_20260327_121957/similar/patches/sim_0061_TCGA-G9-6342-01A-01-BS1.5f4e5513-6cb0-4a36-81a6-a1345829224d_x19952_y17344_sim0.68660_attn10.15484.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/PRAD/similar-wsi/similar-6.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "前列腺，前列腺切除术标本。病理分级为3级。病理分期为pT3a Nx Mx。",
+        "summary": "前列腺癌，病理分级为3级，病理分期为pT3a Nx Mx。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 7,
+      "query_patch": {
+        "x": 43141,
+        "y": 19648,
+        "attention_score": 8.811048,
+        "image": "data/dataforFront/PRAD/high-attention/patch-7.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-G9-6378-01A-01-TS1.5e34f0c4-80be-4784-b765-deef6b0b8f38",
+        "case_id": "TCGA-G9-6378",
+        "x": 18768,
+        "y": 17025,
+        "similarity": 0.67489076,
+        "attention_score": 0.7313634753227234,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_20260327_121957/similar/patches/sim_0101_TCGA-G9-6378-01A-01-TS1.5e34f0c4-80be-4784-b765-deef6b0b8f38_x18768_y17025_sim0.67489_attn0.73136.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/PRAD/similar-wsi/similar-7.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "前列腺，根治性前列腺切除术标本。病理分级为3级。病理分期为pT2x Nx Mx。",
+        "summary": "前列腺癌，病理分级为3级，肿瘤分期为pT2x Nx Mx。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 8,
+      "query_patch": {
+        "x": 18624,
+        "y": 31232,
+        "attention_score": 8.805351,
+        "image": "data/dataforFront/PRAD/high-attention/patch-8.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-CH-5754-01Z-00-DX1.4dae6511-baa2-4472-b625-a41c9c95dec8",
+        "case_id": "TCGA-CH-5754",
+        "x": 60697,
+        "y": 16096,
+        "similarity": 0.7282153,
+        "attention_score": 4.848477363586426,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_20260327_121957/similar/patches/sim_0004_TCGA-CH-5754-01Z-00-DX1.4dae6511-baa2-4472-b625-a41c9c95dec8_x60697_y16096_sim0.72822_attn4.84848.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/PRAD/similar-wsi/similar-8.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "前列腺：双侧前列腺低分化腺癌，累及整个腺体。低分化。可见神经侵犯。淋巴结1/6枚阳性。",
+        "summary": "诊断为双侧前列腺低分化腺癌，累及整个腺体，可见神经侵犯，淋巴结转移（1/6枚阳性）。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 9,
+      "query_patch": {
+        "x": 9920,
+        "y": 34560,
+        "attention_score": 8.759594,
+        "image": "data/dataforFront/PRAD/high-attention/patch-9.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-HC-7079-01A-01-TS1.2e112c76-4fa4-4a7a-a68e-745bb3fea37a",
+        "case_id": "TCGA-HC-7079",
+        "x": 28576,
+        "y": 20544,
+        "similarity": 0.72662497,
+        "attention_score": 2.5091891288757324,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_20260327_121957/similar/patches/sim_0005_TCGA-HC-7079-01A-01-TS1.2e112c76-4fa4-4a7a-a68e-745bb3fea37a_x28576_y20544_sim0.72662_attn2.50919.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/PRAD/similar-wsi/similar-9.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "盆腔淋巴结清扫：四枚良性增生淋巴结。肿瘤大小 1.00 厘米。病理分期 pT3a N0 Mx。",
+        "summary": "该病理报告显示肿瘤大小为 1.00 厘米，病理分期为 pT3a N0 Mx，淋巴结状态为 0/4 枚阳性（良性增生）。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 10,
+      "query_patch": {
+        "x": 8640,
+        "y": 23552,
+        "attention_score": 8.61364,
+        "image": "data/dataforFront/PRAD/high-attention/patch-10.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-G9-6494-01A-01-TS1.ddd3134e-1c27-406c-a6ef-7178c1144bbe",
+        "case_id": "TCGA-G9-6494",
+        "x": 26384,
+        "y": 14336,
+        "similarity": 0.7234304,
+        "attention_score": 3.128159761428833,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_20260327_121957/similar/patches/sim_0008_TCGA-G9-6494-01A-01-TS1.ddd3134e-1c27-406c-a6ef-7178c1144bbe_x26384_y14336_sim0.72343_attn3.12816.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/PRAD/similar-wsi/similar-10.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "右侧盆腔淋巴结，切除：高级别（Grade 4），肿瘤大小1.20厘米，病理分期为pT4 N0 Mx，淋巴结状态为0/3枚阳性。",
+        "summary": "高级别（Grade 4）肿瘤，大小为1.20厘米，病理分期为pT4 N0 Mx，淋巴结状态为0/3枚阳性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 11,
+      "query_patch": {
+        "x": 8896,
+        "y": 37632,
+        "attention_score": 8.5832815,
+        "image": "data/dataforFront/PRAD/high-attention/patch-11.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-HC-8259-11A-01-TS1.d1fff645-517b-40e5-836b-170bf9ed098a",
+        "case_id": "TCGA-HC-8259",
+        "x": 37408,
+        "y": 11584,
+        "similarity": 0.71767455,
+        "attention_score": 5.601592063903809,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_20260327_121957/similar/patches/sim_0011_TCGA-HC-8259-11A-01-TS1.d1fff645-517b-40e5-836b-170bf9ed098a_x37408_y11584_sim0.71767_attn5.60159.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/PRAD/similar-wsi/similar-11.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "前列腺，根治性前列腺切除术标本：病理分期为 pT2a Nx。",
+        "summary": "患者为前列腺癌，病理分期为 pT2a Nx。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 12,
+      "query_patch": {
+        "x": 7872,
+        "y": 21760,
+        "attention_score": 8.409811,
+        "image": "data/dataforFront/PRAD/high-attention/patch-12.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-G9-6342-01A-01-BS1.5f4e5513-6cb0-4a36-81a6-a1345829224d",
+        "case_id": "TCGA-G9-6342",
+        "x": 13040,
+        "y": 12224,
+        "similarity": 0.6832595,
+        "attention_score": 9.336033821105955,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_20260327_121957/similar/patches/sim_0070_TCGA-G9-6342-01A-01-BS1.5f4e5513-6cb0-4a36-81a6-a1345829224d_x13040_y12224_sim0.68326_attn9.33603.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/PRAD/similar-wsi/similar-12.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "前列腺，前列腺切除术标本。病理分级为3级。病理分期为pT3a Nx Mx。",
+        "summary": "前列腺癌，病理分级为3级，病理分期为pT3a Nx Mx。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    }
+  ]
+}

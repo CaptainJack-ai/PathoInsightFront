@@ -1,0 +1,7 @@
+{
+  "tcga_label": "TCGA-PRAD",
+  "short_code": "PRAD",
+  "query_wsi": "/data3/pathoinsight/code/download_script/data/tcga_pairs-full/TCGA-PRAD/TCGA-CH-5748/wsi/TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07.svs",
+  "query_slide_id": "TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07",
+  "run_dir": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_20260327_121957"
+}

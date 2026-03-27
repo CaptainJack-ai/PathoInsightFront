@@ -1,0 +1,7 @@
+{
+  "tcga_label": "TCGA-BRCA",
+  "short_code": "BRCA",
+  "query_wsi": "/data3/pathoinsight/code/download_script/data/tcga_pairs-full/TCGA-BRCA/TCGA-A1-A0SB/wsi/TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1.svs",
+  "query_slide_id": "TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1",
+  "run_dir": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1_20260327_115036"
+}

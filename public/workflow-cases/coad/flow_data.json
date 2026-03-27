@@ -1,0 +1,333 @@
+{
+  "code": "COAD",
+  "tcga_label": "TCGA-COAD",
+  "query_slide_id": "TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a",
+  "run_dir": "data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919",
+  "steps": {
+    "step1_query_upload": "data/dataforFront/COAD/uploaded.jpg",
+    "step2_classification": "data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/query/prediction.json",
+    "step3_query_high_attention": "data/dataforFront/COAD/high-attention",
+    "step4_retrieval_mapping": "data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/top_similar_patches.csv",
+    "step4_case_summary": "data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/top_similar_cases.csv",
+    "step5_report": "data/dataforFront/COAD/report/diagnosis-report.pdf"
+  },
+  "counts": {
+    "patch_count": 12,
+    "similar_wsi_count": 12,
+    "diagnosis_item_count": 12
+  },
+  "flow_links": [
+    {
+      "index": 1,
+      "query_patch": {
+        "x": 102724,
+        "y": 16451,
+        "attention_score": 10.497054,
+        "image": "data/dataforFront/COAD/high-attention/patch-1.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
+        "case_id": "TCGA-A6-6651",
+        "x": 86720,
+        "y": 33200,
+        "similarity": 0.6217879,
+        "attention_score": 8.584981918334961,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0001_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x86720_y33200_sim0.62179_attn8.58498.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/COAD/similar-wsi/similar-1.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
+        "summary": "患者诊断为中分化腺癌，肿瘤大小为3.00厘米，病理分期为pT3 N0 Mx，淋巴结状态为2/33枚阳性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 2,
+      "query_patch": {
+        "x": 110660,
+        "y": 5955,
+        "attention_score": 10.476097,
+        "image": "data/dataforFront/COAD/high-attention/patch-2.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-AD-5900-01Z-00-DX1.ff1dbf00-d9c5-45a2-9732-07b46f4e1471",
+        "case_id": "TCGA-AD-5900",
+        "x": 13136,
+        "y": 31744,
+        "similarity": 0.5389404,
+        "attention_score": 8.799483299255371,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0086_TCGA-AD-5900-01Z-00-DX1.ff1dbf00-d9c5-45a2-9732-07b46f4e1471_x13136_y31744_sim0.53894_attn8.79948.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/COAD/similar-wsi/similar-2.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "右半结肠，节段性切除术。病理分期为 pT2 N0 Mx，淋巴结检查结果为 0/11 枚阳性。",
+        "summary": "右半结肠癌，病理分期为 pT2 N0 Mx，肿瘤大小未明确，淋巴结状态为 0/11 枚阳性，ER/PR/HER2状态未提及。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 3,
+      "query_patch": {
+        "x": 109124,
+        "y": 9027,
+        "attention_score": 10.431914,
+        "image": "data/dataforFront/COAD/high-attention/patch-3.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
+        "case_id": "TCGA-A6-6651",
+        "x": 11088,
+        "y": 50961,
+        "similarity": 0.6031074,
+        "attention_score": 9.098268508911133,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0002_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x11088_y50961_sim0.60311_attn9.09827.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/COAD/similar-wsi/similar-3.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
+        "summary": "患者诊断为中分化腺癌，肿瘤大小为3.00厘米，病理分期为pT3 N0 Mx，淋巴结状态为2/33枚阳性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 4,
+      "query_patch": {
+        "x": 10784,
+        "y": 16137,
+        "attention_score": 10.418151,
+        "image": "data/dataforFront/COAD/high-attention/patch-4.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-AD-5900-01Z-00-DX1.ff1dbf00-d9c5-45a2-9732-07b46f4e1471",
+        "case_id": "TCGA-AD-5900",
+        "x": 15440,
+        "y": 16128,
+        "similarity": 0.513829,
+        "attention_score": 9.529163360595703,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0192_TCGA-AD-5900-01Z-00-DX1.ff1dbf00-d9c5-45a2-9732-07b46f4e1471_x15440_y16128_sim0.51383_attn9.52916.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/COAD/similar-wsi/similar-4.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "右半结肠，节段性切除术。病理分期为 pT2 N0 Mx，淋巴结检查结果为 0/11 枚阳性。",
+        "summary": "右半结肠癌，病理分期为 pT2 N0 Mx，肿瘤大小未明确，淋巴结状态为 0/11 枚阳性，ER/PR/HER2状态未提及。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 5,
+      "query_patch": {
+        "x": 54882,
+        "y": 15362,
+        "attention_score": 10.396892,
+        "image": "data/dataforFront/COAD/high-attention/patch-5.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
+        "case_id": "TCGA-A6-6651",
+        "x": 4176,
+        "y": 50961,
+        "similarity": 0.6006318,
+        "attention_score": 7.964343547821045,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0003_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x4176_y50961_sim0.60063_attn7.96434.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/COAD/similar-wsi/similar-5.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
+        "summary": "患者诊断为中分化腺癌，肿瘤大小为3.00厘米，病理分期为pT3 N0 Mx，淋巴结状态为2/33枚阳性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 6,
+      "query_patch": {
+        "x": 56418,
+        "y": 5890,
+        "attention_score": 10.3940935,
+        "image": "data/dataforFront/COAD/high-attention/patch-6.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
+        "case_id": "TCGA-A6-6651",
+        "x": 121456,
+        "y": 14512,
+        "similarity": 0.5992824,
+        "attention_score": 5.910642147064209,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0004_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x121456_y14512_sim0.59928_attn5.91064.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/COAD/similar-wsi/similar-6.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
+        "summary": "患者诊断为中分化腺癌，肿瘤大小为3.00厘米，病理分期为pT3 N0 Mx，淋巴结状态为2/33枚阳性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 7,
+      "query_patch": {
+        "x": 10016,
+        "y": 31241,
+        "attention_score": 10.380421,
+        "image": "data/dataforFront/COAD/high-attention/patch-7.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
+        "case_id": "TCGA-A6-6651",
+        "x": 62608,
+        "y": 40545,
+        "similarity": 0.5979172,
+        "attention_score": 5.88607120513916,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0005_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x62608_y40545_sim0.59792_attn5.88607.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/COAD/similar-wsi/similar-7.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
+        "summary": "患者诊断为中分化腺癌，肿瘤大小为3.00厘米，病理分期为pT3 N0 Mx，淋巴结状态为2/33枚阳性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 8,
+      "query_patch": {
+        "x": 105796,
+        "y": 6979,
+        "attention_score": 10.380246,
+        "image": "data/dataforFront/COAD/high-attention/patch-8.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
+        "case_id": "TCGA-A6-6651",
+        "x": 53904,
+        "y": 50017,
+        "similarity": 0.59612906,
+        "attention_score": 7.783192157745361,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0006_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x53904_y50017_sim0.59613_attn7.78319.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/COAD/similar-wsi/similar-8.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
+        "summary": "患者诊断为中分化腺癌，肿瘤大小为3.00厘米，病理分期为pT3 N0 Mx，淋巴结状态为2/33枚阳性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 9,
+      "query_patch": {
+        "x": 11808,
+        "y": 16393,
+        "attention_score": 10.3589735,
+        "image": "data/dataforFront/COAD/high-attention/patch-9.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
+        "case_id": "TCGA-A6-6651",
+        "x": 135536,
+        "y": 3248,
+        "similarity": 0.5954838,
+        "attention_score": 9.856892585754396,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0007_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x135536_y3248_sim0.59548_attn9.85689.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/COAD/similar-wsi/similar-9.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
+        "summary": "患者诊断为中分化腺癌，肿瘤大小为3.00厘米，病理分期为pT3 N0 Mx，淋巴结状态为2/33枚阳性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 10,
+      "query_patch": {
+        "x": 55394,
+        "y": 13314,
+        "attention_score": 10.356683,
+        "image": "data/dataforFront/COAD/high-attention/patch-10.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
+        "case_id": "TCGA-A6-6651",
+        "x": 134768,
+        "y": 4272,
+        "similarity": 0.59521514,
+        "attention_score": 10.359478950500488,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0008_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x134768_y4272_sim0.59522_attn10.35948.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/COAD/similar-wsi/similar-10.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
+        "summary": "患者诊断为中分化腺癌，肿瘤大小为3.00厘米，病理分期为pT3 N0 Mx，淋巴结状态为2/33枚阳性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 11,
+      "query_patch": {
+        "x": 6432,
+        "y": 26377,
+        "attention_score": 10.328802,
+        "image": "data/dataforFront/COAD/high-attention/patch-11.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
+        "case_id": "TCGA-A6-6651",
+        "x": 9040,
+        "y": 53777,
+        "similarity": 0.59415716,
+        "attention_score": 9.047026634216309,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0009_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x9040_y53777_sim0.59416_attn9.04703.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/COAD/similar-wsi/similar-11.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
+        "summary": "患者诊断为中分化腺癌，肿瘤大小为3.00厘米，病理分期为pT3 N0 Mx，淋巴结状态为2/33枚阳性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 12,
+      "query_patch": {
+        "x": 105796,
+        "y": 8003,
+        "attention_score": 10.321735,
+        "image": "data/dataforFront/COAD/high-attention/patch-12.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
+        "case_id": "TCGA-A6-6651",
+        "x": 131440,
+        "y": 12976,
+        "similarity": 0.5915537,
+        "attention_score": 6.582605361938477,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0010_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x131440_y12976_sim0.59155_attn6.58261.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/COAD/similar-wsi/similar-12.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
+        "summary": "患者诊断为中分化腺癌，肿瘤大小为3.00厘米，病理分期为pT3 N0 Mx，淋巴结状态为2/33枚阳性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    }
+  ]
+}
