@@ -1,0 +1,333 @@
+{
+  "code": "READ",
+  "tcga_label": "TCGA-READ",
+  "query_slide_id": "TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286",
+  "run_dir": "data/entire project process/runs/TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_20260327_122528",
+  "steps": {
+    "step1_query_upload": "data/dataforFront/READ/uploaded.jpg",
+    "step2_classification": "data/entire project process/runs/TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_20260327_122528/query/prediction.json",
+    "step3_query_high_attention": "data/dataforFront/READ/high-attention",
+    "step4_retrieval_mapping": "data/entire project process/runs/TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_20260327_122528/similar/top_similar_patches.csv",
+    "step4_case_summary": "data/entire project process/runs/TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_20260327_122528/similar/top_similar_cases.csv",
+    "step5_report": "data/dataforFront/READ/report/diagnosis-report.pdf"
+  },
+  "counts": {
+    "patch_count": 12,
+    "similar_wsi_count": 12,
+    "diagnosis_item_count": 12
+  },
+  "flow_links": [
+    {
+      "index": 1,
+      "query_patch": {
+        "x": 116577,
+        "y": 25026,
+        "attention_score": 10.442881,
+        "image": "data/dataforFront/READ/high-attention/patch-1.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-G5-6641-01A-01-TS1.e817c1b0-b819-419b-a779-ac91aa06f52e",
+        "case_id": "TCGA-G5-6641",
+        "x": 5928,
+        "y": 2048,
+        "similarity": 0.6489974,
+        "attention_score": 9.80810832977295,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_20260327_122528/similar/patches/sim_0001_TCGA-G5-6641-01A-01-TS1.e817c1b0-b819-419b-a779-ac91aa06f52e_x5928_y2048_sim0.64900_attn9.80811.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/READ/similar-wsi/similar-1.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "直肠乙状结肠，低位前切除术。肿瘤分级为G2，肿瘤大小为2.00厘米。病理分期为pT1 N1 Mx。淋巴结状态为1/26枚阳性。",
+        "summary": "患者为直肠乙状结肠癌，分级G2，肿瘤大小2.00厘米，病理分期pT1 N1 Mx，淋巴结状态为1/26枚阳性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 2,
+      "query_patch": {
+        "x": 3584,
+        "y": 19680,
+        "attention_score": 10.436829,
+        "image": "data/dataforFront/READ/high-attention/patch-2.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-DC-6158-01Z-00-DX1.06cf3c33-83e1-46fd-8717-6c4cddb659d9",
+        "case_id": "TCGA-DC-6158",
+        "x": 84480,
+        "y": 48352,
+        "similarity": 0.6350328,
+        "attention_score": 5.948165893554688,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_20260327_122528/similar/patches/sim_0003_TCGA-DC-6158-01Z-00-DX1.06cf3c33-83e1-46fd-8717-6c4cddb659d9_x84480_y48352_sim0.63503_attn5.94817.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/READ/similar-wsi/similar-2.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "History: Moderately differentiated, pT2.",
+        "summary": "该报告描述了一种中度分化的癌症，病理分期为 pT2。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 3,
+      "query_patch": {
+        "x": 114017,
+        "y": 25282,
+        "attention_score": 10.432005,
+        "image": "data/dataforFront/READ/high-attention/patch-3.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-EI-6512-01A-01-TS1.f61f5dd7-6794-4d4d-9547-4054d2e2d71a",
+        "case_id": "TCGA-EI-6512",
+        "x": 7329,
+        "y": 16992,
+        "similarity": 0.62977815,
+        "attention_score": 4.923418521881104,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_20260327_122528/similar/patches/sim_0006_TCGA-EI-6512-01A-01-TS1.f61f5dd7-6794-4d4d-9547-4054d2e2d71a_x7329_y16992_sim0.62978_attn4.92342.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/READ/similar-wsi/similar-3.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "Adenocarcinoma tubulare coli. Tubulopapillary adenocarcinoma of the colon, pT3.",
+        "summary": "诊断为结肠管状乳头状腺癌，病理分期为 pT3。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 4,
+      "query_patch": {
+        "x": 59904,
+        "y": 24993,
+        "attention_score": 10.396444,
+        "image": "data/dataforFront/READ/high-attention/patch-4.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-DC-6683-01A-01-BS1.1eeab8a9-4c54-4064-9d32-afce80a8bf09",
+        "case_id": "TCGA-DC-6683",
+        "x": 27296,
+        "y": 33280,
+        "similarity": 0.6196691,
+        "attention_score": 3.69507098197937,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_20260327_122528/similar/patches/sim_0008_TCGA-DC-6683-01A-01-BS1.1eeab8a9-4c54-4064-9d32-afce80a8bf09_x27296_y33280_sim0.61967_attn3.69507.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/READ/similar-wsi/similar-4.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "History: Moderately differentiated tumor, size 5.00 cm, pT3 N1b.",
+        "summary": "患者为中度分化的肿瘤，大小为5.00厘米，病理分期为pT3 N1b。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 5,
+      "query_patch": {
+        "x": 59904,
+        "y": 24737,
+        "attention_score": 10.387889,
+        "image": "data/dataforFront/READ/high-attention/patch-5.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-DC-6682-01A-01-BS1.afc97027-ad22-4e10-a5be-ff717451c3ab",
+        "case_id": "TCGA-DC-6682",
+        "x": 8960,
+        "y": 10496,
+        "similarity": 0.61806256,
+        "attention_score": 6.491999626159668,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_20260327_122528/similar/patches/sim_0009_TCGA-DC-6682-01A-01-BS1.afc97027-ad22-4e10-a5be-ff717451c3ab_x8960_y10496_sim0.61806_attn6.49200.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/READ/similar-wsi/similar-5.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "病史：中分化腺癌，肿瘤大小1.40厘米，病理分期pT3 N0 M1，淋巴结状态0/2枚阳性。",
+        "summary": "患者为中分化腺癌，肿瘤大小为1.40厘米，病理分期为pT3 N0 M1，淋巴结状态为0/2枚阳性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 6,
+      "query_patch": {
+        "x": 5632,
+        "y": 19168,
+        "attention_score": 10.378552,
+        "image": "data/dataforFront/READ/high-attention/patch-6.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-CI-6621-01A-01-TS1.5db9026a-b23e-4c21-a332-c30ca8a57046",
+        "case_id": "TCGA-CI-6621",
+        "x": 12224,
+        "y": 1280,
+        "similarity": 0.61759305,
+        "attention_score": 5.77678108215332,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_20260327_122528/similar/patches/sim_0010_TCGA-CI-6621-01A-01-TS1.5db9026a-b23e-4c21-a332-c30ca8a57046_x12224_y1280_sim0.61759_attn5.77678.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/READ/similar-wsi/similar-6.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "病理报告摘要：息肉，中度分化。",
+        "summary": "病理诊断为中度分化的息肉。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 7,
+      "query_patch": {
+        "x": 60928,
+        "y": 21665,
+        "attention_score": 10.36662,
+        "image": "data/dataforFront/READ/high-attention/patch-7.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-AH-6897-01A-01-TS1.a2c0021f-c9fc-4113-8103-46f32c5a3c11",
+        "case_id": "TCGA-AH-6897",
+        "x": 5088,
+        "y": 24048,
+        "similarity": 0.6027201,
+        "attention_score": 3.4967360496521,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_20260327_122528/similar/patches/sim_0019_TCGA-AH-6897-01A-01-TS1.a2c0021f-c9fc-4113-8103-46f32c5a3c11_x5088_y24048_sim0.60272_attn3.49674.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/READ/similar-wsi/similar-7.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "病理报告：中度分化，肿瘤大小5.30厘米，pT2。",
+        "summary": "该报告描述了一个中度分化（Grade 2）、大小为5.30厘米的肿瘤，病理分期为pT2。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 8,
+      "query_patch": {
+        "x": 3840,
+        "y": 19936,
+        "attention_score": 10.361087,
+        "image": "data/dataforFront/READ/high-attention/patch-8.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-AG-A01N-01A-02-TS2.7d2c707a-0f6b-492c-9fe5-501ef9569aae",
+        "case_id": "TCGA-AG-A01N",
+        "x": 69808,
+        "y": 22659,
+        "similarity": 0.5833231,
+        "attention_score": 8.90424919128418,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_20260327_122528/similar/patches/sim_0048_TCGA-AG-A01N-01A-02-TS2.7d2c707a-0f6b-492c-9fe5-501ef9569aae_x69808_y22659_sim0.58332_attn8.90425.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/READ/similar-wsi/similar-8.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "标本为（左侧）乳腺切除标本，伴有纤维囊性乳腺病及导管内癌，分级为1级，病理分期为pT2。",
+        "summary": "该病理报告诊断为左侧乳腺导管内癌，分级为1级，肿瘤大小为pT2期。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 9,
+      "query_patch": {
+        "x": 3840,
+        "y": 19680,
+        "attention_score": 10.35093,
+        "image": "data/dataforFront/READ/high-attention/patch-9.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-AG-A02G-01Z-00-DX1.E9848C07-0DFC-48E7-AA9F-9BF783676468",
+        "case_id": "TCGA-AG-A02G",
+        "x": 4416,
+        "y": 26560,
+        "similarity": 0.5481502,
+        "attention_score": 0.3824993968009949,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_20260327_122528/similar/patches/sim_0169_TCGA-AG-A02G-01Z-00-DX1.E9848C07-0DFC-48E7-AA9F-9BF783676468_x4416_y26560_sim0.54815_attn0.38250.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/READ/similar-wsi/similar-9.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "The findings under I are the liver metastasis of an adenocarcinoma (in this case, rectal). pT2 pN1.",
+        "summary": "病理诊断为直肠腺癌肝转移，病理分期为 pT2 pN1。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 10,
+      "query_patch": {
+        "x": 114273,
+        "y": 26562,
+        "attention_score": 10.346829,
+        "image": "data/dataforFront/READ/high-attention/patch-10.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-EI-6510-01A-01-TS1.f66017aa-0238-423e-8617-c6c24bef6f30",
+        "case_id": "TCGA-EI-6510",
+        "x": 9776,
+        "y": 12784,
+        "similarity": 0.54650056,
+        "attention_score": 3.698603630065918,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_20260327_122528/similar/patches/sim_0181_TCGA-EI-6510-01A-01-TS1.f66017aa-0238-423e-8617-c6c24bef6f30_x9776_y12784_sim0.54650_attn3.69860.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/READ/similar-wsi/similar-10.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "Examination performed on: 2023-10-26. Specimen: Left breast lumpectomy. Diagnosis: Invasive ductal carcinoma, Nottingham grade 2 (tubule formation 3, nuclear pleomorphism 2, mitotic count 1). Tumor size: 1.8 cm in greatest dimension. Margins: Negative. Lymph nodes: Sentinel lymph node biopsy, 0/3 positive for metastatic carcinoma. Immunohistochemistry: Estrogen receptor (ER) positive (95%), Progesterone receptor (PR) positive (80%), HER2 negative (score 1+). Pathologic stage: pT1c N0(sn) Mx.",
+        "summary": "患者为左乳腺浸润性导管癌，Nottingham分级2级，肿瘤大小1.8厘米，病理分期为pT1c N0(sn) Mx，前哨淋巴结0/3枚阳性，激素受体状态为ER阳性、PR阳性、HER2阴性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 11,
+      "query_patch": {
+        "x": 59648,
+        "y": 24481,
+        "attention_score": 10.334618,
+        "image": "data/dataforFront/READ/high-attention/patch-11.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-G5-6641-01A-01-TS1.e817c1b0-b819-419b-a779-ac91aa06f52e",
+        "case_id": "TCGA-G5-6641",
+        "x": 7720,
+        "y": 1536,
+        "similarity": 0.6435857,
+        "attention_score": 8.933300971984863,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_20260327_122528/similar/patches/sim_0002_TCGA-G5-6641-01A-01-TS1.e817c1b0-b819-419b-a779-ac91aa06f52e_x7720_y1536_sim0.64359_attn8.93330.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/READ/similar-wsi/similar-11.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "直肠乙状结肠，低位前切除术。肿瘤分级为G2，肿瘤大小为2.00厘米。病理分期为pT1 N1 Mx。淋巴结状态为1/26枚阳性。",
+        "summary": "患者为直肠乙状结肠癌，分级G2，肿瘤大小2.00厘米，病理分期pT1 N1 Mx，淋巴结状态为1/26枚阳性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 12,
+      "query_patch": {
+        "x": 5632,
+        "y": 18656,
+        "attention_score": 10.32982,
+        "image": "data/dataforFront/READ/high-attention/patch-12.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-DC-6158-01Z-00-DX1.06cf3c33-83e1-46fd-8717-6c4cddb659d9",
+        "case_id": "TCGA-DC-6158",
+        "x": 73472,
+        "y": 44512,
+        "similarity": 0.61559284,
+        "attention_score": 5.0320963859558105,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_20260327_122528/similar/patches/sim_0011_TCGA-DC-6158-01Z-00-DX1.06cf3c33-83e1-46fd-8717-6c4cddb659d9_x73472_y44512_sim0.61559_attn5.03210.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/READ/similar-wsi/similar-12.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "History: Moderately differentiated, pT2.",
+        "summary": "该报告描述了一种中度分化的癌症，病理分期为 pT2。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    }
+  ]
+}

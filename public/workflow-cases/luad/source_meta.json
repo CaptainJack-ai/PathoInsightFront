@@ -1,0 +1,7 @@
+{
+  "tcga_label": "TCGA-LUAD",
+  "short_code": "LUAD",
+  "query_wsi": "/data3/pathoinsight/code/download_script/data/tcga_pairs-full/TCGA-LUAD/TCGA-05-4245/wsi/TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde.svs",
+  "query_slide_id": "TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde",
+  "run_dir": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde_20260327_121012"
+}

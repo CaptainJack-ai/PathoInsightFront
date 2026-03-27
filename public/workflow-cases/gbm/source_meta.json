@@ -1,0 +1,7 @@
+{
+  "tcga_label": "TCGA-GBM",
+  "short_code": "GBM",
+  "query_wsi": "/data3/pathoinsight/code/download_script/data/tcga_pairs-full/TCGA-GBM/TCGA-02-0024/wsi/TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9.svs",
+  "query_slide_id": "TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9",
+  "run_dir": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9_20260327_115616"
+}

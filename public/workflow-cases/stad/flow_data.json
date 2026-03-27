@@ -1,0 +1,333 @@
+{
+  "code": "STAD",
+  "tcga_label": "TCGA-STAD",
+  "query_slide_id": "TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371",
+  "run_dir": "data/entire project process/runs/TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371_20260327_154857",
+  "steps": {
+    "step1_query_upload": "data/dataforFront/STAD/uploaded.jpg",
+    "step2_classification": "data/entire project process/runs/TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371_20260327_154857/query/prediction.json",
+    "step3_query_high_attention": "data/dataforFront/STAD/high-attention",
+    "step4_retrieval_mapping": "data/entire project process/runs/TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371_20260327_154857/similar/top_similar_patches.csv",
+    "step4_case_summary": "data/entire project process/runs/TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371_20260327_154857/similar/top_similar_cases.csv",
+    "step5_report": "data/dataforFront/STAD/report/diagnosis-report.pdf"
+  },
+  "counts": {
+    "patch_count": 12,
+    "similar_wsi_count": 12,
+    "diagnosis_item_count": 12
+  },
+  "flow_links": [
+    {
+      "index": 1,
+      "query_patch": {
+        "x": 30208,
+        "y": 46944,
+        "attention_score": 10.149061,
+        "image": "data/dataforFront/STAD/high-attention/patch-1.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-RD-A8MW-01Z-00-DX1.30EE6F24-3983-4793-9EF6-059B9AF53F24",
+        "case_id": "TCGA-RD-A8MW",
+        "x": 119552,
+        "y": 17664,
+        "similarity": 0.68623936,
+        "attention_score": 4.273646831512451,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371_20260327_154857/similar/patches/sim_0001_TCGA-RD-A8MW-01Z-00-DX1.30EE6F24-3983-4793-9EF6-059B9AF53F24_x119552_y17664_sim0.68624_attn4.27365.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/STAD/similar-wsi/similar-1.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "胃活检：轻度活动性中度慢性幽门螺杆菌相关性胃炎，伴低分化腺癌。淋巴结状态为N0，远处转移为M1。",
+        "summary": "胃活检显示低分化腺癌，病理分期为N0 M1，提示存在远处转移。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 2,
+      "query_patch": {
+        "x": 20736,
+        "y": 28512,
+        "attention_score": 9.924851,
+        "image": "data/dataforFront/STAD/high-attention/patch-2.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-BR-7957-01Z-00-DX1.870e24e0-b9cf-4baa-91f1-bd031d06da8e",
+        "case_id": "TCGA-BR-7957",
+        "x": 12800,
+        "y": 24832,
+        "similarity": 0.6827012,
+        "attention_score": 0.2850475609302521,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371_20260327_154857/similar/patches/sim_0002_TCGA-BR-7957-01Z-00-DX1.870e24e0-b9cf-4baa-91f1-bd031d06da8e_x12800_y24832_sim0.68270_attn0.28505.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/STAD/similar-wsi/similar-2.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "肿瘤大小为 4.00 厘米。",
+        "summary": "肿瘤大小为 4.00 厘米。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 3,
+      "query_patch": {
+        "x": 29952,
+        "y": 47200,
+        "attention_score": 9.889441,
+        "image": "data/dataforFront/STAD/high-attention/patch-3.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-BR-A4PF-01Z-00-DX1.43DBDE88-34C4-494B-9B47-473ED525149F",
+        "case_id": "TCGA-BR-A4PF",
+        "x": 23488,
+        "y": 49056,
+        "similarity": 0.67035526,
+        "attention_score": 8.47523307800293,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371_20260327_154857/similar/patches/sim_0004_TCGA-BR-A4PF-01Z-00-DX1.43DBDE88-34C4-494B-9B47-473ED525149F_x23488_y49056_sim0.67036_attn8.47523.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/STAD/similar-wsi/similar-3.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "病理报告摘要：肿瘤为低分化，大小为10.00厘米。",
+        "summary": "该病例为低分化（Grade 3）肿瘤，大小为10.00厘米。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 4,
+      "query_patch": {
+        "x": 30720,
+        "y": 47456,
+        "attention_score": 9.793259,
+        "image": "data/dataforFront/STAD/high-attention/patch-4.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-RD-A8MW-01Z-00-DX1.30EE6F24-3983-4793-9EF6-059B9AF53F24",
+        "case_id": "TCGA-RD-A8MW",
+        "x": 171008,
+        "y": 19456,
+        "similarity": 0.6708189,
+        "attention_score": 3.591240644454956,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371_20260327_154857/similar/patches/sim_0003_TCGA-RD-A8MW-01Z-00-DX1.30EE6F24-3983-4793-9EF6-059B9AF53F24_x171008_y19456_sim0.67082_attn3.59124.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/STAD/similar-wsi/similar-4.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "胃活检：轻度活动性中度慢性幽门螺杆菌相关性胃炎，伴低分化腺癌。淋巴结状态为N0，远处转移为M1。",
+        "summary": "胃活检显示低分化腺癌，病理分期为N0 M1，提示存在远处转移。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 5,
+      "query_patch": {
+        "x": 31744,
+        "y": 48480,
+        "attention_score": 9.730828,
+        "image": "data/dataforFront/STAD/high-attention/patch-5.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-BR-A4PF-01Z-00-DX1.43DBDE88-34C4-494B-9B47-473ED525149F",
+        "case_id": "TCGA-BR-A4PF",
+        "x": 23488,
+        "y": 48800,
+        "similarity": 0.66566,
+        "attention_score": 8.3607759475708,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371_20260327_154857/similar/patches/sim_0006_TCGA-BR-A4PF-01Z-00-DX1.43DBDE88-34C4-494B-9B47-473ED525149F_x23488_y48800_sim0.66566_attn8.36078.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/STAD/similar-wsi/similar-5.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "病理报告摘要：肿瘤为低分化，大小为10.00厘米。",
+        "summary": "该病例为低分化（Grade 3）肿瘤，大小为10.00厘米。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 6,
+      "query_patch": {
+        "x": 62976,
+        "y": 25696,
+        "attention_score": 9.535301,
+        "image": "data/dataforFront/STAD/high-attention/patch-6.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-BR-7957-01Z-00-DX1.870e24e0-b9cf-4baa-91f1-bd031d06da8e",
+        "case_id": "TCGA-BR-7957",
+        "x": 68096,
+        "y": 60416,
+        "similarity": 0.6506058,
+        "attention_score": 5.7787957191467285,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371_20260327_154857/similar/patches/sim_0016_TCGA-BR-7957-01Z-00-DX1.870e24e0-b9cf-4baa-91f1-bd031d06da8e_x68096_y60416_sim0.65061_attn5.77880.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/STAD/similar-wsi/similar-6.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "肿瘤大小为 4.00 厘米。",
+        "summary": "肿瘤大小为 4.00 厘米。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 7,
+      "query_patch": {
+        "x": 18688,
+        "y": 26976,
+        "attention_score": 9.309156,
+        "image": "data/dataforFront/STAD/high-attention/patch-7.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-RD-A8MW-01Z-00-DX1.30EE6F24-3983-4793-9EF6-059B9AF53F24",
+        "case_id": "TCGA-RD-A8MW",
+        "x": 119552,
+        "y": 79104,
+        "similarity": 0.66855025,
+        "attention_score": 3.418813705444336,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371_20260327_154857/similar/patches/sim_0005_TCGA-RD-A8MW-01Z-00-DX1.30EE6F24-3983-4793-9EF6-059B9AF53F24_x119552_y79104_sim0.66855_attn3.41881.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/STAD/similar-wsi/similar-7.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "胃活检：轻度活动性中度慢性幽门螺杆菌相关性胃炎，伴低分化腺癌。淋巴结状态为N0，远处转移为M1。",
+        "summary": "胃活检显示低分化腺癌，病理分期为N0 M1，提示存在远处转移。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 8,
+      "query_patch": {
+        "x": 30464,
+        "y": 46944,
+        "attention_score": 9.2623825,
+        "image": "data/dataforFront/STAD/high-attention/patch-8.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-BR-A4PF-01Z-00-DX1.43DBDE88-34C4-494B-9B47-473ED525149F",
+        "case_id": "TCGA-BR-A4PF",
+        "x": 8128,
+        "y": 26272,
+        "similarity": 0.6599276,
+        "attention_score": 9.220986366271973,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371_20260327_154857/similar/patches/sim_0008_TCGA-BR-A4PF-01Z-00-DX1.43DBDE88-34C4-494B-9B47-473ED525149F_x8128_y26272_sim0.65993_attn9.22099.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/STAD/similar-wsi/similar-8.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "病理报告摘要：肿瘤为低分化，大小为10.00厘米。",
+        "summary": "该病例为低分化（Grade 3）肿瘤，大小为10.00厘米。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 9,
+      "query_patch": {
+        "x": 62208,
+        "y": 25952,
+        "attention_score": 9.250997,
+        "image": "data/dataforFront/STAD/high-attention/patch-9.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-BR-7957-01Z-00-DX1.870e24e0-b9cf-4baa-91f1-bd031d06da8e",
+        "case_id": "TCGA-BR-7957",
+        "x": 63488,
+        "y": 61696,
+        "similarity": 0.6474091,
+        "attention_score": 0.3444058299064636,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371_20260327_154857/similar/patches/sim_0020_TCGA-BR-7957-01Z-00-DX1.870e24e0-b9cf-4baa-91f1-bd031d06da8e_x63488_y61696_sim0.64741_attn0.34441.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/STAD/similar-wsi/similar-9.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "肿瘤大小为 4.00 厘米。",
+        "summary": "肿瘤大小为 4.00 厘米。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 10,
+      "query_patch": {
+        "x": 45312,
+        "y": 45408,
+        "attention_score": 9.220344,
+        "image": "data/dataforFront/STAD/high-attention/patch-10.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-RD-A8MW-01Z-00-DX1.30EE6F24-3983-4793-9EF6-059B9AF53F24",
+        "case_id": "TCGA-RD-A8MW",
+        "x": 67072,
+        "y": 16896,
+        "similarity": 0.66011685,
+        "attention_score": 6.430624485015869,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371_20260327_154857/similar/patches/sim_0007_TCGA-RD-A8MW-01Z-00-DX1.30EE6F24-3983-4793-9EF6-059B9AF53F24_x67072_y16896_sim0.66012_attn6.43062.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/STAD/similar-wsi/similar-10.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "胃活检：轻度活动性中度慢性幽门螺杆菌相关性胃炎，伴低分化腺癌。淋巴结状态为N0，远处转移为M1。",
+        "summary": "胃活检显示低分化腺癌，病理分期为N0 M1，提示存在远处转移。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 11,
+      "query_patch": {
+        "x": 29952,
+        "y": 46944,
+        "attention_score": 9.15348,
+        "image": "data/dataforFront/STAD/high-attention/patch-11.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-BR-A4PF-01Z-00-DX1.43DBDE88-34C4-494B-9B47-473ED525149F",
+        "case_id": "TCGA-BR-A4PF",
+        "x": 22720,
+        "y": 49312,
+        "similarity": 0.65783024,
+        "attention_score": 10.098076820373535,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371_20260327_154857/similar/patches/sim_0010_TCGA-BR-A4PF-01Z-00-DX1.43DBDE88-34C4-494B-9B47-473ED525149F_x22720_y49312_sim0.65783_attn10.09808.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/STAD/similar-wsi/similar-11.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "病理报告摘要：肿瘤为低分化，大小为10.00厘米。",
+        "summary": "该病例为低分化（Grade 3）肿瘤，大小为10.00厘米。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 12,
+      "query_patch": {
+        "x": 18176,
+        "y": 39008,
+        "attention_score": 9.151233,
+        "image": "data/dataforFront/STAD/high-attention/patch-12.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-BR-7957-01Z-00-DX1.870e24e0-b9cf-4baa-91f1-bd031d06da8e",
+        "case_id": "TCGA-BR-7957",
+        "x": 12544,
+        "y": 24832,
+        "similarity": 0.63176715,
+        "attention_score": 2.6354219913482666,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371_20260327_154857/similar/patches/sim_0075_TCGA-BR-7957-01Z-00-DX1.870e24e0-b9cf-4baa-91f1-bd031d06da8e_x12544_y24832_sim0.63177_attn2.63542.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/STAD/similar-wsi/similar-12.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "肿瘤大小为 4.00 厘米。",
+        "summary": "肿瘤大小为 4.00 厘米。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    }
+  ]
+}

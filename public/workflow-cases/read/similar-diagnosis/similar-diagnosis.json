@@ -1,0 +1,65 @@
+{
+  "caseId": "read-case",
+  "items": [
+    {
+      "index": 1,
+      "diagnosis_text": "直肠乙状结肠，低位前切除术。肿瘤分级为G2，肿瘤大小为2.00厘米。病理分期为pT1 N1 Mx。淋巴结状态为1/26枚阳性。",
+      "summary": "患者为直肠乙状结肠癌，分级G2，肿瘤大小2.00厘米，病理分期pT1 N1 Mx，淋巴结状态为1/26枚阳性。"
+    },
+    {
+      "index": 2,
+      "diagnosis_text": "History: Moderately differentiated, pT2.",
+      "summary": "该报告描述了一种中度分化的癌症，病理分期为 pT2。"
+    },
+    {
+      "index": 3,
+      "diagnosis_text": "Adenocarcinoma tubulare coli. Tubulopapillary adenocarcinoma of the colon, pT3.",
+      "summary": "诊断为结肠管状乳头状腺癌，病理分期为 pT3。"
+    },
+    {
+      "index": 4,
+      "diagnosis_text": "History: Moderately differentiated tumor, size 5.00 cm, pT3 N1b.",
+      "summary": "患者为中度分化的肿瘤，大小为5.00厘米，病理分期为pT3 N1b。"
+    },
+    {
+      "index": 5,
+      "diagnosis_text": "病史：中分化腺癌，肿瘤大小1.40厘米，病理分期pT3 N0 M1，淋巴结状态0/2枚阳性。",
+      "summary": "患者为中分化腺癌，肿瘤大小为1.40厘米，病理分期为pT3 N0 M1，淋巴结状态为0/2枚阳性。"
+    },
+    {
+      "index": 6,
+      "diagnosis_text": "病理报告摘要：息肉，中度分化。",
+      "summary": "病理诊断为中度分化的息肉。"
+    },
+    {
+      "index": 7,
+      "diagnosis_text": "病理报告：中度分化，肿瘤大小5.30厘米，pT2。",
+      "summary": "该报告描述了一个中度分化（Grade 2）、大小为5.30厘米的肿瘤，病理分期为pT2。"
+    },
+    {
+      "index": 8,
+      "diagnosis_text": "标本为（左侧）乳腺切除标本，伴有纤维囊性乳腺病及导管内癌，分级为1级，病理分期为pT2。",
+      "summary": "该病理报告诊断为左侧乳腺导管内癌，分级为1级，肿瘤大小为pT2期。"
+    },
+    {
+      "index": 9,
+      "diagnosis_text": "The findings under I are the liver metastasis of an adenocarcinoma (in this case, rectal). pT2 pN1.",
+      "summary": "病理诊断为直肠腺癌肝转移，病理分期为 pT2 pN1。"
+    },
+    {
+      "index": 10,
+      "diagnosis_text": "Examination performed on: 2023-10-26. Specimen: Left breast lumpectomy. Diagnosis: Invasive ductal carcinoma, Nottingham grade 2 (tubule formation 3, nuclear pleomorphism 2, mitotic count 1). Tumor size: 1.8 cm in greatest dimension. Margins: Negative. Lymph nodes: Sentinel lymph node biopsy, 0/3 positive for metastatic carcinoma. Immunohistochemistry: Estrogen receptor (ER) positive (95%), Progesterone receptor (PR) positive (80%), HER2 negative (score 1+). Pathologic stage: pT1c N0(sn) Mx.",
+      "summary": "患者为左乳腺浸润性导管癌，Nottingham分级2级，肿瘤大小1.8厘米，病理分期为pT1c N0(sn) Mx，前哨淋巴结0/3枚阳性，激素受体状态为ER阳性、PR阳性、HER2阴性。"
+    },
+    {
+      "index": 11,
+      "diagnosis_text": "直肠乙状结肠，低位前切除术。肿瘤分级为G2，肿瘤大小为2.00厘米。病理分期为pT1 N1 Mx。淋巴结状态为1/26枚阳性。",
+      "summary": "患者为直肠乙状结肠癌，分级G2，肿瘤大小2.00厘米，病理分期pT1 N1 Mx，淋巴结状态为1/26枚阳性。"
+    },
+    {
+      "index": 12,
+      "diagnosis_text": "History: Moderately differentiated, pT2.",
+      "summary": "该报告描述了一种中度分化的癌症，病理分期为 pT2。"
+    }
+  ]
+}

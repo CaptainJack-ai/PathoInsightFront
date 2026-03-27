@@ -1,0 +1,333 @@
+{
+  "code": "BRCA",
+  "tcga_label": "TCGA-BRCA",
+  "query_slide_id": "TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1",
+  "run_dir": "data/entire project process/runs/TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1_20260327_115036",
+  "steps": {
+    "step1_query_upload": "data/dataforFront/BRCA/uploaded.jpg",
+    "step2_classification": "data/entire project process/runs/TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1_20260327_115036/query/prediction.json",
+    "step3_query_high_attention": "data/dataforFront/BRCA/high-attention",
+    "step4_retrieval_mapping": "data/entire project process/runs/TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1_20260327_115036/similar/top_similar_patches.csv",
+    "step4_case_summary": "data/entire project process/runs/TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1_20260327_115036/similar/top_similar_cases.csv",
+    "step5_report": "data/dataforFront/BRCA/report/diagnosis-report.pdf"
+  },
+  "counts": {
+    "patch_count": 12,
+    "similar_wsi_count": 12,
+    "diagnosis_item_count": 12
+  },
+  "flow_links": [
+    {
+      "index": 1,
+      "query_patch": {
+        "x": 75469,
+        "y": 33664,
+        "attention_score": 10.401594,
+        "image": "data/dataforFront/BRCA/high-attention/patch-1.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-A2-A0T3-01Z-00-DX1.5E96BC87-F4FB-4ABA-8D81-FAB7F4A80661",
+        "case_id": "TCGA-A2-A0T3",
+        "x": 108849,
+        "y": 14992,
+        "similarity": 0.62084574,
+        "attention_score": 9.327803611755373,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1_20260327_115036/similar/patches/sim_0001_TCGA-A2-A0T3-01Z-00-DX1.5E96BC87-F4FB-4ABA-8D81-FAB7F4A80661_x108849_y14992_sim0.62085_attn9.32780.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/BRCA/similar-wsi/similar-1.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "病理诊断为浸润性癌，中度分化。肿瘤大小为2.0厘米，病理分期为pT1c N0 Mx。淋巴结状态为0/4枚阳性。免疫组化结果显示：雌激素受体（ER）阳性，孕激素受体（PR）阳性，HER2阴性。",
+        "summary": "诊断为中度分化的浸润性癌，肿瘤大小为2.0厘米，病理分期为pT1c N0 Mx，淋巴结0/4枚阳性，ER阳性、PR阳性、HER2阴性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 2,
+      "query_patch": {
+        "x": 73933,
+        "y": 33408,
+        "attention_score": 10.400302,
+        "image": "data/dataforFront/BRCA/high-attention/patch-2.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-B6-A0I6-01Z-00-DX1.D597D207-BEB2-4CE5-B315-FE7AD6E9C30B",
+        "case_id": "TCGA-B6-A0I6",
+        "x": 130448,
+        "y": 50032,
+        "similarity": 0.60164356,
+        "attention_score": 5.498693466186523,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1_20260327_115036/similar/patches/sim_0002_TCGA-B6-A0I6-01Z-00-DX1.D597D207-BEB2-4CE5-B315-FE7AD6E9C30B_x130448_y50032_sim0.60164_attn5.49869.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/BRCA/similar-wsi/similar-2.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "手术标本病理报告：肿瘤为高级别（Grade 3），淋巴结状态为12/64枚阳性。",
+        "summary": "高级别（Grade 3）肿瘤，淋巴结转移广泛（12/64枚阳性）。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 3,
+      "query_patch": {
+        "x": 64461,
+        "y": 51328,
+        "attention_score": 10.398086,
+        "image": "data/dataforFront/BRCA/high-attention/patch-3.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-EW-A1P7-01Z-00-DX1.97575C9F-C318-45A5-A4B7-1A902B93FA3F",
+        "case_id": "TCGA-EW-A1P7",
+        "x": 54784,
+        "y": 47776,
+        "similarity": 0.58431274,
+        "attention_score": 9.07688808441162,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1_20260327_115036/similar/patches/sim_0003_TCGA-EW-A1P7-01Z-00-DX1.97575C9F-C318-45A5-A4B7-1A902B93FA3F_x54784_y47776_sim0.58431_attn9.07689.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/BRCA/similar-wsi/similar-3.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "病理诊断为浸润性导管癌，组织学分级为1级。肿瘤大小为2.40厘米。病理分期为pT2c N0 Mx。免疫组化结果显示：ER（雌激素受体）阳性，PR（孕激素受体）阳性，HER2（人表皮生长因子受体2）阴性。所有免疫组化染色均使用标准化的抗体或分子固定方法进行。",
+        "summary": "患者诊断为浸润性导管癌（Grade 1级），肿瘤大小为2.40厘米，病理分期为pT2c N0 Mx，淋巴结未见转移，免疫组化显示ER阳性、PR阳性、HER2阴性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 4,
+      "query_patch": {
+        "x": 77261,
+        "y": 37248,
+        "attention_score": 10.375801,
+        "image": "data/dataforFront/BRCA/high-attention/patch-4.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-A7-A26E-01B-06-BS6.071B5BA3-05A2-46B2-A1D6-80E1F34B33C5",
+        "case_id": "TCGA-A7-A26E",
+        "x": 16176,
+        "y": 13633,
+        "similarity": 0.5763302,
+        "attention_score": 8.973700523376465,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1_20260327_115036/similar/patches/sim_0005_TCGA-A7-A26E-01B-06-BS6.071B5BA3-05A2-46B2-A1D6-80E1F34B33C5_x16176_y13633_sim0.57633_attn8.97370.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/BRCA/similar-wsi/similar-4.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "浸润性导管癌，2级，肿瘤大小1.00厘米，pT3 N1 Mx。",
+        "summary": "诊断为浸润性导管癌，组织学分级为2级，肿瘤大小为1.00厘米，病理分期为pT3 N1 Mx。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 5,
+      "query_patch": {
+        "x": 88013,
+        "y": 28032,
+        "attention_score": 10.372564,
+        "image": "data/dataforFront/BRCA/high-attention/patch-5.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-AC-A2FB-01Z-00-DX1.A4D93E32-BBD7-45E4-8ACF-3724B059ECBC",
+        "case_id": "TCGA-AC-A2FB",
+        "x": 52896,
+        "y": 15200,
+        "similarity": 0.540215,
+        "attention_score": 9.303159713745115,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1_20260327_115036/similar/patches/sim_0023_TCGA-AC-A2FB-01Z-00-DX1.A4D93E32-BBD7-45E4-8ACF-3724B059ECBC_x52896_y15200_sim0.54022_attn9.30316.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/BRCA/similar-wsi/similar-5.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "病理诊断为浸润性癌，分级为2级。肿瘤大小为2.80厘米。病理分期为pT1c N0 Mx。免疫组化结果显示：雌激素受体（ER）为阳性（2+）；孕激素受体（PR）状态因信息被遮盖而无法获取；HER2状态未明确报告。",
+        "summary": "诊断为2级浸润性癌，肿瘤大小为2.80厘米，病理分期为pT1c N0 Mx，ER阳性（2+），PR状态信息缺失，HER2状态未报告。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 6,
+      "query_patch": {
+        "x": 69837,
+        "y": 40576,
+        "attention_score": 10.369824,
+        "image": "data/dataforFront/BRCA/high-attention/patch-6.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-BH-A0DX-01Z-00-DX1.45C27E71-9A0A-400E-93A9-5CE7780F3C5E",
+        "case_id": "TCGA-BH-A0DX",
+        "x": 69408,
+        "y": 25809,
+        "similarity": 0.5347484,
+        "attention_score": 8.694560050964355,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1_20260327_115036/similar/patches/sim_0032_TCGA-BH-A0DX-01Z-00-DX1.45C27E71-9A0A-400E-93A9-5CE7780F3C5E_x69408_y25809_sim0.53475_attn8.69456.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/BRCA/similar-wsi/similar-6.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "导管原位癌，2级，肿瘤大小0.80厘米，淋巴结状态0/12枚阳性，ER阳性，PR阳性。",
+        "summary": "诊断为2级导管原位癌，肿瘤大小为0.80厘米，淋巴结未见转移（0/12枚阳性），激素受体ER和PR均为阳性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 7,
+      "query_patch": {
+        "x": 71117,
+        "y": 35968,
+        "attention_score": 10.309772,
+        "image": "data/dataforFront/BRCA/high-attention/patch-7.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-EW-A1P7-01Z-00-DX1.97575C9F-C318-45A5-A4B7-1A902B93FA3F",
+        "case_id": "TCGA-EW-A1P7",
+        "x": 191856,
+        "y": 60048,
+        "similarity": 0.5798418,
+        "attention_score": 8.261260986328125,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1_20260327_115036/similar/patches/sim_0004_TCGA-EW-A1P7-01Z-00-DX1.97575C9F-C318-45A5-A4B7-1A902B93FA3F_x191856_y60048_sim0.57984_attn8.26126.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/BRCA/similar-wsi/similar-7.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "病理诊断为浸润性导管癌，组织学分级为1级。肿瘤大小为2.40厘米。病理分期为pT2c N0 Mx。免疫组化结果显示：ER（雌激素受体）阳性，PR（孕激素受体）阳性，HER2（人表皮生长因子受体2）阴性。所有免疫组化染色均使用标准化的抗体或分子固定方法进行。",
+        "summary": "患者诊断为浸润性导管癌（Grade 1级），肿瘤大小为2.40厘米，病理分期为pT2c N0 Mx，淋巴结未见转移，免疫组化显示ER阳性、PR阳性、HER2阴性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 8,
+      "query_patch": {
+        "x": 66765,
+        "y": 45440,
+        "attention_score": 10.28565,
+        "image": "data/dataforFront/BRCA/high-attention/patch-8.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-A2-A0T3-01Z-00-DX1.5E96BC87-F4FB-4ABA-8D81-FAB7F4A80661",
+        "case_id": "TCGA-A2-A0T3",
+        "x": 34512,
+        "y": 33700,
+        "similarity": 0.5684556,
+        "attention_score": 7.652384281158447,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1_20260327_115036/similar/patches/sim_0008_TCGA-A2-A0T3-01Z-00-DX1.5E96BC87-F4FB-4ABA-8D81-FAB7F4A80661_x34512_y33700_sim0.56846_attn7.65238.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/BRCA/similar-wsi/similar-8.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "病理诊断为浸润性癌，中度分化。肿瘤大小为2.0厘米，病理分期为pT1c N0 Mx。淋巴结状态为0/4枚阳性。免疫组化结果显示：雌激素受体（ER）阳性，孕激素受体（PR）阳性，HER2阴性。",
+        "summary": "诊断为中度分化的浸润性癌，肿瘤大小为2.0厘米，病理分期为pT1c N0 Mx，淋巴结0/4枚阳性，ER阳性、PR阳性、HER2阴性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 9,
+      "query_patch": {
+        "x": 85197,
+        "y": 31616,
+        "attention_score": 10.285392,
+        "image": "data/dataforFront/BRCA/high-attention/patch-9.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-B6-A0I6-01Z-00-DX1.D597D207-BEB2-4CE5-B315-FE7AD6E9C30B",
+        "case_id": "TCGA-B6-A0I6",
+        "x": 136592,
+        "y": 41840,
+        "similarity": 0.558155,
+        "attention_score": 3.353351593017578,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1_20260327_115036/similar/patches/sim_0012_TCGA-B6-A0I6-01Z-00-DX1.D597D207-BEB2-4CE5-B315-FE7AD6E9C30B_x136592_y41840_sim0.55816_attn3.35335.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/BRCA/similar-wsi/similar-9.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "手术标本病理报告：肿瘤为高级别（Grade 3），淋巴结状态为12/64枚阳性。",
+        "summary": "高级别（Grade 3）肿瘤，淋巴结转移广泛（12/64枚阳性）。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 10,
+      "query_patch": {
+        "x": 64973,
+        "y": 51328,
+        "attention_score": 10.284115,
+        "image": "data/dataforFront/BRCA/high-attention/patch-10.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-A7-A26E-01B-05-BS5.AF4878FB-892F-4907-B59C-8AA0E7630A1A",
+        "case_id": "TCGA-A7-A26E",
+        "x": 5792,
+        "y": 15056,
+        "similarity": 0.53396773,
+        "attention_score": 9.60877799987793,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1_20260327_115036/similar/patches/sim_0034_TCGA-A7-A26E-01B-05-BS5.AF4878FB-892F-4907-B59C-8AA0E7630A1A_x5792_y15056_sim0.53397_attn9.60878.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/BRCA/similar-wsi/similar-10.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "浸润性导管癌，2级，肿瘤大小1.00厘米，pT3 N1 Mx。",
+        "summary": "诊断为浸润性导管癌，组织学分级为2级，肿瘤大小为1.00厘米，病理分期为pT3 N1 Mx。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 11,
+      "query_patch": {
+        "x": 72141,
+        "y": 36480,
+        "attention_score": 10.283026,
+        "image": "data/dataforFront/BRCA/high-attention/patch-11.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-AC-A2FB-01Z-00-DX1.A4D93E32-BBD7-45E4-8ACF-3724B059ECBC",
+        "case_id": "TCGA-AC-A2FB",
+        "x": 44704,
+        "y": 10080,
+        "similarity": 0.49744523,
+        "attention_score": 9.269271850585938,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1_20260327_115036/similar/patches/sim_0183_TCGA-AC-A2FB-01Z-00-DX1.A4D93E32-BBD7-45E4-8ACF-3724B059ECBC_x44704_y10080_sim0.49745_attn9.26927.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/BRCA/similar-wsi/similar-11.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "病理诊断为浸润性癌，分级为2级。肿瘤大小为2.80厘米。病理分期为pT1c N0 Mx。免疫组化结果显示：雌激素受体（ER）为阳性（2+）；孕激素受体（PR）状态因信息被遮盖而无法获取；HER2状态未明确报告。",
+        "summary": "诊断为2级浸润性癌，肿瘤大小为2.80厘米，病理分期为pT1c N0 Mx，ER阳性（2+），PR状态信息缺失，HER2状态未报告。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    },
+    {
+      "index": 12,
+      "query_patch": {
+        "x": 84941,
+        "y": 31616,
+        "attention_score": 10.276708,
+        "image": "data/dataforFront/BRCA/high-attention/patch-12.jpg"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-EW-A1P7-01Z-00-DX1.97575C9F-C318-45A5-A4B7-1A902B93FA3F",
+        "case_id": "TCGA-EW-A1P7",
+        "x": 103024,
+        "y": 46480,
+        "similarity": 0.57318544,
+        "attention_score": 8.708521842956543,
+        "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A1-A0SB-01Z-00-DX1.B34C267B-CAAA-4AB6-AD5C-276C26F997A1_20260327_115036/similar/patches/sim_0006_TCGA-EW-A1P7-01Z-00-DX1.97575C9F-C318-45A5-A4B7-1A902B93FA3F_x103024_y46480_sim0.57319_attn8.70852.png"
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/BRCA/similar-wsi/similar-12.jpg"
+      },
+      "diagnosis": {
+        "diagnosis_text": "病理诊断为浸润性导管癌，组织学分级为1级。肿瘤大小为2.40厘米。病理分期为pT2c N0 Mx。免疫组化结果显示：ER（雌激素受体）阳性，PR（孕激素受体）阳性，HER2（人表皮生长因子受体2）阴性。所有免疫组化染色均使用标准化的抗体或分子固定方法进行。",
+        "summary": "患者诊断为浸润性导管癌（Grade 1级），肿瘤大小为2.40厘米，病理分期为pT2c N0 Mx，淋巴结未见转移，免疫组化显示ER阳性、PR阳性、HER2阴性。"
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联；similar_wsi 是 retrieved_patch 所属 slide 的可视化。"
+    }
+  ]
+}
