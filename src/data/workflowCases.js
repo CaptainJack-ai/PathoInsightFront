@@ -22,7 +22,7 @@ const makeStageContent = (caseName) => ({
 });
 
 const makePatchHighlightPaths = (id) =>
-  Array.from({ length: 12 }).map((_, idx) => `/workflow-cases/${id}/high-attention/patch-${idx + 1}.jpg`);
+  Array.from({ length: 12 }).map((_, idx) => `/workflow-cases/${id}/high-attention/patch-${idx + 1}.webp`);
 
 const makeCase = (id, name, classificationLabel = "CLASS_PLACEHOLDER", options = {}) => {
   const patchHighlights = makePatchHighlightPaths(id);
@@ -32,18 +32,18 @@ const makeCase = (id, name, classificationLabel = "CLASS_PLACEHOLDER", options =
     name,
     classificationLabel,
     stageImages: {
-      uploaded: `/workflow-cases/${id}/uploaded.jpg`,
-      classifying: `/workflow-cases/${id}/classifying.jpg`,
-      patching: `/workflow-cases/${id}/patching.jpg`,
-      retrieving_similar: `/workflow-cases/${id}/retrieving_similar.jpg`,
-      generating_report: `/workflow-cases/${id}/generating_report.jpg`,
+      uploaded: `/workflow-cases/${id}/uploaded.webp`,
+      classifying: `/workflow-cases/${id}/classifying.webp`,
+      patching: `/workflow-cases/${id}/patching.webp`,
+      retrieving_similar: `/workflow-cases/${id}/retrieving_similar.webp`,
+      generating_report: `/workflow-cases/${id}/generating_report.webp`,
     },
     patchHighlights,
     retrievalItems: Array.from({ length: 12 }).map((_, idx) => ({
       id: `retrieval-${idx + 1}`,
       sourcePatchImage: patchHighlights[idx],
       sourcePatchPath: patchHighlights[idx],
-      similarWsiImage: `/workflow-cases/${id}/similar-wsi/similar-${idx + 1}.jpg`,
+      similarWsiImage: `/workflow-cases/${id}/similar-wsi/similar-${idx + 1}.webp`,
       similarCaseTitle: `相似病例 ${idx + 1}`,
       similarReportText: `相似病例报告占位 ${idx + 1}：在此填写诊断描述与证据说明。`,
     })),

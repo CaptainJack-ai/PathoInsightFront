@@ -4,7 +4,7 @@
   "query_slide_id": "TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9",
   "run_dir": "data/entire project process/runs/TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9_20260327_115616",
   "steps": {
-    "step1_query_upload": "data/dataforFront/GBM/uploaded.jpg",
+    "step1_query_upload": "data/dataforFront/GBM/uploaded.webp",
     "step2_classification": "data/entire project process/runs/TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9_20260327_115616/query/prediction.json",
     "step3_query_high_attention": "data/dataforFront/GBM/high-attention",
     "step4_retrieval_mapping": "data/entire project process/runs/TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9_20260327_115616/similar/top_similar_patches.csv",
@@ -23,7 +23,7 @@
         "x": 17600,
         "y": 13828,
         "attention_score": 9.198285,
-        "image": "data/dataforFront/GBM/high-attention/patch-1.jpg"
+        "image": "data/dataforFront/GBM/high-attention/patch-1.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-06-0221-01Z-00-DX1.bc444e2a-9530-453a-b494-ec31ee5db9c1",
@@ -35,7 +35,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9_20260327_115616/similar/patches/sim_0001_TCGA-06-0221-01Z-00-DX1.bc444e2a-9530-453a-b494-ec31ee5db9c1_x26516_y7361_sim0.64836_attn10.16286.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/GBM/similar-wsi/similar-1.jpg"
+        "image": "data/dataforFront/GBM/similar-wsi/similar-1.webp"
       },
       "diagnosis": {
         "diagnosis_text": "参见特殊染色报告。WHO分级IV级。淋巴结状态N0。",
@@ -49,7 +49,7 @@
         "x": 1984,
         "y": 13828,
         "attention_score": 8.403455,
-        "image": "data/dataforFront/GBM/high-attention/patch-2.jpg"
+        "image": "data/dataforFront/GBM/high-attention/patch-2.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-08-0349-01Z-00-DX1.3D53FE9F-E4E6-4D73-A339-CCF9CDD81288",
@@ -61,7 +61,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9_20260327_115616/similar/patches/sim_0019_TCGA-08-0349-01Z-00-DX1.3D53FE9F-E4E6-4D73-A339-CCF9CDD81288_x24224_y15729_sim0.61001_attn6.15264.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/GBM/similar-wsi/similar-2.jpg"
+        "image": "data/dataforFront/GBM/similar-wsi/similar-2.webp"
       },
       "diagnosis": {
         "diagnosis_text": "胶质母细胞瘤，WHO 4级，肿瘤大小1.20厘米。",
@@ -75,7 +75,7 @@
         "x": 1984,
         "y": 11524,
         "attention_score": 8.308202,
-        "image": "data/dataforFront/GBM/high-attention/patch-3.jpg"
+        "image": "data/dataforFront/GBM/high-attention/patch-3.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-06-0171-01Z-00-DX4.e27958fb-cc72-4d23-ba97-1bbf52e061e0",
@@ -87,7 +87,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9_20260327_115616/similar/patches/sim_0026_TCGA-06-0171-01Z-00-DX4.e27958fb-cc72-4d23-ba97-1bbf52e061e0_x11024_y15872_sim0.60410_attn10.34304.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/GBM/similar-wsi/similar-3.jpg"
+        "image": "data/dataforFront/GBM/similar-wsi/similar-3.webp"
       },
       "diagnosis": {
         "diagnosis_text": "脑，右额叶，切除标本：广泛凝固性坏死。",
@@ -101,7 +101,7 @@
         "x": 2496,
         "y": 13060,
         "attention_score": 8.263871,
-        "image": "data/dataforFront/GBM/high-attention/patch-4.jpg"
+        "image": "data/dataforFront/GBM/high-attention/patch-4.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-14-1459-01Z-00-DX1.cb8ebe63-8e53-4ab9-af3a-b34de40bd13b",
@@ -113,7 +113,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9_20260327_115616/similar/patches/sim_0054_TCGA-14-1459-01Z-00-DX1.cb8ebe63-8e53-4ab9-af3a-b34de40bd13b_x5184_y11968_sim0.58290_attn10.06305.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/GBM/similar-wsi/similar-4.jpg"
+        "image": "data/dataforFront/GBM/similar-wsi/similar-4.webp"
       },
       "diagnosis": {
         "diagnosis_text": "根据提供的文本，仅包含不完整的片段 'if different). | M1'，这似乎是某个病理报告摘要的结尾部分，可能表示存在远处转移（M1）。由于缺乏上下文，无法进行有效的清洗和修正。完整的病理报告应包含癌症类型、分级、肿瘤大小、病理分期、淋巴结状态及生物标志物状态等关键信息。",
@@ -127,7 +127,7 @@
         "x": 9920,
         "y": 14084,
         "attention_score": 8.114092,
-        "image": "data/dataforFront/GBM/high-attention/patch-5.jpg"
+        "image": "data/dataforFront/GBM/high-attention/patch-5.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-15-1447-01Z-00-DX1.80c2a3ec-5ddd-479d-a85e-1b21000cbe36",
@@ -139,7 +139,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9_20260327_115616/similar/patches/sim_0080_TCGA-15-1447-01Z-00-DX1.80c2a3ec-5ddd-479d-a85e-1b21000cbe36_x10128_y29184_sim0.57228_attn9.95700.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/GBM/similar-wsi/similar-5.jpg"
+        "image": "data/dataforFront/GBM/similar-wsi/similar-5.webp"
       },
       "diagnosis": {
         "diagnosis_text": "No diagnosis text found for case_id=TCGA-15-1447",
@@ -153,7 +153,7 @@
         "x": 7616,
         "y": 16900,
         "attention_score": 8.032351,
-        "image": "data/dataforFront/GBM/high-attention/patch-6.jpg"
+        "image": "data/dataforFront/GBM/high-attention/patch-6.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-14-1451-01Z-00-DX7.7ddf944d-c184-4374-b3b1-60efbb6b6645",
@@ -165,7 +165,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9_20260327_115616/similar/patches/sim_0084_TCGA-14-1451-01Z-00-DX7.7ddf944d-c184-4374-b3b1-60efbb6b6645_x16512_y20000_sim0.57078_attn9.87398.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/GBM/similar-wsi/similar-6.jpg"
+        "image": "data/dataforFront/GBM/similar-wsi/similar-6.webp"
       },
       "diagnosis": {
         "diagnosis_text": "Glioblastoma Multiforme",
@@ -179,7 +179,7 @@
         "x": 4544,
         "y": 13828,
         "attention_score": 7.824743,
-        "image": "data/dataforFront/GBM/high-attention/patch-7.jpg"
+        "image": "data/dataforFront/GBM/high-attention/patch-7.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-02-0321-01Z-00-DX1.3c57c27d-4a4f-45af-bf8b-2bde421a42fa",
@@ -191,7 +191,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9_20260327_115616/similar/patches/sim_0104_TCGA-02-0321-01Z-00-DX1.3c57c27d-4a4f-45af-bf8b-2bde421a42fa_x8704_y22545_sim0.56573_attn9.62476.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/GBM/similar-wsi/similar-7.jpg"
+        "image": "data/dataforFront/GBM/similar-wsi/similar-7.webp"
       },
       "diagnosis": {
         "diagnosis_text": "您提供的文本片段 'if different).' 不包含任何可识别的病理报告内容。它看起来是一个不完整的句子片段，可能来自某个文档的脚注或条件说明，但无法从中提取任何病理诊断信息。",
@@ -205,7 +205,7 @@
         "x": 24512,
         "y": 14996,
         "attention_score": 7.7673044,
-        "image": "data/dataforFront/GBM/high-attention/patch-8.jpg"
+        "image": "data/dataforFront/GBM/high-attention/patch-8.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-06-0221-01Z-00-DX1.bc444e2a-9530-453a-b494-ec31ee5db9c1",
@@ -217,7 +217,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9_20260327_115616/similar/patches/sim_0002_TCGA-06-0221-01Z-00-DX1.bc444e2a-9530-453a-b494-ec31ee5db9c1_x25236_y12737_sim0.64403_attn10.16149.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/GBM/similar-wsi/similar-8.jpg"
+        "image": "data/dataforFront/GBM/similar-wsi/similar-8.webp"
       },
       "diagnosis": {
         "diagnosis_text": "参见特殊染色报告。WHO分级IV级。淋巴结状态N0。",
@@ -231,7 +231,7 @@
         "x": 4032,
         "y": 10244,
         "attention_score": 7.745042,
-        "image": "data/dataforFront/GBM/high-attention/patch-9.jpg"
+        "image": "data/dataforFront/GBM/high-attention/patch-9.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-06-0171-01Z-00-DX5.223799ea-caac-4314-8e9d-5cb466756a64",
@@ -243,7 +243,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9_20260327_115616/similar/patches/sim_0027_TCGA-06-0171-01Z-00-DX5.223799ea-caac-4314-8e9d-5cb466756a64_x20480_y17872_sim0.60324_attn10.27273.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/GBM/similar-wsi/similar-9.jpg"
+        "image": "data/dataforFront/GBM/similar-wsi/similar-9.webp"
       },
       "diagnosis": {
         "diagnosis_text": "脑，右额叶，切除标本：广泛凝固性坏死。",
@@ -257,7 +257,7 @@
         "x": 4544,
         "y": 10756,
         "attention_score": 7.647947,
-        "image": "data/dataforFront/GBM/high-attention/patch-10.jpg"
+        "image": "data/dataforFront/GBM/high-attention/patch-10.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-08-0349-01Z-00-DX1.3D53FE9F-E4E6-4D73-A339-CCF9CDD81288",
@@ -269,7 +269,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9_20260327_115616/similar/patches/sim_0075_TCGA-08-0349-01Z-00-DX1.3D53FE9F-E4E6-4D73-A339-CCF9CDD81288_x104208_y30641_sim0.57403_attn4.81423.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/GBM/similar-wsi/similar-10.jpg"
+        "image": "data/dataforFront/GBM/similar-wsi/similar-10.webp"
       },
       "diagnosis": {
         "diagnosis_text": "胶质母细胞瘤，WHO 4级，肿瘤大小1.20厘米。",
@@ -283,7 +283,7 @@
         "x": 17600,
         "y": 13572,
         "attention_score": 7.647266,
-        "image": "data/dataforFront/GBM/high-attention/patch-11.jpg"
+        "image": "data/dataforFront/GBM/high-attention/patch-11.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-15-1447-01Z-00-DX1.80c2a3ec-5ddd-479d-a85e-1b21000cbe36",
@@ -295,7 +295,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9_20260327_115616/similar/patches/sim_0110_TCGA-15-1447-01Z-00-DX1.80c2a3ec-5ddd-479d-a85e-1b21000cbe36_x8848_y28928_sim0.56499_attn9.97776.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/GBM/similar-wsi/similar-11.jpg"
+        "image": "data/dataforFront/GBM/similar-wsi/similar-11.webp"
       },
       "diagnosis": {
         "diagnosis_text": "No diagnosis text found for case_id=TCGA-15-1447",
@@ -309,7 +309,7 @@
         "x": 22976,
         "y": 8852,
         "attention_score": 7.6208196,
-        "image": "data/dataforFront/GBM/high-attention/patch-12.jpg"
+        "image": "data/dataforFront/GBM/high-attention/patch-12.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-14-1451-01Z-00-DX7.7ddf944d-c184-4374-b3b1-60efbb6b6645",
@@ -321,7 +321,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-02-0024-01Z-00-DX1.d4cec60d-e2b6-41d1-92af-2d24f15b03a9_20260327_115616/similar/patches/sim_0111_TCGA-14-1451-01Z-00-DX7.7ddf944d-c184-4374-b3b1-60efbb6b6645_x17024_y19744_sim0.56491_attn9.51071.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/GBM/similar-wsi/similar-12.jpg"
+        "image": "data/dataforFront/GBM/similar-wsi/similar-12.webp"
       },
       "diagnosis": {
         "diagnosis_text": "Glioblastoma Multiforme",

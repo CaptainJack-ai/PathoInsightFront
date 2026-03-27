@@ -4,7 +4,7 @@
   "query_slide_id": "TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a",
   "run_dir": "data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919",
   "steps": {
-    "step1_query_upload": "data/dataforFront/COAD/uploaded.jpg",
+    "step1_query_upload": "data/dataforFront/COAD/uploaded.webp",
     "step2_classification": "data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/query/prediction.json",
     "step3_query_high_attention": "data/dataforFront/COAD/high-attention",
     "step4_retrieval_mapping": "data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/top_similar_patches.csv",
@@ -23,7 +23,7 @@
         "x": 102724,
         "y": 16451,
         "attention_score": 10.497054,
-        "image": "data/dataforFront/COAD/high-attention/patch-1.jpg"
+        "image": "data/dataforFront/COAD/high-attention/patch-1.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
@@ -35,7 +35,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0001_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x86720_y33200_sim0.62179_attn8.58498.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/COAD/similar-wsi/similar-1.jpg"
+        "image": "data/dataforFront/COAD/similar-wsi/similar-1.webp"
       },
       "diagnosis": {
         "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
@@ -49,7 +49,7 @@
         "x": 110660,
         "y": 5955,
         "attention_score": 10.476097,
-        "image": "data/dataforFront/COAD/high-attention/patch-2.jpg"
+        "image": "data/dataforFront/COAD/high-attention/patch-2.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-AD-5900-01Z-00-DX1.ff1dbf00-d9c5-45a2-9732-07b46f4e1471",
@@ -61,7 +61,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0086_TCGA-AD-5900-01Z-00-DX1.ff1dbf00-d9c5-45a2-9732-07b46f4e1471_x13136_y31744_sim0.53894_attn8.79948.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/COAD/similar-wsi/similar-2.jpg"
+        "image": "data/dataforFront/COAD/similar-wsi/similar-2.webp"
       },
       "diagnosis": {
         "diagnosis_text": "右半结肠，节段性切除术。病理分期为 pT2 N0 Mx，淋巴结检查结果为 0/11 枚阳性。",
@@ -75,7 +75,7 @@
         "x": 109124,
         "y": 9027,
         "attention_score": 10.431914,
-        "image": "data/dataforFront/COAD/high-attention/patch-3.jpg"
+        "image": "data/dataforFront/COAD/high-attention/patch-3.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
@@ -87,7 +87,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0002_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x11088_y50961_sim0.60311_attn9.09827.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/COAD/similar-wsi/similar-3.jpg"
+        "image": "data/dataforFront/COAD/similar-wsi/similar-3.webp"
       },
       "diagnosis": {
         "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
@@ -101,7 +101,7 @@
         "x": 10784,
         "y": 16137,
         "attention_score": 10.418151,
-        "image": "data/dataforFront/COAD/high-attention/patch-4.jpg"
+        "image": "data/dataforFront/COAD/high-attention/patch-4.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-AD-5900-01Z-00-DX1.ff1dbf00-d9c5-45a2-9732-07b46f4e1471",
@@ -113,7 +113,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0192_TCGA-AD-5900-01Z-00-DX1.ff1dbf00-d9c5-45a2-9732-07b46f4e1471_x15440_y16128_sim0.51383_attn9.52916.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/COAD/similar-wsi/similar-4.jpg"
+        "image": "data/dataforFront/COAD/similar-wsi/similar-4.webp"
       },
       "diagnosis": {
         "diagnosis_text": "右半结肠，节段性切除术。病理分期为 pT2 N0 Mx，淋巴结检查结果为 0/11 枚阳性。",
@@ -127,7 +127,7 @@
         "x": 54882,
         "y": 15362,
         "attention_score": 10.396892,
-        "image": "data/dataforFront/COAD/high-attention/patch-5.jpg"
+        "image": "data/dataforFront/COAD/high-attention/patch-5.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
@@ -139,7 +139,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0003_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x4176_y50961_sim0.60063_attn7.96434.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/COAD/similar-wsi/similar-5.jpg"
+        "image": "data/dataforFront/COAD/similar-wsi/similar-5.webp"
       },
       "diagnosis": {
         "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
@@ -153,7 +153,7 @@
         "x": 56418,
         "y": 5890,
         "attention_score": 10.3940935,
-        "image": "data/dataforFront/COAD/high-attention/patch-6.jpg"
+        "image": "data/dataforFront/COAD/high-attention/patch-6.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
@@ -165,7 +165,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0004_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x121456_y14512_sim0.59928_attn5.91064.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/COAD/similar-wsi/similar-6.jpg"
+        "image": "data/dataforFront/COAD/similar-wsi/similar-6.webp"
       },
       "diagnosis": {
         "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
@@ -179,7 +179,7 @@
         "x": 10016,
         "y": 31241,
         "attention_score": 10.380421,
-        "image": "data/dataforFront/COAD/high-attention/patch-7.jpg"
+        "image": "data/dataforFront/COAD/high-attention/patch-7.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
@@ -191,7 +191,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0005_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x62608_y40545_sim0.59792_attn5.88607.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/COAD/similar-wsi/similar-7.jpg"
+        "image": "data/dataforFront/COAD/similar-wsi/similar-7.webp"
       },
       "diagnosis": {
         "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
@@ -205,7 +205,7 @@
         "x": 105796,
         "y": 6979,
         "attention_score": 10.380246,
-        "image": "data/dataforFront/COAD/high-attention/patch-8.jpg"
+        "image": "data/dataforFront/COAD/high-attention/patch-8.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
@@ -217,7 +217,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0006_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x53904_y50017_sim0.59613_attn7.78319.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/COAD/similar-wsi/similar-8.jpg"
+        "image": "data/dataforFront/COAD/similar-wsi/similar-8.webp"
       },
       "diagnosis": {
         "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
@@ -231,7 +231,7 @@
         "x": 11808,
         "y": 16393,
         "attention_score": 10.3589735,
-        "image": "data/dataforFront/COAD/high-attention/patch-9.jpg"
+        "image": "data/dataforFront/COAD/high-attention/patch-9.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
@@ -243,7 +243,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0007_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x135536_y3248_sim0.59548_attn9.85689.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/COAD/similar-wsi/similar-9.jpg"
+        "image": "data/dataforFront/COAD/similar-wsi/similar-9.webp"
       },
       "diagnosis": {
         "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
@@ -257,7 +257,7 @@
         "x": 55394,
         "y": 13314,
         "attention_score": 10.356683,
-        "image": "data/dataforFront/COAD/high-attention/patch-10.jpg"
+        "image": "data/dataforFront/COAD/high-attention/patch-10.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
@@ -269,7 +269,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0008_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x134768_y4272_sim0.59522_attn10.35948.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/COAD/similar-wsi/similar-10.jpg"
+        "image": "data/dataforFront/COAD/similar-wsi/similar-10.webp"
       },
       "diagnosis": {
         "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
@@ -283,7 +283,7 @@
         "x": 6432,
         "y": 26377,
         "attention_score": 10.328802,
-        "image": "data/dataforFront/COAD/high-attention/patch-11.jpg"
+        "image": "data/dataforFront/COAD/high-attention/patch-11.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
@@ -295,7 +295,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0009_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x9040_y53777_sim0.59416_attn9.04703.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/COAD/similar-wsi/similar-11.jpg"
+        "image": "data/dataforFront/COAD/similar-wsi/similar-11.webp"
       },
       "diagnosis": {
         "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",
@@ -309,7 +309,7 @@
         "x": 105796,
         "y": 8003,
         "attention_score": 10.321735,
-        "image": "data/dataforFront/COAD/high-attention/patch-12.jpg"
+        "image": "data/dataforFront/COAD/high-attention/patch-12.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4",
@@ -321,7 +321,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_20260327_151919/similar/patches/sim_0010_TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4_x131440_y12976_sim0.59155_attn6.58261.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/COAD/similar-wsi/similar-12.jpg"
+        "image": "data/dataforFront/COAD/similar-wsi/similar-12.webp"
       },
       "diagnosis": {
         "diagnosis_text": "腺癌，中分化，肿瘤大小3.00厘米，病理分期pT3 N0 Mx，淋巴结状态为2/33枚阳性。",

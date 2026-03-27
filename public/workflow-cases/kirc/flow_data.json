@@ -4,7 +4,7 @@
   "query_slide_id": "TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5",
   "run_dir": "data/entire project process/runs/TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5_20260327_153739",
   "steps": {
-    "step1_query_upload": "data/dataforFront/KIRC/uploaded.jpg",
+    "step1_query_upload": "data/dataforFront/KIRC/uploaded.webp",
     "step2_classification": "data/entire project process/runs/TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5_20260327_153739/query/prediction.json",
     "step3_query_high_attention": "data/dataforFront/KIRC/high-attention",
     "step4_retrieval_mapping": "data/entire project process/runs/TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5_20260327_153739/similar/top_similar_patches.csv",
@@ -23,7 +23,7 @@
         "x": 27185,
         "y": 21536,
         "attention_score": 10.487838,
-        "image": "data/dataforFront/KIRC/high-attention/patch-1.jpg"
+        "image": "data/dataforFront/KIRC/high-attention/patch-1.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9",
@@ -35,7 +35,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5_20260327_153739/similar/patches/sim_0001_TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9_x46161_y5616_sim0.76301_attn10.01764.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/KIRC/similar-wsi/similar-1.jpg"
+        "image": "data/dataforFront/KIRC/similar-wsi/similar-1.webp"
       },
       "diagnosis": {
         "diagnosis_text": "左肾及肾上腺切除标本：肿瘤大小 3.5 x 2.8 x 2.1 cm。镜下为透明细胞肾细胞癌，Fuhrman 核分级 2 级。肿瘤侵犯肾周脂肪组织，但未突破肾周筋膜。未见明确脉管侵犯。肾上腺组织未见肿瘤累及。手术切缘阴性。送检区域淋巴结 0/4 枚见癌转移。病理分期：pT3a N0 Mx。",
@@ -49,7 +49,7 @@
         "x": 38961,
         "y": 15392,
         "attention_score": 10.298502,
-        "image": "data/dataforFront/KIRC/high-attention/patch-2.jpg"
+        "image": "data/dataforFront/KIRC/high-attention/patch-2.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9",
@@ -61,7 +61,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5_20260327_153739/similar/patches/sim_0002_TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9_x48977_y18672_sim0.76136_attn9.74323.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/KIRC/similar-wsi/similar-2.jpg"
+        "image": "data/dataforFront/KIRC/similar-wsi/similar-2.webp"
       },
       "diagnosis": {
         "diagnosis_text": "左肾及肾上腺切除标本：肿瘤大小 3.5 x 2.8 x 2.1 cm。镜下为透明细胞肾细胞癌，Fuhrman 核分级 2 级。肿瘤侵犯肾周脂肪组织，但未突破肾周筋膜。未见明确脉管侵犯。肾上腺组织未见肿瘤累及。手术切缘阴性。送检区域淋巴结 0/4 枚见癌转移。病理分期：pT3a N0 Mx。",
@@ -75,7 +75,7 @@
         "x": 27697,
         "y": 23072,
         "attention_score": 10.143103,
-        "image": "data/dataforFront/KIRC/high-attention/patch-3.jpg"
+        "image": "data/dataforFront/KIRC/high-attention/patch-3.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9",
@@ -87,7 +87,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5_20260327_153739/similar/patches/sim_0003_TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9_x48209_y13808_sim0.75480_attn10.05763.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/KIRC/similar-wsi/similar-3.jpg"
+        "image": "data/dataforFront/KIRC/similar-wsi/similar-3.webp"
       },
       "diagnosis": {
         "diagnosis_text": "左肾及肾上腺切除标本：肿瘤大小 3.5 x 2.8 x 2.1 cm。镜下为透明细胞肾细胞癌，Fuhrman 核分级 2 级。肿瘤侵犯肾周脂肪组织，但未突破肾周筋膜。未见明确脉管侵犯。肾上腺组织未见肿瘤累及。手术切缘阴性。送检区域淋巴结 0/4 枚见癌转移。病理分期：pT3a N0 Mx。",
@@ -101,7 +101,7 @@
         "x": 25137,
         "y": 19488,
         "attention_score": 10.084519,
-        "image": "data/dataforFront/KIRC/high-attention/patch-4.jpg"
+        "image": "data/dataforFront/KIRC/high-attention/patch-4.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9",
@@ -113,7 +113,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5_20260327_153739/similar/patches/sim_0004_TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9_x35409_y10736_sim0.75013_attn9.88845.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/KIRC/similar-wsi/similar-4.jpg"
+        "image": "data/dataforFront/KIRC/similar-wsi/similar-4.webp"
       },
       "diagnosis": {
         "diagnosis_text": "左肾及肾上腺切除标本：肿瘤大小 3.5 x 2.8 x 2.1 cm。镜下为透明细胞肾细胞癌，Fuhrman 核分级 2 级。肿瘤侵犯肾周脂肪组织，但未突破肾周筋膜。未见明确脉管侵犯。肾上腺组织未见肿瘤累及。手术切缘阴性。送检区域淋巴结 0/4 枚见癌转移。病理分期：pT3a N0 Mx。",
@@ -127,7 +127,7 @@
         "x": 25137,
         "y": 14624,
         "attention_score": 10.0442095,
-        "image": "data/dataforFront/KIRC/high-attention/patch-5.jpg"
+        "image": "data/dataforFront/KIRC/high-attention/patch-5.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9",
@@ -139,7 +139,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5_20260327_153739/similar/patches/sim_0005_TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9_x48209_y22000_sim0.74891_attn9.84512.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/KIRC/similar-wsi/similar-5.jpg"
+        "image": "data/dataforFront/KIRC/similar-wsi/similar-5.webp"
       },
       "diagnosis": {
         "diagnosis_text": "左肾及肾上腺切除标本：肿瘤大小 3.5 x 2.8 x 2.1 cm。镜下为透明细胞肾细胞癌，Fuhrman 核分级 2 级。肿瘤侵犯肾周脂肪组织，但未突破肾周筋膜。未见明确脉管侵犯。肾上腺组织未见肿瘤累及。手术切缘阴性。送检区域淋巴结 0/4 枚见癌转移。病理分期：pT3a N0 Mx。",
@@ -153,7 +153,7 @@
         "x": 37425,
         "y": 38944,
         "attention_score": 9.946478,
-        "image": "data/dataforFront/KIRC/high-attention/patch-6.jpg"
+        "image": "data/dataforFront/KIRC/high-attention/patch-6.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9",
@@ -165,7 +165,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5_20260327_153739/similar/patches/sim_0006_TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9_x48977_y7152_sim0.74826_attn10.26997.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/KIRC/similar-wsi/similar-6.jpg"
+        "image": "data/dataforFront/KIRC/similar-wsi/similar-6.webp"
       },
       "diagnosis": {
         "diagnosis_text": "左肾及肾上腺切除标本：肿瘤大小 3.5 x 2.8 x 2.1 cm。镜下为透明细胞肾细胞癌，Fuhrman 核分级 2 级。肿瘤侵犯肾周脂肪组织，但未突破肾周筋膜。未见明确脉管侵犯。肾上腺组织未见肿瘤累及。手术切缘阴性。送检区域淋巴结 0/4 枚见癌转移。病理分期：pT3a N0 Mx。",
@@ -179,7 +179,7 @@
         "x": 21809,
         "y": 21024,
         "attention_score": 9.941841,
-        "image": "data/dataforFront/KIRC/high-attention/patch-7.jpg"
+        "image": "data/dataforFront/KIRC/high-attention/patch-7.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9",
@@ -191,7 +191,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5_20260327_153739/similar/patches/sim_0007_TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9_x29777_y16624_sim0.74518_attn9.89228.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/KIRC/similar-wsi/similar-7.jpg"
+        "image": "data/dataforFront/KIRC/similar-wsi/similar-7.webp"
       },
       "diagnosis": {
         "diagnosis_text": "左肾及肾上腺切除标本：肿瘤大小 3.5 x 2.8 x 2.1 cm。镜下为透明细胞肾细胞癌，Fuhrman 核分级 2 级。肿瘤侵犯肾周脂肪组织，但未突破肾周筋膜。未见明确脉管侵犯。肾上腺组织未见肿瘤累及。手术切缘阴性。送检区域淋巴结 0/4 枚见癌转移。病理分期：pT3a N0 Mx。",
@@ -205,7 +205,7 @@
         "x": 27185,
         "y": 32288,
         "attention_score": 9.900653,
-        "image": "data/dataforFront/KIRC/high-attention/patch-8.jpg"
+        "image": "data/dataforFront/KIRC/high-attention/patch-8.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9",
@@ -217,7 +217,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5_20260327_153739/similar/patches/sim_0008_TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9_x47953_y21488_sim0.74514_attn9.72062.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/KIRC/similar-wsi/similar-8.jpg"
+        "image": "data/dataforFront/KIRC/similar-wsi/similar-8.webp"
       },
       "diagnosis": {
         "diagnosis_text": "左肾及肾上腺切除标本：肿瘤大小 3.5 x 2.8 x 2.1 cm。镜下为透明细胞肾细胞癌，Fuhrman 核分级 2 级。肿瘤侵犯肾周脂肪组织，但未突破肾周筋膜。未见明确脉管侵犯。肾上腺组织未见肿瘤累及。手术切缘阴性。送检区域淋巴结 0/4 枚见癌转移。病理分期：pT3a N0 Mx。",
@@ -231,7 +231,7 @@
         "x": 22065,
         "y": 27424,
         "attention_score": 9.832135,
-        "image": "data/dataforFront/KIRC/high-attention/patch-9.jpg"
+        "image": "data/dataforFront/KIRC/high-attention/patch-9.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9",
@@ -243,7 +243,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5_20260327_153739/similar/patches/sim_0009_TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9_x51537_y6384_sim0.74292_attn10.01818.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/KIRC/similar-wsi/similar-9.jpg"
+        "image": "data/dataforFront/KIRC/similar-wsi/similar-9.webp"
       },
       "diagnosis": {
         "diagnosis_text": "左肾及肾上腺切除标本：肿瘤大小 3.5 x 2.8 x 2.1 cm。镜下为透明细胞肾细胞癌，Fuhrman 核分级 2 级。肿瘤侵犯肾周脂肪组织，但未突破肾周筋膜。未见明确脉管侵犯。肾上腺组织未见肿瘤累及。手术切缘阴性。送检区域淋巴结 0/4 枚见癌转移。病理分期：pT3a N0 Mx。",
@@ -257,7 +257,7 @@
         "x": 24113,
         "y": 19488,
         "attention_score": 9.811065,
-        "image": "data/dataforFront/KIRC/high-attention/patch-10.jpg"
+        "image": "data/dataforFront/KIRC/high-attention/patch-10.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9",
@@ -269,7 +269,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5_20260327_153739/similar/patches/sim_0010_TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9_x37969_y16624_sim0.74278_attn9.72644.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/KIRC/similar-wsi/similar-10.jpg"
+        "image": "data/dataforFront/KIRC/similar-wsi/similar-10.webp"
       },
       "diagnosis": {
         "diagnosis_text": "左肾及肾上腺切除标本：肿瘤大小 3.5 x 2.8 x 2.1 cm。镜下为透明细胞肾细胞癌，Fuhrman 核分级 2 级。肿瘤侵犯肾周脂肪组织，但未突破肾周筋膜。未见明确脉管侵犯。肾上腺组织未见肿瘤累及。手术切缘阴性。送检区域淋巴结 0/4 枚见癌转移。病理分期：pT3a N0 Mx。",
@@ -283,7 +283,7 @@
         "x": 19761,
         "y": 23328,
         "attention_score": 9.801293,
-        "image": "data/dataforFront/KIRC/high-attention/patch-11.jpg"
+        "image": "data/dataforFront/KIRC/high-attention/patch-11.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9",
@@ -295,7 +295,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5_20260327_153739/similar/patches/sim_0011_TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9_x42577_y11760_sim0.74027_attn9.72064.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/KIRC/similar-wsi/similar-11.jpg"
+        "image": "data/dataforFront/KIRC/similar-wsi/similar-11.webp"
       },
       "diagnosis": {
         "diagnosis_text": "左肾及肾上腺切除标本：肿瘤大小 3.5 x 2.8 x 2.1 cm。镜下为透明细胞肾细胞癌，Fuhrman 核分级 2 级。肿瘤侵犯肾周脂肪组织，但未突破肾周筋膜。未见明确脉管侵犯。肾上腺组织未见肿瘤累及。手术切缘阴性。送检区域淋巴结 0/4 枚见癌转移。病理分期：pT3a N0 Mx。",
@@ -309,7 +309,7 @@
         "x": 35121,
         "y": 30496,
         "attention_score": 9.773527,
-        "image": "data/dataforFront/KIRC/high-attention/patch-12.jpg"
+        "image": "data/dataforFront/KIRC/high-attention/patch-12.webp"
       },
       "retrieved_patch": {
         "slide_id": "TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9",
@@ -321,7 +321,7 @@
         "saved_patch_path": "/data3/pathoinsight/code/download_script/data/entire project process/runs/TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5_20260327_153739/similar/patches/sim_0012_TCGA-AK-3461-01Z-00-DX1.C63E8820-0A22-4567-B986-2958B4B73EA9_x51281_y7152_sim0.73894_attn9.73570.png"
       },
       "similar_wsi": {
-        "image": "data/dataforFront/KIRC/similar-wsi/similar-12.jpg"
+        "image": "data/dataforFront/KIRC/similar-wsi/similar-12.webp"
       },
       "diagnosis": {
         "diagnosis_text": "左肾及肾上腺切除标本：肿瘤大小 3.5 x 2.8 x 2.1 cm。镜下为透明细胞肾细胞癌，Fuhrman 核分级 2 级。肿瘤侵犯肾周脂肪组织，但未突破肾周筋膜。未见明确脉管侵犯。肾上腺组织未见肿瘤累及。手术切缘阴性。送检区域淋巴结 0/4 枚见癌转移。病理分期：pT3a N0 Mx。",

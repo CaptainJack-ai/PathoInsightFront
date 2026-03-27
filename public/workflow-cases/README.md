@@ -19,13 +19,13 @@ The current case ids (aligned with dataforFront) are:
 
 Required files per case:
 
-- `uploaded.jpg`
-- `classifying.jpg`
-- `patching.jpg`
-- `retrieving_similar.jpg`
-- `generating_report.jpg`
-- `high-attention/patch-1.jpg` ~ `high-attention/patch-12.jpg`
-- `similar-wsi/similar-1.jpg` ~ `similar-wsi/similar-12.jpg`
+- `uploaded.webp`
+- `classifying.webp`
+- `patching.webp`
+- `retrieving_similar.webp`
+- `generating_report.webp`
+- `high-attention/patch-1.webp` ~ `high-attention/patch-12.webp`
+- `similar-wsi/similar-1.webp` ~ `similar-wsi/similar-12.webp`
 - `similar-diagnosis/similar-diagnosis.json`
 - `report/diagnosis-report.pdf`
 - `flow_data.json`
@@ -38,9 +38,9 @@ Flow rendering notes:
 
 Example:
 
-- `public/workflow-cases/luad/uploaded.jpg`
-- `public/workflow-cases/luad/high-attention/patch-1.jpg`
-- `public/workflow-cases/luad/similar-wsi/similar-1.jpg`
+- `public/workflow-cases/luad/uploaded.webp`
+- `public/workflow-cases/luad/high-attention/patch-1.webp`
+- `public/workflow-cases/luad/similar-wsi/similar-1.webp`
 - `public/workflow-cases/luad/similar-diagnosis/similar-diagnosis.json`
 - `public/workflow-cases/luad/report/diagnosis-report.pdf`
 - `public/workflow-cases/luad/flow_data.json`
