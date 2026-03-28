@@ -88,10 +88,8 @@ const FlowDiagramSection = () => {
       if (!svgElement) return;
 
       svgElement.setAttribute("width", "100%");
-      svgElement.removeAttribute("height");
+      svgElement.setAttribute("height", "100%");
       svgElement.setAttribute("preserveAspectRatio", "xMidYMid meet");
-      svgElement.style.width = "100%";
-      svgElement.style.height = "auto";
       svgElement.classList.add("patho-flow-svg-inner");
       svgElement.style.background = "transparent";
       svgElement.style.backgroundColor = "transparent";
@@ -106,6 +104,21 @@ const FlowDiagramSection = () => {
       const targetGroups = rootGroups.filter((group) => {
         const id = group.getAttribute("data-cell-id");
         return id && id !== "0" && id !== "1";
+      });
+
+      gsap.set(targetGroups, {
+        autoAlpha: 0,
+        y: 10,
+        scale: 0.985,
+        transformOrigin: "center center",
+      });
+
+      const edgePaths = Array.from(svgElement.querySelectorAll("g[data-cell-id] path"));
+      edgePaths.forEach((path) => {
+        const pathLength = path.getTotalLength?.() || 0;
+        if (!pathLength) return;
+        path.style.strokeDasharray = `${pathLength}`;
+        path.style.strokeDashoffset = `${pathLength}`;
       });
 
       const tl = gsap.timeline({
@@ -132,30 +145,22 @@ const FlowDiagramSection = () => {
         tl.to(
             groups,
             {
-              y: -1.5,
-              scale: 1.01,
-              duration: 0.5,
-              stagger: 0.06,
+              autoAlpha: 1,
+              y: 0,
+              scale: 1,
+              duration: 0.95,
+              stagger: 0.12,
             },
             "<"
           )
           .to(
             stepPaths,
             {
-              stroke: "#e2e8f0",
-              duration: 0.32,
+              strokeDashoffset: 0,
+              duration: 0.9,
+              stagger: 0.08,
             },
             "<"
-          )
-          .to(
-            groups,
-            {
-              y: 0,
-              scale: 1,
-              duration: 0.45,
-              stagger: 0.06,
-            },
-            ">-0.05"
           );
       });
 

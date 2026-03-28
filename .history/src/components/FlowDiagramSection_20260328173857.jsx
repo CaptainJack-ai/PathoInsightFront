@@ -88,24 +88,34 @@ const FlowDiagramSection = () => {
       if (!svgElement) return;
 
       svgElement.setAttribute("width", "100%");
-      svgElement.removeAttribute("height");
+      svgElement.setAttribute("height", "100%");
       svgElement.setAttribute("preserveAspectRatio", "xMidYMid meet");
-      svgElement.style.width = "100%";
-      svgElement.style.height = "auto";
       svgElement.classList.add("patho-flow-svg-inner");
-      svgElement.style.background = "transparent";
-      svgElement.style.backgroundColor = "transparent";
 
-      const backgroundRect = svgElement.querySelector('rect[width="100%"][height="100%"]');
-      if (backgroundRect) {
-        backgroundRect.setAttribute("fill", "transparent");
-        backgroundRect.style.fill = "transparent";
+      const backgroundGroup = svgElement.querySelector('g[data-cell-id="0"]');
+      if (backgroundGroup) {
+        backgroundGroup.setAttribute("display", "none");
       }
 
       const rootGroups = Array.from(svgElement.querySelectorAll("g[data-cell-id]"));
       const targetGroups = rootGroups.filter((group) => {
         const id = group.getAttribute("data-cell-id");
         return id && id !== "0" && id !== "1";
+      });
+
+      gsap.set(targetGroups, {
+        autoAlpha: 0,
+        y: 10,
+        scale: 0.985,
+        transformOrigin: "center center",
+      });
+
+      const edgePaths = Array.from(svgElement.querySelectorAll("g[data-cell-id] path"));
+      edgePaths.forEach((path) => {
+        const pathLength = path.getTotalLength?.() || 0;
+        if (!pathLength) return;
+        path.style.strokeDasharray = `${pathLength}`;
+        path.style.strokeDashoffset = `${pathLength}`;
       });
 
       const tl = gsap.timeline({
@@ -132,30 +142,22 @@ const FlowDiagramSection = () => {
         tl.to(
             groups,
             {
-              y: -1.5,
-              scale: 1.01,
-              duration: 0.5,
-              stagger: 0.06,
+              autoAlpha: 1,
+              y: 0,
+              scale: 1,
+              duration: 0.95,
+              stagger: 0.12,
             },
             "<"
           )
           .to(
             stepPaths,
             {
-              stroke: "#e2e8f0",
-              duration: 0.32,
+              strokeDashoffset: 0,
+              duration: 0.9,
+              stagger: 0.08,
             },
             "<"
-          )
-          .to(
-            groups,
-            {
-              y: 0,
-              scale: 1,
-              duration: 0.45,
-              stagger: 0.06,
-            },
-            ">-0.05"
           );
       });
 
@@ -202,7 +204,7 @@ const FlowDiagramSection = () => {
           用同一套流程图把检索证据链可视化：从输入切片到最终结论，每一步都可解释、可追踪。
         </p>
 
-        <div className="relative mt-14 flex flex-col items-center">
+        <div className="relative mt-14 flex justify-center">
           <div className="patho-flow-svg relative w-full max-w-5xl">
             {svgMarkup ? (
               <div
@@ -217,7 +219,7 @@ const FlowDiagramSection = () => {
             )}
           </div>
 
-          <div className="pointer-events-none mt-5 flex gap-2">
+          <div className="pointer-events-none absolute -bottom-6 left-1/2 flex -translate-x-1/2 gap-2">
             {Array.from({ length: 10 }).map((_, index) => (
               <span
                 key={`flow-particle-${index}`}
