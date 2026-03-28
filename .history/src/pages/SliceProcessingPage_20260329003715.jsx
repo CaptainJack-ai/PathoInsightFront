@@ -32,7 +32,6 @@ const SliceProcessingPage = () => {
   const [statusText, setStatusText] = useState("请选择一个 WSI 文件后开始处理");
   const [errorMessage, setErrorMessage] = useState("");
   const [reportUrl, setReportUrl] = useState("");
-  const [reportBlob, setReportBlob] = useState(null);
   const [reportFileName, setReportFileName] = useState("diagnosis-report.pdf");
   const [generatedAt, setGeneratedAt] = useState("");
   const [dragging, setDragging] = useState(false);
@@ -56,8 +55,6 @@ const SliceProcessingPage = () => {
       URL.revokeObjectURL(reportUrl);
       setReportUrl("");
     }
-
-    setReportBlob(null);
   };
 
   const handleProcessWsi = async (file) => {
@@ -75,10 +72,6 @@ const SliceProcessingPage = () => {
     setStatus(STATUS.PROCESSING);
     setStatusText("报告生成中，请稍候...");
 
-    if (requestAbortRef.current) {
-      requestAbortRef.current.abort();
-    }
-
     const controller = new AbortController();
     requestAbortRef.current = controller;
 
@@ -89,7 +82,6 @@ const SliceProcessingPage = () => {
 
       const objectUrl = URL.createObjectURL(blob);
       setReportUrl(objectUrl);
-      setReportBlob(blob);
       setReportFileName(fileName || "diagnosis-report.pdf");
       setGeneratedAt(new Date().toLocaleString("zh-CN"));
       setStatus(STATUS.SUCCESS);
@@ -115,10 +107,6 @@ const SliceProcessingPage = () => {
     setStatus(STATUS.PROCESSING);
     setStatusText("正在获取最近报告...");
 
-    if (requestAbortRef.current) {
-      requestAbortRef.current.abort();
-    }
-
     const controller = new AbortController();
     requestAbortRef.current = controller;
 
@@ -127,7 +115,6 @@ const SliceProcessingPage = () => {
       const objectUrl = URL.createObjectURL(blob);
 
       setReportUrl(objectUrl);
-      setReportBlob(blob);
       setReportFileName(fileName || "latest-report.pdf");
       setGeneratedAt(new Date().toLocaleString("zh-CN"));
       setStatus(STATUS.SUCCESS);
@@ -343,12 +330,18 @@ const SliceProcessingPage = () => {
                   <div className="flex flex-wrap gap-3">
                     <button
                       type="button"
-                      onClick={() => {
-                        if (reportBlob) {
-                          saveBlobAsFile(reportBlob, reportFileName);
-                        }
+                      onClick={() => saveBlobAsFile(new Blob([], { type: "application/pdf" }), reportFileName)}
+                      className="hidden"
+                    >
+                      hidden
+                    </button>
+                    <button
+                      type="button"
+                      onClick={async () => {
+                        const response = await fetch(reportUrl);
+                        const blob = await response.blob();
+                        saveBlobAsFile(blob, reportFileName);
                       }}
-                      disabled={!reportBlob}
                       className="rounded-full border border-white/25 px-4 py-2 text-xs uppercase tracking-wider transition hover:border-violet-200 hover:text-white"
                     >
                       下载当前报告
