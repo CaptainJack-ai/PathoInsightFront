@@ -15,6 +15,14 @@ dist
 dist-ssr
 coverage
 
+# Large pathology sample data (keep local, do not push)
+public/wsi-samples/
+*.svs
+*.ndpi
+*.mrxs
+*.tif
+*.tiff
+
 # Local environment files
 .env
 .env.*
