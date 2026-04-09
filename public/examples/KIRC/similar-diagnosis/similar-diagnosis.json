@@ -1,0 +1,62 @@
+[
+  {
+    "index": 1,
+    "diagnosis_text": "肾细胞癌，2级，病理分期为 pNx。",
+    "summary": "诊断为肾细胞癌，分级为2级，淋巴结状态为pNx（无法评估）。"
+  },
+  {
+    "index": 2,
+    "diagnosis_text": "肾细胞癌，pT1a Nx Mx。",
+    "summary": "诊断为肾细胞癌，病理分期为pT1a Nx Mx。"
+  },
+  {
+    "index": 3,
+    "diagnosis_text": "肾细胞癌，pT1a Nx Mx。",
+    "summary": "诊断为肾细胞癌，病理分期为pT1a Nx Mx。"
+  },
+  {
+    "index": 4,
+    "diagnosis_text": "肾细胞癌，2级，病理分期为 pNx。",
+    "summary": "诊断为肾细胞癌，分级为2级，淋巴结状态为pNx（无法评估）。"
+  },
+  {
+    "index": 5,
+    "diagnosis_text": "Clear Cell Renal Cell Carcinoma, tumor size 3.00 cm.",
+    "summary": "病理诊断为透明细胞肾细胞癌，肿瘤大小为3.00厘米。"
+  },
+  {
+    "index": 6,
+    "diagnosis_text": "肾细胞癌，pT1a Nx Mx。",
+    "summary": "诊断为肾细胞癌，病理分期为pT1a Nx Mx。"
+  },
+  {
+    "index": 7,
+    "diagnosis_text": "肾细胞癌，pT1a Nx Mx。",
+    "summary": "诊断为肾细胞癌，病理分期为pT1a Nx Mx。"
+  },
+  {
+    "index": 8,
+    "diagnosis_text": "肾细胞癌，pT1a Nx Mx。",
+    "summary": "诊断为肾细胞癌，病理分期为pT1a Nx Mx。"
+  },
+  {
+    "index": 9,
+    "diagnosis_text": "肾细胞癌，2级，病理分期为 pNx。",
+    "summary": "诊断为肾细胞癌，分级为2级，淋巴结状态为pNx（无法评估）。"
+  },
+  {
+    "index": 10,
+    "diagnosis_text": "肾细胞癌，2级，病理分期为 pNx。",
+    "summary": "诊断为肾细胞癌，分级为2级，淋巴结状态为pNx（无法评估）。"
+  },
+  {
+    "index": 11,
+    "diagnosis_text": "肾细胞癌，2级，病理分期为 pNx。",
+    "summary": "诊断为肾细胞癌，分级为2级，淋巴结状态为pNx（无法评估）。"
+  },
+  {
+    "index": 12,
+    "diagnosis_text": "左肾及肾上腺切除标本：肿瘤大小 3.5 x 2.8 x 2.1 cm。镜下为透明细胞肾细胞癌，Fuhrman 核分级 2 级。肿瘤侵犯肾周脂肪组织，但未突破肾周筋膜。未见明确脉管侵犯。肾上腺组织未见肿瘤累及。手术切缘阴性。送检区域淋巴结 0/4 枚见癌转移。病理分期：pT3a N0 Mx。",
+    "summary": "患者为透明细胞肾细胞癌，Fuhrman 核分级 2 级，肿瘤大小 3.5 x 2.8 x 2.1 cm，病理分期为 pT3a N0 Mx，淋巴结状态为 0/4 枚阳性。"
+  }
+]

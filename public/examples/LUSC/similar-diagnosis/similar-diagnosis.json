@@ -1,0 +1,62 @@
+[
+  {
+    "index": 1,
+    "diagnosis_text": "诊断：低分化癌，病理分期为T2 N0，淋巴结检查结果为0/12枚阳性。",
+    "summary": "该病例为低分化癌，肿瘤大小为T2，淋巴结状态为0/12枚阳性，病理分期为T2 N0。"
+  },
+  {
+    "index": 2,
+    "diagnosis_text": "诊断：低分化癌，病理分期为T2 N0，淋巴结检查结果为0/12枚阳性。",
+    "summary": "该病例为低分化癌，肿瘤大小为T2，淋巴结状态为0/12枚阳性，病理分期为T2 N0。"
+  },
+  {
+    "index": 3,
+    "diagnosis_text": "诊断：低分化癌，病理分期为T2 N0，淋巴结检查结果为0/12枚阳性。",
+    "summary": "该病例为低分化癌，肿瘤大小为T2，淋巴结状态为0/12枚阳性，病理分期为T2 N0。"
+  },
+  {
+    "index": 4,
+    "diagnosis_text": "诊断：低分化癌，病理分期为T2 N0，淋巴结检查结果为0/12枚阳性。",
+    "summary": "该病例为低分化癌，肿瘤大小为T2，淋巴结状态为0/12枚阳性，病理分期为T2 N0。"
+  },
+  {
+    "index": 5,
+    "diagnosis_text": "诊断：低分化癌，病理分期为T2 N0，淋巴结检查结果为0/12枚阳性。",
+    "summary": "该病例为低分化癌，肿瘤大小为T2，淋巴结状态为0/12枚阳性，病理分期为T2 N0。"
+  },
+  {
+    "index": 6,
+    "diagnosis_text": "胸膜活检：可见纤维斑块，未见肿瘤。肿瘤为中度分化，病理分期为 pT2 N0 Mx，淋巴结检查结果为 0/22 枚阳性。",
+    "summary": "胸膜活检未见肿瘤，仅见纤维斑块。报告提及中度分化的肿瘤，病理分期为 pT2 N0 Mx，淋巴结状态为 0/22 枚阳性。"
+  },
+  {
+    "index": 7,
+    "diagnosis_text": "Summary Statement: Grade 2, tumor size 4.80 cm, pT3 N1, lymph nodes 0/28.",
+    "summary": "该病例为乳腺癌，组织学分级为G2，肿瘤大小为4.80厘米，病理分期为pT3 N1，淋巴结状态为0/28枚阳性。ER/PR/HER2状态未提及。"
+  },
+  {
+    "index": 8,
+    "diagnosis_text": "Summary Statement: Grade 2, tumor size 4.80 cm, pT3 N1, lymph nodes 0/28.",
+    "summary": "该病例为乳腺癌，组织学分级为G2，肿瘤大小为4.80厘米，病理分期为pT3 N1，淋巴结状态为0/28枚阳性。ER/PR/HER2状态未提及。"
+  },
+  {
+    "index": 9,
+    "diagnosis_text": "胸膜活检：可见纤维斑块，未见肿瘤。肿瘤为中度分化，病理分期为 pT2 N0 Mx，淋巴结检查结果为 0/22 枚阳性。",
+    "summary": "胸膜活检未见肿瘤，仅见纤维斑块。报告提及中度分化的肿瘤，病理分期为 pT2 N0 Mx，淋巴结状态为 0/22 枚阳性。"
+  },
+  {
+    "index": 10,
+    "diagnosis_text": "胸膜活检：可见纤维斑块，未见肿瘤。肿瘤为中度分化，病理分期为 pT2 N0 Mx，淋巴结检查结果为 0/22 枚阳性。",
+    "summary": "胸膜活检未见肿瘤，仅见纤维斑块。报告提及中度分化的肿瘤，病理分期为 pT2 N0 Mx，淋巴结状态为 0/22 枚阳性。"
+  },
+  {
+    "index":11,
+    "diagnosis_text": "Summary Statement: Grade 2, tumor size 4.80 cm, pT3 N1, lymph nodes 0/28.",
+    "summary": "该病例为乳腺癌，组织学分级为G2，肿瘤大小为4.80厘米，病理分期为pT3 N1，淋巴结状态为0/28枚阳性。ER/PR/HER2状态未提及。"
+  },
+  {
+    "index": 12,
+    "diagnosis_text": "Summary Statement: T3 N0 M1",
+    "summary": "病理分期为 T3 N0 M1，提示存在远处转移。"
+  }
+]

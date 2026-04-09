@@ -31,7 +31,10 @@ const NavBar = () => {
   const [isNavVisible, setIsNavVisible] = useState(true);
   const [isWorkflowNavVisible, setIsWorkflowNavVisible] = useState(true);
   const [isTopHoverActive, setIsTopHoverActive] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const navVisible =
+    isMobileMenuOpen || isTopHoverActive || (isWorkflowPage ? isWorkflowNavVisible : isNavVisible);
 
   // Toggle audio and visual indicator
   const toggleAudioIndicator = () => {
@@ -63,6 +66,18 @@ const NavBar = () => {
   }, [currentScrollY, isWorkflowPage, lastScrollY]);
 
   useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    document.body.style.overflow = isMobileMenuOpen ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMobileMenuOpen]);
+
+  useEffect(() => {
     const onMouseMove = (event) => {
       if (event.clientY <= 24) {
         if (topHoverTimeoutRef.current) {
@@ -80,6 +95,12 @@ const NavBar = () => {
         topHoverTimeoutRef.current = null;
       }, 3000);
     };
+
+    const canUseHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    if (!canUseHover) {
+      setIsTopHoverActive(false);
+      return;
+    }
 
     window.addEventListener("mousemove", onMouseMove);
     return () => {
@@ -109,25 +130,33 @@ const NavBar = () => {
   }, [isWorkflowPage]);
 
   useEffect(() => {
-    const visible = isTopHoverActive || (isWorkflowPage ? isWorkflowNavVisible : isNavVisible);
-
     gsap.to(navContainerRef.current, {
-      y: visible ? 0 : -100,
-      opacity: visible ? 1 : 0,
+      y: navVisible ? 0 : -100,
+      opacity: navVisible ? 1 : 0,
       duration: 0.2,
     });
-  }, [isNavVisible, isWorkflowNavVisible, isWorkflowPage, isTopHoverActive]);
+  }, [navVisible]);
+
+  useEffect(() => {
+    window.dispatchEvent(
+      new CustomEvent("app-nav-visibility", {
+        detail: { visible: navVisible },
+      })
+    );
+  }, [navVisible]);
 
   return (
     <div
       ref={navContainerRef}
-      className="fixed inset-x-0 top-4 z-50 h-16 border-none transition-all duration-700 sm:inset-x-6"
+      className="fixed inset-x-2 top-2 z-50 h-14 border-none transition-all duration-700 sm:inset-x-6 sm:top-4 sm:h-16"
     >
       <header className="absolute top-1/2 w-full -translate-y-1/2">
-        <nav className="flex size-full items-center justify-between p-4">
+        <nav className="flex size-full items-center justify-between p-3 sm:p-4">
           <div className="flex items-center">
-            <img src="/img/logo.png" alt="logo" className="w-10" />
+            <img src="/img/logo.png" alt="logo" className="w-8 sm:w-10" />
+            <div className="ml-2 text-sm font-bold text-white sm:text-lg">PathoInsight</div>
           </div>
+         
 
           {/* Navigation Links and Audio Button */}
           <div className="flex h-full items-center">
@@ -146,9 +175,15 @@ const NavBar = () => {
             </div>
 
             <button
-              onClick={toggleAudioIndicator}
-              className="ml-10 flex items-center space-x-0.5"
+              type="button"
+              className="ml-3 inline-flex h-9 w-9 items-center justify-center rounded-md border border-white/25 bg-black/30 text-white md:hidden"
+              aria-label={isMobileMenuOpen ? "关闭导航菜单" : "打开导航菜单"}
+              onClick={() => setIsMobileMenuOpen((prev) => !prev)}
             >
+              <span className="text-lg leading-none">{isMobileMenuOpen ? "×" : "☰"}</span>
+            </button>
+
+            <button onClick={toggleAudioIndicator} className="ml-4 flex items-center space-x-0.5 sm:ml-10">
               <audio
                 ref={audioElementRef}
                 className="hidden"
@@ -170,6 +205,21 @@ const NavBar = () => {
             </button>
           </div>
         </nav>
+
+        {isMobileMenuOpen && (
+          <div className="mt-2 rounded-xl border border-white/15 bg-black/90 p-2 text-white md:hidden">
+            {navItems.map((item, index) => (
+              <Link
+                key={`mobile-${index}`}
+                to={item.href}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block rounded-md px-3 py-2 text-sm uppercase tracking-wide hover:bg-white/10"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        )}
       </header>
     </div>
   );

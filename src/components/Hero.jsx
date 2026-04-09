@@ -81,9 +81,9 @@ const Hero = () => {
   const getVideoSrc = (index) => `videos/hero-${index}.mp4`;
 
   return (
-    <div id="overview" className="relative h-dvh w-screen overflow-x-hidden">
+    <div id="overview" className="relative h-dvh w-full overflow-x-hidden">
       {loading && (
-        <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
+        <div className="flex-center absolute z-[100] h-dvh w-full overflow-hidden bg-violet-50">
           {/* https://uiverse.io/G4b413l/tidy-walrus-92 */}
           <div className="three-body">
             <div className="three-body__dot"></div>
@@ -95,10 +95,10 @@ const Hero = () => {
 
       <div
         id="video-frame"
-        className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75"
+        className="relative z-10 h-dvh w-full overflow-hidden rounded-lg bg-blue-75"
       >
         <div>
-          <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
+          <div className="mask-clip-path absolute-center absolute z-50 size-32 cursor-pointer overflow-hidden rounded-lg sm:size-40 md:size-64">
             <VideoPreview>
               <div
                 onClick={handleMiniVdClick}
@@ -110,7 +110,7 @@ const Hero = () => {
                   loop
                   muted
                   id="current-video"
-                  className="size-64 origin-center scale-150 object-cover object-center"
+                  className="size-32 origin-center scale-150 object-cover object-center sm:size-40 md:size-64"
                   onLoadedData={handleVideoLoad}
                 />
               </div>
@@ -123,7 +123,7 @@ const Hero = () => {
             loop
             muted
             id="next-video"
-            className="absolute-center invisible absolute z-20 size-64 object-cover object-center"
+            className="absolute-center invisible absolute z-20 size-32 object-cover object-center sm:size-40 md:size-64"
             onLoadedData={handleVideoLoad}
           />
           <video
@@ -142,7 +142,7 @@ const Hero = () => {
           insig<b>h</b>t
         </h1>
 
-        <p className="absolute bottom-40 right-5 z-40 max-w-xl text-right text-lg font-robert-regular leading-relaxed text-blue-100 md:bottom-52 md:text-lg">
+        <p className="absolute bottom-28 right-3 z-40 max-w-[82vw] text-right text-xs font-robert-regular leading-relaxed text-blue-100 sm:bottom-36 sm:right-5 sm:max-w-lg sm:text-sm md:bottom-52 md:max-w-xl md:text-lg">
           理念与目标：基于专家医生撰写的高质量病例与诊断报告，我们不仅给出结论，
           更还原结论背后的病理证据与成因。
           <br />
@@ -151,12 +151,12 @@ const Hero = () => {
         </p>
 
         <div className="absolute left-0 top-0 z-40 size-full">
-          <div className="mt-24 px-5 sm:px-10">
+          <div className="mt-20 px-4 sm:mt-24 sm:px-10">
             <h1 className="special-font hero-heading text-blue-100">
               P<b>A</b>THO
             </h1>
 
-            <p className="mb-5 max-w-md text-lg font-robert-regular leading-relaxed text-blue-100 md:max-w-xl md:text-xl">
+            <p className="mb-5 max-w-[88vw] text-sm font-robert-regular leading-relaxed text-blue-100 sm:max-w-md sm:text-base md:max-w-xl md:text-xl">
               PathoInsight 六阶段工作流：WSI上传、病理分类、切片分块、相似检索、报告生成、诊断完成。
               <br />
               让每一次诊断都可追踪、可解释、可复核。

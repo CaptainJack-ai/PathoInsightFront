@@ -1,7 +1,6 @@
 import gsap from "gsap";
 import { useRef } from "react";
 
-import Button from "./Button";
 import AnimatedTitle from "./AnimatedTitle";
 
 const FloatingImage = () => {
@@ -46,7 +45,7 @@ const FloatingImage = () => {
   };
 
   return (
-    <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
+    <div id="story" className="min-h-dvh w-full overflow-x-hidden bg-black text-blue-50">
       <div className="flex size-full flex-col items-center py-10 pb-24">
         <p className="font-general text-sm uppercase md:text-[10px]">
           项目愿景
@@ -67,7 +66,7 @@ const FloatingImage = () => {
                   onMouseLeave={handleMouseLeave}
                   onMouseUp={handleMouseLeave}
                   onMouseEnter={handleMouseLeave}
-                  src="/img/patho-story.webp"
+                  src="/img/patho-story.jpg"
                   alt="pathology workflow"
                   className="object-contain"
                 />
@@ -103,18 +102,13 @@ const FloatingImage = () => {
           </div>
         </div>
 
-        <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
+        <div className="-mt-28 flex w-full justify-center sm:-mt-40 md:-mt-64 md:me-44 md:justify-end">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
             <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
               首页叙事与 Workflow 页面完全对齐：6 个阶段逐步展开，从 WSI 到可下载报告，
               让病理结论不仅准确，而且过程透明、证据可追溯。
             </p>
 
-            <Button
-              id="realm-btn"
-              title="查看工作流"
-              containerClass="mt-5"
-            />
           </div>
         </div>
       </div>

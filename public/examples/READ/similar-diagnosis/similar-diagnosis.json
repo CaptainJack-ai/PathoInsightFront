@@ -1,0 +1,62 @@
+[
+  {
+    "index": 1,
+    "diagnosis_text": "病理报告摘要：息肉，中度分化。",
+    "summary": "病理诊断为中度分化的息肉。"
+  },
+  {
+    "index": 2,
+    "diagnosis_text": "病理报告摘要：息肉，中度分化。",
+    "summary": "病理诊断为中度分化的息肉。"
+  },
+  {
+    "index": 3,
+    "diagnosis_text": "病理报告摘要：息肉，中度分化。",
+    "summary": "病理诊断为中度分化的息肉。"
+  },
+  {
+    "index": 4,
+    "diagnosis_text": "病理报告摘要：息肉，中度分化。",
+    "summary": "病理诊断为中度分化的息肉。"
+  },
+  {
+    "index": 5,
+    "diagnosis_text": "病理报告摘要：息肉，中度分化。",
+    "summary": "病理诊断为中度分化的息肉。"
+  },
+  {
+    "index": 6,
+    "diagnosis_text": "A. 阑尾 | 中分化 | 肿瘤大小 5.50 cm | pT3 Nx",
+    "summary": "阑尾中分化腺癌，肿瘤大小为5.50厘米，病理分期为pT3 Nx。"
+  },
+  {
+    "index": 7,
+    "diagnosis_text": "Order Physician: Moderately differentiated. Tumor size 3.50 cm. pT3 N0. Lymph nodes 6/34 positive.",
+    "summary": "病理报告显示为中度分化的腺癌，肿瘤大小为3.50厘米，病理分期为pT3 N0，淋巴结状态为6/34枚阳性。"
+  },
+  {
+    "index": 8,
+    "diagnosis_text": "A. 阑尾 | 中分化 | 肿瘤大小 5.50 cm | pT3 Nx",
+    "summary": "阑尾中分化腺癌，肿瘤大小为5.50厘米，病理分期为pT3 Nx。"
+  },
+  {
+    "index": 9,
+    "diagnosis_text": "A. 阑尾 | 中分化 | 肿瘤大小 5.50 cm | pT3 Nx",
+    "summary": "阑尾中分化腺癌，肿瘤大小为5.50厘米，病理分期为pT3 Nx。"
+  },
+  {
+    "index": 10,
+    "diagnosis_text": "病史：中分化腺癌，肿瘤大小1.40厘米，病理分期pT3 N0 M1，淋巴结状态0/2枚阳性。",
+    "summary": "患者为中分化腺癌，肿瘤大小为1.40厘米，病理分期为pT3 N0 M1，淋巴结状态为0/2枚阳性。"
+  },
+  {
+    "index": 11,
+    "diagnosis_text": "A. 阑尾 | 中分化 | 肿瘤大小 5.50 cm | pT3 Nx",
+    "summary": "阑尾中分化腺癌，肿瘤大小为5.50厘米，病理分期为pT3 Nx。"
+  },
+  {
+    "index": 12,
+    "diagnosis_text": "A. 阑尾 | 中分化 | 肿瘤大小 5.50 cm | pT3 Nx",
+    "summary": "阑尾中分化腺癌，肿瘤大小为5.50厘米，病理分期为pT3 Nx。"
+  }
+]

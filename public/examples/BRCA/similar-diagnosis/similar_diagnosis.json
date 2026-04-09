@@ -1,0 +1,62 @@
+[
+  {
+    "index": 1,
+    "diagnosis_text": "浸润性导管癌，2级，肿瘤大小1.00厘米，pT3 N1 Mx。",
+    "summary": "诊断为浸润性导管癌，组织学分级为2级，肿瘤大小为1.00厘米，病理分期为pT3 N1 Mx。"
+  },
+  {
+    "index": 2,
+    "diagnosis_text": "病理诊断为浸润性导管癌，组织学分级为1级。肿瘤大小为2.40厘米。病理分期为pT2c N0 Mx。免疫组化结果显示：ER（雌激素受体）阳性，PR（孕激素受体）阳性，HER2（人表皮生长因子受体2）阴性。所有免疫组化染色均使用标准化的抗体或分子固定方法进行。",
+    "summary": "患者诊断为浸润性导管癌（Grade 1级），肿瘤大小为2.40厘米，病理分期为pT2c N0 Mx，淋巴结未见转移，免疫组化显示ER阳性、PR阳性、HER2阴性。"
+  },
+  {
+    "index": 3,
+    "diagnosis_text": "病理诊断为浸润性小叶癌。肿瘤大小为T1，淋巴结状态为N0。免疫组化结果显示：雌激素受体（ER）阳性，孕激素受体（PR）阳性。",
+    "summary": "诊断为浸润性小叶癌，病理分期为pT1 N0，ER阳性，PR阳性。"
+  },
+  {
+    "index": 4,
+    "diagnosis_text": "病理诊断为浸润性癌，中度分化。肿瘤大小为2.0厘米，病理分期为pT1c N0 Mx。淋巴结状态为0/4枚阳性。免疫组化结果显示：雌激素受体（ER）阳性，孕激素受体（PR）阳性，HER2阴性。",
+    "summary": "诊断为中度分化的浸润性癌，肿瘤大小为2.0厘米，病理分期为pT1c N0 Mx，淋巴结0/4枚阳性，ER阳性、PR阳性、HER2阴性。"
+  },
+  {
+    "index": 5,
+    "diagnosis_text": "Invasive Ductal Carcinoma, tumor size 4.80 cm, N0, lymph nodes 1/2 positive. PR: Homogeneous, dark circumferential. Comment: Controls are satisfactory. PATHWAY anti-HER2/neu is performed; HER2: tissue routinely processed for histologic evaluation. The HER2 test results are reported in accordance with the ASCO/CAP guidelines.",
+    "summary": "诊断为浸润性导管癌，肿瘤大小为4.80厘米，淋巴结状态为1/2枚阳性，PR呈阳性，HER2状态待最终报告。"
+  },
+  {
+    "index": 6,
+    "diagnosis_text": "病理诊断为浸润性导管癌，肿瘤大小为5.00厘米。病理分期为pT4 N0。淋巴结检查结果显示0/9枚阳性。免疫组化染色结果显示：雌激素受体（ER）阴性，孕激素受体（PR）阴性，HER2阴性。",
+    "summary": "患者诊断为浸润性导管癌，肿瘤大小为5.00厘米，病理分期为pT4 N0，淋巴结状态为0/9枚阳性，ER阴性、PR阴性、HER2阴性。"
+  },
+  {
+    "index": 7,
+    "diagnosis_text": "手术标本病理报告：肿瘤为高级别（Grade 3），淋巴结状态为12/64枚阳性。",
+    "summary": "高级别（Grade 3）肿瘤，淋巴结转移广泛（12/64枚阳性）。"
+  },
+  {
+    "index": 8,
+    "diagnosis_text": "Breast Cancer Histological description: Infiltrating ductal carcinoma, Grade 3.",
+    "summary": "诊断为高级别（Grade 3）浸润性导管癌。"
+  },
+  {
+    "index": 9,
+    "diagnosis_text": "导管原位癌，2级，肿瘤大小0.80厘米，淋巴结状态0/12枚阳性，ER阳性，PR阳性。",
+    "summary": "诊断为2级导管原位癌，肿瘤大小为0.80厘米，淋巴结未见转移（0/12枚阳性），激素受体ER和PR均为阳性。"
+  },
+  {
+    "index": 10,
+    "diagnosis_text": "病理诊断为浸润性癌，分级为2级。肿瘤大小为2.80厘米。病理分期为pT1c N0 Mx。免疫组化结果显示：雌激素受体（ER）为阳性（2+）；孕激素受体（PR）状态因信息被遮盖而无法获取；HER2状态未明确报告。",
+    "summary": "诊断为2级浸润性癌，肿瘤大小为2.80厘米，病理分期为pT1c N0 Mx，ER阳性（2+），PR状态信息缺失，HER2状态未报告。"
+  },
+  {
+    "index": 11,
+    "diagnosis_text": "浸润性导管癌，2级，肿瘤大小8.00厘米，病理分期pT2 N2，淋巴结状态9/18枚阳性。ER状态：阳性；PR状态：阳性；HER2状态：待定。",
+    "summary": "患者诊断为浸润性导管癌（Grade 2），肿瘤大小为8.00厘米，病理分期为pT2 N2，淋巴结转移广泛（9/18枚阳性），激素受体ER和PR均为阳性，HER2状态待定。"
+  },
+  {
+    "index": 12,
+    "diagnosis_text": "浸润性癌，肿瘤大小3.20厘米，pT2。雌激素受体（ER）：在75%的肿瘤细胞核中阳性。孕激素受体（PR）：在75%的肿瘤细胞核中阳性。HER2：使用DAKO HercepTest进行检测。",
+    "summary": "诊断为浸润性癌，肿瘤大小为3.20厘米，病理分期为pT2。激素受体状态为ER阳性（75%）、PR阳性（75%），HER2状态待明确。"
+  }
+]

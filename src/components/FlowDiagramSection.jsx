@@ -65,7 +65,7 @@ const FlowDiagramSection = () => {
         if (!cancelled) {
           setSvgMarkup(markup);
         }
-      } catch (error) {
+      } catch {
         if (!cancelled) {
           setSvgMarkup("");
         }
@@ -102,12 +102,6 @@ const FlowDiagramSection = () => {
         backgroundRect.style.fill = "transparent";
       }
 
-      const rootGroups = Array.from(svgElement.querySelectorAll("g[data-cell-id]"));
-      const targetGroups = rootGroups.filter((group) => {
-        const id = group.getAttribute("data-cell-id");
-        return id && id !== "0" && id !== "1";
-      });
-
       const tl = gsap.timeline({
         defaults: { ease: "power3.out" },
         scrollTrigger: {
@@ -118,9 +112,9 @@ const FlowDiagramSection = () => {
         },
       });
 
-      FLOW_STEPS.forEach((step, index) => {
+      FLOW_STEPS.forEach((step) => {
         const groups = step.ids
-          .map((id) => svgElement.querySelector(`g[data-cell-id=\"${id}\"]`))
+          .map((id) => svgElement.querySelector(`g[data-cell-id="${id}"]`))
           .filter(Boolean);
 
         if (!groups.length) return;
@@ -183,7 +177,7 @@ const FlowDiagramSection = () => {
   );
 
   return (
-    <section id="flow-diagram" ref={sectionRef} className="relative w-screen overflow-hidden bg-black py-28 text-blue-50">
+    <section id="flow-diagram" ref={sectionRef} className="relative w-full overflow-hidden bg-black py-20 text-blue-50 md:py-28">
       <div className="pointer-events-none absolute inset-0 opacity-60">
         <div className="flow-grid-overlay absolute inset-0" />
         <div className="flow-scanline absolute left-[-45%] top-0 h-full w-1/3 bg-gradient-to-r from-blue-200/0 via-blue-200/20 to-blue-200/0" />
@@ -193,7 +187,7 @@ const FlowDiagramSection = () => {
         <p className="font-general text-xs uppercase tracking-[0.28em] text-blue-50/70">
           PathoInsight Visual Pipeline
         </p>
-        <h2 className="mt-4 max-w-4xl font-zentry text-4xl uppercase leading-[0.92] text-white md:text-6xl">
+        <h2 className="mt-4 max-w-4xl font-zentry text-3xl uppercase leading-[0.92] text-white sm:text-4xl md:text-6xl">
           diagnosis signal is built
           <br />
           step by step
@@ -202,7 +196,7 @@ const FlowDiagramSection = () => {
           用同一套流程图把检索证据链可视化：从输入切片到最终结论，每一步都可解释、可追踪。
         </p>
 
-        <div className="relative mt-14 flex flex-col items-center">
+        <div className="relative mt-10 flex flex-col items-center md:mt-14">
           <div className="patho-flow-svg relative w-full max-w-5xl">
             {svgMarkup ? (
               <div
@@ -211,7 +205,7 @@ const FlowDiagramSection = () => {
                 dangerouslySetInnerHTML={{ __html: svgMarkup }}
               />
             ) : (
-              <div className="relative z-10 flex h-[440px] items-center justify-center font-circular-web text-blue-50/75">
+              <div className="relative z-10 flex h-[260px] items-center justify-center font-circular-web text-blue-50/75 sm:h-[320px] md:h-[440px]">
                 流程图资源加载中...
               </div>
             )}
