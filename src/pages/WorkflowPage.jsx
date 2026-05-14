@@ -31,8 +31,12 @@ const SimilarRetrievalShowcase = ({ stage, caseData }) => {
   const retrievalRef = useRef(null);
   const wheelLockRef = useRef(false);
   const retrievalItems = caseData?.retrievalItems || [];
+  const [isMobile, setIsMobile] = useState(() =>
+    typeof window !== "undefined" ? window.innerWidth < 768 : false
+  );
   const [flowLinks, setFlowLinks] = useState([]);
   const [focusIndex, setFocusIndex] = useState(getInitialFocusIndex(PATCH_DISPLAY_COUNT));
+  const visibleSpan = isMobile ? 0 : VISIBLE_RETRIEVAL_SPAN;
   const displayRows = useMemo(
     () =>
       Array.from({ length: PATCH_DISPLAY_COUNT }).map((_, idx) => {
@@ -83,9 +87,18 @@ const SimilarRetrievalShowcase = ({ stage, caseData }) => {
   );
 
   const visibleRows = useMemo(
-    () => displayRows.filter((row) => Math.abs(row.rowIndex - focusIndex) <= VISIBLE_RETRIEVAL_SPAN),
-    [displayRows, focusIndex]
+    () => displayRows.filter((row) => Math.abs(row.rowIndex - focusIndex) <= visibleSpan),
+    [displayRows, focusIndex, visibleSpan]
   );
+
+  useEffect(() => {
+    const onResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -168,6 +181,8 @@ const SimilarRetrievalShowcase = ({ stage, caseData }) => {
   }, [caseData?.id, displayRows.length]);
 
   const onCarouselWheel = (event) => {
+    if (isMobile) return;
+
     event.preventDefault();
     event.stopPropagation();
 
@@ -187,14 +202,33 @@ const SimilarRetrievalShowcase = ({ stage, caseData }) => {
     <div className="relative h-full w-full overflow-hidden rounded-2xl border border-white/25 bg-black text-blue-100 shadow-[0_20px_80px_rgba(0,0,0,0.32)]">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_35%_45%,rgba(237,255,102,0.12),rgba(0,0,0,0)_44%),radial-gradient(circle_at_78%_18%,rgba(96,165,250,0.17),rgba(0,0,0,0)_52%)]" />
 
-      <div className="absolute left-4 top-4 z-20 rounded-full border border-white/35 bg-black/60 px-3 py-1 text-[10px] uppercase tracking-wider">
+      <div className="absolute left-2 top-2 z-20 rounded-full border border-white/35 bg-black/60 px-2.5 py-1 text-[9px] uppercase tracking-wider sm:left-4 sm:top-4 sm:px-3 sm:text-[10px]">
         {stage.badge}
       </div>
-      <div className="absolute right-4 top-4 z-20 rounded-full border border-white/35 bg-black/60 px-3 py-1 text-[10px] uppercase tracking-wider">
+      <div className="absolute right-2 top-2 z-20 max-w-[48%] truncate rounded-full border border-white/35 bg-black/60 px-2.5 py-1 text-[9px] uppercase tracking-wider sm:right-4 sm:top-4 sm:max-w-none sm:px-3 sm:text-[10px]">
         {caseData.name}
       </div>
 
-      <div data-retrieval-scroll="true" ref={retrievalRef} onWheel={onCarouselWheel} className="relative z-10 h-full overflow-visible px-5 pb-6 pt-14 md:px-8">
+      <div data-retrieval-scroll="true" ref={retrievalRef} onWheel={onCarouselWheel} className="relative z-10 h-full overflow-visible px-3 pb-4 pt-14 sm:px-5 sm:pb-6 md:px-8">
+        {isMobile && (
+          <div className="absolute inset-x-0 bottom-3 z-30 flex justify-center gap-2">
+            <button
+              type="button"
+              onClick={() => setFocusIndex((prev) => Math.max(prev - 1, 0))}
+              className="rounded-full border border-white/35 bg-black/55 px-3 py-1 text-[10px] uppercase tracking-wider"
+            >
+              上一条
+            </button>
+            <button
+              type="button"
+              onClick={() => setFocusIndex((prev) => Math.min(prev + 1, displayRows.length - 1))}
+              className="rounded-full border border-white/35 bg-black/55 px-3 py-1 text-[10px] uppercase tracking-wider"
+            >
+              下一条
+            </button>
+          </div>
+        )}
+
         <div className="absolute left-1/2 top-1/2 h-[110%] w-full max-w-[1220px] -translate-x-1/2 -translate-y-1/2">
           {visibleRows.map((item) => {
             const offset = item.rowIndex - focusIndex;
@@ -202,7 +236,7 @@ const SimilarRetrievalShowcase = ({ stage, caseData }) => {
             const scale = absOffset === 0 ? 1 : absOffset === 1 ? 0.68 : absOffset === 2 ? 0.44 : 0.3;
             const opacity = absOffset === 0 ? 1 : absOffset === 1 ? 0.42 : absOffset === 2 ? 0.18 : 0.08;
             const blur = absOffset === 0 ? 0 : absOffset === 1 ? 1.5 : absOffset === 2 ? 4 : 8;
-            const translateY = offset * 200;
+            const translateY = isMobile ? 0 : offset * 200;
             const layerBase = 80 - absOffset * 2;
             const zIndex = layerBase + (offset < 0 ? 1 : 0);
             const isFocused = absOffset === 0;
@@ -219,37 +253,37 @@ const SimilarRetrievalShowcase = ({ stage, caseData }) => {
                   opacity,
                   filter: `blur(${blur}px)`,
                   zIndex,
-                  pointerEvents: absOffset === 0 ? "auto" : "none",
+                  pointerEvents: absOffset === 0 || isMobile ? "auto" : "none",
                 }}
               >
-                <div className="retrieval-shell grid grid-cols-[220px_34px_220px_34px_minmax(0,1fr)] items-center gap-3 rounded-2xl bg-gradient-to-r from-black/72 via-black/62 to-black/52 p-3 shadow-[0_14px_36px_rgba(0,0,0,0.3)]">
+                <div className="retrieval-shell grid grid-cols-1 items-start gap-2 rounded-2xl bg-gradient-to-r from-black/72 via-black/62 to-black/52 p-2.5 shadow-[0_14px_36px_rgba(0,0,0,0.3)] sm:p-3 md:grid-cols-[220px_34px_220px_34px_minmax(0,1fr)] md:items-center md:gap-3">
                   <div>
                     <p className="text-[10px] uppercase tracking-wider text-blue-100/75">高注意力切片 {item.rowIndex + 1}</p>
                     <img
                       src={item.sourcePatchImage}
                       alt={`Source attention patch ${item.rowIndex + 1}`}
-                      className="mt-2 aspect-square w-full rounded-md object-cover"
+                      className="mt-2 aspect-video w-full rounded-md object-cover md:aspect-square"
                       loading={eagerLoad ? "eager" : "lazy"}
                       decoding="async"
                       fetchPriority={isFocused ? "high" : "low"}
                     />
                   </div>
 
-                  <div className="text-center font-general text-xs uppercase text-blue-100/70">-&gt;</div>
+                  <div className="hidden text-center font-general text-xs uppercase text-blue-100/70 md:block">-&gt;</div>
 
                   <div>
                     <p className="text-[10px] uppercase tracking-wider text-blue-100/75">相似WSI</p>
                     <img
                       src={item.similarWsiImage}
                       alt={`相似病理 WSI ${item.rowIndex + 1}`}
-                      className="mt-2 aspect-square w-full rounded-md object-cover"
+                      className="mt-2 aspect-video w-full rounded-md object-cover md:aspect-square"
                       loading={eagerLoad ? "eager" : "lazy"}
                       decoding="async"
                       fetchPriority={isFocused ? "high" : "low"}
                     />
                   </div>
 
-                  <div className="text-center font-general text-xs uppercase text-blue-100/70">-&gt;</div>
+                  <div className="hidden text-center font-general text-xs uppercase text-blue-100/70 md:block">-&gt;</div>
 
                   <div className="min-h-[12rem] rounded-xl bg-black/45 p-3">
                     <p className="text-[10px] uppercase tracking-wider text-blue-100/80">检索证据链（右侧）</p>
@@ -278,20 +312,20 @@ const ReportPdfShowcase = ({ stage, caseData }) => {
     <div className="relative h-full w-full overflow-hidden rounded-2xl border border-black/15 bg-blue-50 text-black shadow-[0_20px_80px_rgba(0,0,0,0.18)]">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_16%,rgba(59,130,246,0.16),rgba(255,255,255,0)_42%),radial-gradient(circle_at_85%_82%,rgba(15,23,42,0.08),rgba(255,255,255,0)_55%)]" />
 
-      <div className="absolute left-4 top-4 z-20 rounded-full border border-black/20 bg-white/78 px-3 py-1 text-[10px] uppercase tracking-wider text-black/80">
+      <div className="absolute left-2 top-2 z-20 rounded-full border border-black/20 bg-white/78 px-2.5 py-1 text-[9px] uppercase tracking-wider text-black/80 sm:left-4 sm:top-4 sm:px-3 sm:text-[10px]">
         {stage.badge}
       </div>
-      <div className="absolute right-4 top-4 z-20 rounded-full border border-black/20 bg-white/78 px-3 py-1 text-[10px] uppercase tracking-wider text-black/80">
+      <div className="absolute right-2 top-2 z-20 max-w-[48%] truncate rounded-full border border-black/20 bg-white/78 px-2.5 py-1 text-[9px] uppercase tracking-wider text-black/80 sm:right-4 sm:top-4 sm:max-w-none sm:px-3 sm:text-[10px]">
         {caseData.name}
       </div>
 
-      <div className="relative z-10 flex h-full flex-col px-4 pb-4 pt-12 md:px-5 md:pb-5">
+      <div className="relative z-10 flex h-full flex-col px-3 pb-3 pt-11 sm:px-4 sm:pb-4 sm:pt-12 md:px-5 md:pb-5">
         <div className="mb-2 flex items-center justify-between gap-3">
           <p className="font-general text-xs uppercase tracking-wider text-black/65">诊断报告 PDF</p>
           <a
             href={reportPdf}
             download
-            className="rounded-full border border-black/25 bg-white/85 px-4 py-1.5 font-general text-[10px] uppercase tracking-wider text-black transition hover:bg-black hover:text-white"
+            className="rounded-full border border-black/25 bg-white/85 px-3 py-1.5 font-general text-[9px] uppercase tracking-wider text-black transition hover:bg-black hover:text-white sm:px-4 sm:text-[10px]"
           >
             下载 PDF
           </a>
@@ -376,10 +410,10 @@ const StageShowcase = ({ stage, caseData }) => {
         <img src={displayImage} alt={stage.title} className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
 
-        <div className="absolute left-4 top-4 rounded-full border border-white/35 bg-black/60 px-3 py-1 text-[10px] uppercase tracking-wider">
+        <div className="absolute left-2 top-2 rounded-full border border-white/35 bg-black/60 px-2.5 py-1 text-[9px] uppercase tracking-wider sm:left-4 sm:top-4 sm:px-3 sm:text-[10px]">
           {stage.badge}
         </div>
-        <div className="absolute right-4 top-4 rounded-full border border-white/35 bg-black/60 px-3 py-1 text-[10px] uppercase tracking-wider">
+        <div className="absolute right-2 top-2 max-w-[48%] truncate rounded-full border border-white/35 bg-black/60 px-2.5 py-1 text-[9px] uppercase tracking-wider sm:right-4 sm:top-4 sm:max-w-none sm:px-3 sm:text-[10px]">
           {caseData.name}
         </div>
 
@@ -407,8 +441,8 @@ const StageShowcase = ({ stage, caseData }) => {
 
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/28 to-transparent" />
 
-            <div className="absolute inset-x-0 bottom-6 top-14 z-10 flex items-center justify-center overflow-hidden px-4 md:bottom-8 md:px-6 md:top-12">
-              <div className="grid w-full max-w-3xl grid-cols-4 gap-2 md:max-w-4xl md:gap-3">
+            <div className="absolute inset-x-0 bottom-4 top-12 z-10 flex items-center justify-center overflow-hidden px-3 sm:bottom-6 sm:top-14 sm:px-4 md:bottom-8 md:px-6 md:top-12">
+              <div className="grid w-full max-w-3xl grid-cols-3 gap-1.5 sm:grid-cols-4 sm:gap-2 md:max-w-4xl md:gap-3">
                 {displayPatches.map((img, idx) => (
                   <div key={`patch-${img}`} className="highlight-patch-card aspect-square overflow-hidden rounded-lg border border-white/30 bg-black/65 p-1 shadow-[0_8px_30px_rgba(0,0,0,0.3)] md:rounded-xl md:p-1.5">
                     <img src={img} alt={`高注意力切片 ${idx + 1}`} className="size-full rounded-md object-cover" loading="lazy" decoding="async" />
@@ -420,8 +454,8 @@ const StageShowcase = ({ stage, caseData }) => {
         )}
 
         {isUploadStep && (
-          <div className="absolute bottom-4 left-1/2 w-[92%] max-w-xl -translate-x-1/2 rounded-xl border border-yellow-300/50 bg-black/78 px-4 py-3 backdrop-blur-sm">
-            <p className="text-[10px] uppercase tracking-wider text-yellow-300">WSI Thumbnail Metadata</p>
+          <div className="absolute bottom-3 left-1/2 w-[95%] max-w-xl -translate-x-1/2 rounded-xl border border-white-300/50 bg-black/78 px-3 py-2.5 backdrop-blur-sm sm:bottom-4 sm:w-[92%] sm:px-4 sm:py-3">
+            <p className="text-[10px] uppercase tracking-wider text-white-300">WSI Thumbnail Metadata</p>
             <div className="mt-2 grid gap-1 text-xs text-blue-100 md:grid-cols-2">
               <p>类型：癌种占位_001</p>
               <p>编号：病例编号占位_000001</p>
@@ -430,9 +464,9 @@ const StageShowcase = ({ stage, caseData }) => {
         )}
 
         {isClassifyStep && (
-          <div className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-yellow-300/60 bg-black/72 px-8 py-5 text-center shadow-[0_0_30px_rgba(237,255,102,0.25)] backdrop-blur-sm animate-pulse">
+          <div className="absolute left-1/2 top-1/2 z-10 w-[90%] max-w-md -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-yellow-300/60 bg-black/72 px-5 py-4 text-center shadow-[0_0_30px_rgba(237,255,102,0.25)] backdrop-blur-sm animate-pulse sm:w-auto sm:px-8 sm:py-5">
             <p className="text-[10px] uppercase tracking-[0.22em] text-yellow-300">预测类别</p>
-            <p className="mt-2 font-zentry text-4xl uppercase leading-none text-blue-100 md:text-5xl">{caseData?.classificationLabel || "类别占位"}</p>
+            <p className="mt-2 font-zentry text-3xl uppercase leading-none text-blue-100 sm:text-4xl md:text-5xl">{caseData?.classificationLabel || "类别占位"}</p>
           </div>
         )}
       </div>
@@ -592,40 +626,40 @@ function WorkflowPage() {
   return (
     <main
       ref={wrapperRef}
-      className={`h-screen w-screen overflow-hidden bg-blue-100 px-5 pb-6 transition-[padding,transform] duration-500 ease-out md:px-10 md:pb-8 ${
-        isNavVisible ? "pt-24 md:pt-28" : "pt-10 md:pt-14"
+      className={`min-h-screen w-full overflow-x-hidden overflow-y-auto bg-blue-100 px-3 pb-4 transition-[padding,transform] duration-500 ease-out sm:px-5 md:h-screen md:overflow-hidden md:px-10 md:pb-8 ${
+        isNavVisible ? "pt-20 md:pt-28" : "pt-8 md:pt-14"
       }`}
     >
       <div className="mx-auto h-full w-full max-w-[1600px]">
-        <div className="mb-5 flex items-end justify-between md:mb-7">
+        <div className="mb-4 flex flex-col gap-3 sm:mb-5 sm:flex-row sm:items-end sm:justify-between md:mb-7">
           <div>
             <p className="font-general text-xs uppercase tracking-widest text-black/60">PathoInsight 演示</p>
-            <h1 className="font-zentry text-4xl uppercase text-black md:text-6xl">工作流叙事展示</h1>
+            <h1 className="font-zentry text-3xl uppercase text-black sm:text-4xl md:text-6xl">工作流展示</h1>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             {selectedCase && (
               <button
                 type="button"
                 onClick={() => navigate("/workflow")}
-                className="rounded-full border border-black/20 px-4 py-2 font-general text-[10px] uppercase text-black transition hover:bg-black hover:text-blue-100"
+                className="rounded-full border border-black/20 px-3 py-1.5 font-general text-[11px] uppercase text-black transition hover:bg-black hover:text-blue-100 sm:px-4 sm:py-2"
               >
                 切换病理
               </button>
             )}
             <Link
               to="/"
-              className="rounded-full border border-black/20 px-5 py-2 font-general text-xs uppercase text-black transition hover:bg-black hover:text-blue-100"
+              className="rounded-full border border-black/20 px-4 py-1.5 font-general text-[11px] uppercase text-black transition hover:bg-black hover:text-blue-100 sm:px-5 sm:py-2 sm:text-xs"
             >
               返回首页
             </Link>
           </div>
         </div>
 
-        <div className="flex h-[calc(100%-5rem)] flex-col gap-6 md:flex-row md:gap-8">
-          <aside className="flex h-full md:w-[30%] md:min-w-[320px] md:max-w-[480px] md:items-center">
-            <div className="w-full rounded-2xl border border-black/15 bg-white/90 p-6 shadow-[0_12px_50px_rgba(1,1,1,0.08)] md:p-7">
+        <div className="flex h-auto flex-col gap-4 md:h-[calc(100%-5rem)] md:flex-row md:gap-8">
+          <aside className="flex h-auto md:h-full md:w-[30%] md:min-w-[320px] md:max-w-[480px] md:items-center">
+            <div className="w-full rounded-2xl border border-black/15 bg-white/90 p-4 shadow-[0_12px_50px_rgba(1,1,1,0.08)] sm:p-5 md:p-7">
               <p className="font-general text-xs uppercase tracking-wider text-black/50">当前阶段</p>
-              <h2 ref={labelRef} className="mt-3 font-zentry text-4xl uppercase text-black md:text-5xl">
+              <h2 ref={labelRef} className="mt-2 font-zentry text-3xl uppercase text-black sm:mt-3 sm:text-4xl md:text-5xl">
                 {activeStage.title}
               </h2>
               <p className="mt-2 font-circular-web text-sm text-black/65">{activeStage.subtitle}</p>
@@ -667,7 +701,7 @@ function WorkflowPage() {
             </div>
           </aside>
 
-          <section onWheel={handleWheel} className="relative flex h-full flex-col md:w-[70%]">
+          <section onWheel={handleWheel} className="relative flex min-h-[58vh] flex-col md:h-full md:w-[70%]">
             {selectedCase ? (
               <>
                 <div ref={cardRef} className="h-full">

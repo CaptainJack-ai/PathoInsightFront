@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>项目页面关系图</title>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --line: #d9e0ea;
+        --line-strong: #b9c4d1;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --root: #1f2937;
+        --home: #5aa9e6;
+        --workflow: #66c2a5;
+        --slice: #7cb342;
+        --ai: #d4a73b;
+        --soft: #f8fafc;
+      }
+
+      * { box-sizing: border-box; }
+      html, body {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", Arial, sans-serif;
+      }
+
+      body {
+        padding: 28px;
+      }
+
+      .page {
+        width: 100%;
+        max-width: 1520px;
+        margin: 0 auto;
+      }
+
+      .title {
+        margin-bottom: 18px;
+      }
+
+      .title h1 {
+        margin: 0;
+        font-size: 28px;
+        letter-spacing: 0.02em;
+      }
+
+      .title p {
+        margin: 10px 0 0;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.7;
+        max-width: 1050px;
+      }
+
+      .diagram {
+        position: relative;
+        width: 100%;
+        min-height: 1080px;
+        border: 1px solid #edf1f6;
+        border-radius: 18px;
+        background: linear-gradient(180deg, #ffffff 0%, #fbfcfe 100%);
+        overflow: hidden;
+      }
+
+      .root {
+        position: absolute;
+        left: 50%;
+        top: 28px;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 52px;
+        border-radius: 14px;
+        background: linear-gradient(180deg, #2c2f36, #17191d);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+      }
+
+      .root-label {
+        position: absolute;
+        left: 50%;
+        top: 90px;
+        transform: translateX(-50%);
+        color: var(--muted);
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      .bus {
+        position: absolute;
+        left: 92px;
+        right: 92px;
+        top: 132px;
+        height: 1px;
+        background: linear-gradient(90deg, rgba(185, 196, 209, 0.25), var(--line-strong), rgba(185, 196, 209, 0.25));
+      }
+
+      .down {
+        position: absolute;
+        left: 50%;
+        top: 80px;
+        width: 1px;
+        height: 52px;
+        background: var(--line-strong);
+      }
+
+      .columns {
+        position: absolute;
+        left: 36px;
+        right: 36px;
+        top: 148px;
+        bottom: 34px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .column {
+        position: relative;
+        padding: 0 8px 0;
+      }
+
+      .column::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: -16px;
+        width: 1px;
+        height: calc(100% + 16px);
+        background: linear-gradient(180deg, var(--line-strong), rgba(185, 196, 209, 0.2));
+      }
+
+      .column::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 9px;
+        height: 9px;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        background: #fff;
+        border: 2px solid var(--line-strong);
+        z-index: 1;
+      }
+
+      .head {
+        position: relative;
+        z-index: 2;
+        width: 110px;
+        height: 40px;
+        margin: 0 auto 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 700;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+      }
+
+      .head.home { background: linear-gradient(180deg, #74b9ff, var(--home)); }
+      .head.workflow { background: linear-gradient(180deg, #7dd6ba, var(--workflow)); }
+      .head.slice { background: linear-gradient(180deg, #94c85a, var(--slice)); }
+      .head.ai { background: linear-gradient(180deg, #e6c15a, var(--ai)); }
+
+      .group {
+        position: relative;
+        display: grid;
+        gap: 14px;
+        justify-items: center;
+        padding-bottom: 12px;
+      }
+
+      .group::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 1px;
+        height: 18px;
+        background: var(--line-strong);
+      }
+
+      .node {
+        position: relative;
+        width: min(100%, 248px);
+        min-height: 80px;
+        padding: 14px 16px;
+        border-radius: 12px;
+        border: 1px solid var(--line);
+        background: #fff;
+        box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
+      }
+
+      .node::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: -17px;
+        width: 1px;
+        height: 17px;
+        background: var(--line-strong);
+      }
+
+      .node::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: -4px;
+        width: 8px;
+        height: 8px;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        background: #fff;
+        border: 2px solid var(--line-strong);
+      }
+
+      .node h3 {
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+
+      .node p {
+        margin: 8px 0 0;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.65;
+      }
+
+      .subnodes {
+        display: grid;
+        gap: 10px;
+        margin-top: 2px;
+        width: 100%;
+        justify-items: center;
+      }
+
+      .subnode {
+        position: relative;
+        width: min(100%, 238px);
+        padding: 11px 14px;
+        border-radius: 10px;
+        border: 1px solid var(--line);
+        background: var(--soft);
+        color: var(--text);
+        font-size: 12px;
+        line-height: 1.55;
+      }
+
+      .subnode::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: -11px;
+        width: 1px;
+        height: 11px;
+        background: var(--line-strong);
+      }
+
+      .subnode strong {
+        color: #111827;
+      }
+
+      .subnode ul {
+        margin: 6px 0 0;
+        padding-left: 16px;
+      }
+
+      .subnode li {
+        margin: 2px 0;
+      }
+
+      .column.home .subnode { background: #f5faff; }
+      .column.workflow .subnode { background: #f5fbf9; }
+      .column.slice .subnode { background: #f8fbf4; }
+      .column.ai .subnode { background: #fffbf1; }
+
+      .footer-note {
+        margin-top: 14px;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.7;
+      }
+
+      @media (max-width: 1200px) {
+        .diagram { min-height: 1200px; }
+        .columns {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          row-gap: 24px;
+        }
+      }
+
+      @media (max-width: 720px) {
+        body { padding: 16px; }
+        .title h1 { font-size: 22px; }
+        .diagram { min-height: auto; padding-bottom: 24px; }
+        .root, .root-label, .bus, .down { position: static; transform: none; }
+        .root { margin: 0 auto 10px; }
+        .root-label { text-align: center; margin-bottom: 8px; display: block; }
+        .bus, .down { display: none; }
+        .columns {
+          position: static;
+          grid-template-columns: 1fr;
+          padding: 14px;
+        }
+        .column::before,
+        .column::after,
+        .group::before,
+        .node::before,
+        .subnode::before,
+        .node::after { display: none; }
+        .head { margin-bottom: 12px; }
+        .subnode, .node { width: 100%; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="title">
+          <h1>项目页面关系图</h1>
+        <p>
+          该图采用报告插图风格：顶层为系统入口，底层横向展开四类主要页面，并在每个页面下补充核心职责、设计特点与交互方式。
+          适合直接放入项目报告、论文或答辩材料中。
+        </p>
+      </div>
+
+      <div class="diagram" role="img" aria-label="项目页面关系图">
+        <div class="root">PathoInsight</div>
+        <div class="root-label">Web 页面关系</div>
+        <div class="down"></div>
+        <div class="bus"></div>
+
+        <div class="columns">
+          <section class="column home">
+            <div class="head home">首页</div>
+            <div class="group">
+              <div class="node">
+                <h3>统一入口与导航</h3>
+                <p>承担系统介绍、页面跳转与场景引导功能，是用户进入系统的第一接触页。</p>
+              </div>
+              <div class="subnodes">
+                <div class="subnode">
+                  <strong>功能定位</strong>
+                  <ul>
+                    <li>展示系统概览</li>
+                    <li>引导进入各功能页</li>
+                    <li>建立整体认知</li>
+                  </ul>
+                </div>
+                <div class="subnode">
+                  <strong>页面特点</strong>
+                  <ul>
+                    <li>品牌化首屏展示</li>
+                    <li>模块分区清晰</li>
+                    <li>适合作为总入口页</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="column workflow">
+            <div class="head workflow">工作流展示</div>
+            <div class="group">
+              <div class="node">
+                <h3>流程演示页面</h3>
+                <p>用于展示病理分析的完整步骤与阶段切换，强调流程的连续性和可解释性。</p>
+              </div>
+              <div class="subnodes">
+                <div class="subnode">
+                  <strong>设计特色</strong>
+                  <ul>
+                    <li>阶段导航清晰</li>
+                    <li>支持逐步演示</li>
+                    <li>突出可解释性</li>
+                  </ul>
+                </div>
+                <div class="subnode">
+                  <strong>交互方式</strong>
+                  <ul>
+                    <li>滚轮切换阶段</li>
+                    <li>按钮跳转节点</li>
+                    <li>查看案例流程详情</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="column slice">
+            <div class="head slice">切片处理</div>
+            <div class="group">
+              <div class="node">
+                <h3>核心业务操作页面</h3>
+                <p>负责上传 WSI、查看进度、获取中间结果与双报告，是系统最核心的任务执行页。</p>
+              </div>
+              <div class="subnodes">
+                <div class="subnode">
+                  <strong>主要功能</strong>
+                  <ul>
+                    <li>WSI 文件上传</li>
+                    <li>异步任务处理</li>
+                    <li>病理报告与诊断报告输出</li>
+                    <li>日志与中间文件查看</li>
+                  </ul>
+                </div>
+                <div class="subnode">
+                  <strong>结果展示</strong>
+                  <ul>
+                    <li>实时进度反馈</li>
+                    <li>PDF 在线预览</li>
+                    <li>结构化 JSON 查看</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="column ai">
+            <div class="head ai">AI 架构图</div>
+            <div class="group">
+              <div class="node">
+                <h3>技术流程说明页面</h3>
+                <p>展示从输入切片到双报告输出的推理链路，适合用于技术汇报与架构解释。</p>
+              </div>
+              <div class="subnodes">
+                <div class="subnode">
+                  <strong>核心逻辑</strong>
+                  <ul>
+                    <li>报告生成</li>
+                    <li>Critic 评估回流</li>
+                    <li>达阈值后输出病理报告与诊断报告</li>
+                  </ul>
+                </div>
+                <div class="subnode">
+                  <strong>页面价值</strong>
+                  <ul>
+                    <li>说明推理闭环</li>
+                    <li>突出双报告输出</li>
+                    <li>辅助研发对齐</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="footer-note">
+        注：当前图形为报告风格的结构关系图，强调层级关系、功能说明与页面分工，适合正文插图与附录展示。
+      </div>
+    </div>
+  </body>
+</html>

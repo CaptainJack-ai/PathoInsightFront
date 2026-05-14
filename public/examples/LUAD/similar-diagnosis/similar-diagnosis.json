@@ -1,0 +1,62 @@
+[
+  {
+    "index": 1,
+    "diagnosis_text": "肿瘤大小为3.50厘米。",
+    "summary": "肿瘤大小为3.50厘米。"
+  },
+  {
+    "index": 2,
+    "diagnosis_text": "肿瘤大小为3.50厘米。",
+    "summary": "肿瘤大小为3.50厘米。"
+  },
+  {
+    "index": 3,
+    "diagnosis_text": "淋巴结状态：N0。",
+    "summary": "淋巴结状态为阴性（N0）。"
+  },
+  {
+    "index": 4,
+    "diagnosis_text": "淋巴结状态：N0。",
+    "summary": "淋巴结状态为阴性（N0）。"
+  },
+  {
+    "index": 5,
+    "diagnosis_text": "胸壁切缘（冰冻切片），切除：中分化，肿瘤大小 2.20 厘米，pT3 pN0 pMx，淋巴结 0/15 枚阳性。",
+    "summary": "病理报告显示为胸壁中分化腺癌（具体类型未明确），肿瘤大小为 2.20 厘米，病理分期为 pT3 pN0 pMx，淋巴结状态为 0/15 枚阳性。ER/PR/HER2 状态未提及。"
+  },
+  {
+    "index": 6,
+    "diagnosis_text": "淋巴结状态：N0。",
+    "summary": "淋巴结状态为阴性（N0）。"
+  },
+  {
+    "index": 7,
+    "diagnosis_text": "肿瘤大小为3.50厘米。",
+    "summary": "肿瘤大小为3.50厘米。"
+  },
+  {
+    "index": 8,
+    "diagnosis_text": "肿瘤大小为3.50厘米。",
+    "summary": "肿瘤大小为3.50厘米。"
+  },
+  {
+    "index": 9,
+    "diagnosis_text": "淋巴结状态：N0。",
+    "summary": "淋巴结状态为阴性（N0）。"
+  },
+  {
+    "index": 10,
+    "diagnosis_text": "肿瘤大小为3.50厘米。",
+    "summary": "肿瘤大小为3.50厘米。"
+  },
+  {
+    "index": 11,
+    "diagnosis_text": "淋巴结状态：N0。",
+    "summary": "淋巴结状态为阴性（N0）。"
+  },
+  {
+    "index": 12,
+    "diagnosis_text": "胸壁切缘（冰冻切片），切除：中分化，肿瘤大小 2.20 厘米，pT3 pN0 pMx，淋巴结 0/15 枚阳性。",
+    "summary": "病理报告显示为胸壁中分化腺癌（具体类型未明确），肿瘤大小为 2.20 厘米，病理分期为 pT3 pN0 pMx，淋巴结状态为 0/15 枚阳性。ER/PR/HER2 状态未提及。"
+  }
+]
