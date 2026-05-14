@@ -1,0 +1,17 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "env": {
+    "VITE_API_BASE_URL": "@vite-api-base-url"
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "destination": "${VITE_API_BASE_URL}/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
