@@ -25,3 +25,6 @@ dist-ssr
 *.sw?
 .vercel
 .env*.local
+
+# AppleDouble / macOS À¬»øÎÄ¼þ
+._*
