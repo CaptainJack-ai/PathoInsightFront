@@ -1,0 +1,7 @@
+{
+  "tcga_label": "TCGA-STAD",
+  "short_code": "STAD",
+  "query_wsi": "G:\\PathoInsightBack\\data\\reference\\wsi\\source_wsis\\TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371.svs",
+  "query_slide_id": "TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371_a7559e672b388753",
+  "run_dir": "G:\\PathoInsightBack\\data\\runtime\\runs\\TCGA-BR-6457-01Z-00-DX1.387f0968-fcec-4864-86f8-9c87f658c371_a7559e672b388753_20260627_192010"
+}

@@ -1,0 +1,65 @@
+{
+  "caseId": "coad-case",
+  "items": [
+    {
+      "index": 1,
+      "diagnosis_text": "腺癌，中分化，pT3a N0。",
+      "summary": "诊断为腺癌，分级为G2（中分化），病理分期为pT3a N0。"
+    },
+    {
+      "index": 2,
+      "diagnosis_text": "腺癌，中分化，pT3a N0。",
+      "summary": "诊断为腺癌，分级为G2（中分化），病理分期为pT3a N0。"
+    },
+    {
+      "index": 3,
+      "diagnosis_text": "# 一、患者基本信息\n- 病理号：自动生成（由系统添加，你不要输出）\n- 姓名：留空\n- 性别：留空\n- 年龄：留空\n- 送检科室：病理科\n- 临床诊断：结肠腺癌（基于预测类别 TCGA-COAD 及镜下形态学特征推断）\n- 标本类型：留空\n- 送检日期：留空\n- 报告日期：留空",
+      "summary": "一、患者基本信息\n- 病理号：自动生成（由系统添加，你不要输出）\n- 姓名：留空\n- 性别：留空\n- 年龄：留空\n- 送检科室：病理科\n- 临床诊断：结肠腺癌（基于预测类别 TCGA-COAD 及镜下"
+    },
+    {
+      "index": 4,
+      "diagnosis_text": "# 二、镜下所见\n![图1 HE ×400，显示肿瘤细胞呈不规则腺样结构，细胞核增大、深染，核仁明显，部分区域可见核分裂象，胞质较少且嗜碱性，提示中分化腺癌特征。](G:\\PathoInsightBack\\data\\runtime\\runs\\TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_46adf114e61be5da_20260627_165900\\similar\\patches\\sim_0002_0a25073cbc_x7712_y26121.png)\n\n![图2 HE ×400，显示肿瘤细胞形成巢状或团块状排列，缺乏正常腺体结构，细胞核异型性显著，大小不一，染色质粗颗粒状，部分区域可见坏死灶，背景中有少量淋巴细胞浸润。](G:\\PathoInsightBack\\data\\runtime\\runs\\TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_46adf114e61be5da_20260627_165900\\similar\\patc",
+      "summary": "二、镜下所见\n![图1 HE ×400，显示肿瘤细胞呈不规则腺样结构，细胞核增大、深染，核仁明显，部分区域可见核分裂象，胞质较少且嗜碱性，提示中分化腺癌特征。](G:\\PathoInsightBack"
+    },
+    {
+      "index": 5,
+      "diagnosis_text": "# 三、免疫组化及特殊染色\n未提供免疫组化信息。",
+      "summary": "三、免疫组化及特殊染色\n未提供免疫组化信息。"
+    },
+    {
+      "index": 6,
+      "diagnosis_text": "# 四、病理诊断\n本病例为 Query Case（slide_id: TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_46adf114e61be5da），经综合分析高注意力区域图像、模型预测结果（TCGA-COAD，概率 0.999）及检索到的相似病例证据，明确诊断为右结肠中分化腺癌，pT3a N0。镜下观察显示肿瘤细胞呈不规则腺样或巢状排列，细胞核增大、深染，核仁清晰，异型性明显，部分区域可见坏死及轻度炎症反应，符合中分化腺癌典型形态学特征。根据检索报告，肿瘤侵犯至浆膜下层（pT3a），但未穿透浆膜；所有16枚区域淋巴结均无转移（pN0）；切缘均为阴性，距最近切缘20 cm；无血管侵犯，远处转移无法评估。该诊断与多源证据高度一致，包括视觉特征、模型预测和文本证据。建议结合临床进一步评估分期并制定治疗方案。",
+      "summary": "四、病理诊断\n本病例为 Query Case（slide_id: TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_46adf1"
+    },
+    {
+      "index": 7,
+      "diagnosis_text": "# 五、备注\n本报告仅对送检标本负责。建议补充分子检测以明确是否存在微卫星不稳定状态（MSI）或KRAS/BRAF突变等分子标志物，有助于指导靶向治疗选择。",
+      "summary": "五、备注\n本报告仅对送检标本负责。建议补充分子检测以明确是否存在微卫星不稳定状态（MSI）或KRAS/BRAF突变等分子标志物，有助于指导靶向治疗选择。"
+    },
+    {
+      "index": 8,
+      "diagnosis_text": "相似病例 TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41db-836d-f0afe46d6b5a_46adf114e61be5da",
+      "summary": "Slide: TCGA-A6-2679-01Z-00-DX1.8df66ef4-d9e5-41..."
+    },
+    {
+      "index": 9,
+      "diagnosis_text": "",
+      "summary": ""
+    },
+    {
+      "index": 10,
+      "diagnosis_text": "",
+      "summary": ""
+    },
+    {
+      "index": 11,
+      "diagnosis_text": "",
+      "summary": ""
+    },
+    {
+      "index": 12,
+      "diagnosis_text": "",
+      "summary": ""
+    }
+  ]
+}

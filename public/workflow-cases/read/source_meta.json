@@ -1,0 +1,7 @@
+{
+  "tcga_label": "TCGA-READ",
+  "short_code": "READ",
+  "query_wsi": "G:\\PathoInsightBack\\data\\reference\\wsi\\source_wsis\\TCGA-AF-3911-01A-01-TS1.3fcb228c-f8f7-4d71-b048-f5fc033c360f.svs",
+  "query_slide_id": "TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_cdf13d2f565f2592",
+  "run_dir": "G:\\PathoInsightBack\\data\\runtime\\runs\\TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_cdf13d2f565f2592_20260627_190326"
+}

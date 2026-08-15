@@ -1,0 +1,7 @@
+{
+  "tcga_label": "TCGA-PRAD",
+  "short_code": "PRAD",
+  "query_wsi": "G:\\PathoInsightBack\\data\\reference\\wsi\\source_wsis\\TCGA-CH-5748-01A-01-TS1.481e4b06-2a69-449c-bf4e-543e5f8c98e0.svs",
+  "query_slide_id": "TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_501f6040be738ca8",
+  "run_dir": "G:\\PathoInsightBack\\data\\runtime\\runs\\TCGA-CH-5748-01Z-00-DX1.032202f2-70c0-4115-99ff-1cecf4042e07_501f6040be738ca8_20260627_184436"
+}

@@ -1,0 +1,7 @@
+{
+  "tcga_label": "TCGA-LUSC",
+  "short_code": "LUSC",
+  "query_wsi": "G:\\PathoInsightBack\\data\\reference\\wsi\\source_wsis\\TCGA-05-4245-01A-01-TS1.bf71c76b-e802-4a7a-b6c3-c5f46212fab0.svs",
+  "query_slide_id": "TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde_8d636ea4ea473bae",
+  "run_dir": "G:\\PathoInsightBack\\data\\runtime\\runs\\TCGA-05-4245-01Z-00-DX1.36ff5403-d4bb-4415-b2c5-7c750d655cde_8d636ea4ea473bae_20260627_183034"
+}

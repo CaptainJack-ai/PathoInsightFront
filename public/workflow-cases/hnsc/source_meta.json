@@ -1,0 +1,7 @@
+{
+  "tcga_label": "TCGA-HNSC",
+  "short_code": "HNSC",
+  "query_wsi": "G:\\PathoInsightBack\\data\\reference\\wsi\\source_wsis\\TCGA-BA-5152-01A-01-BS1.56fdae69-a1f1-425e-b39f-65f052b8f60c.svs",
+  "query_slide_id": "TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552_6ca6248778276121",
+  "run_dir": "G:\\PathoInsightBack\\data\\runtime\\runs\\TCGA-BA-5152-01Z-00-DX1.d85d709e-8627-46d4-8558-ce5bdad2d552_6ca6248778276121_20260627_172041"
+}

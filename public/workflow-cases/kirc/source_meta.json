@@ -1,0 +1,7 @@
+{
+  "tcga_label": "TCGA-KIRC",
+  "short_code": "KIRC",
+  "query_wsi": "G:\\PathoInsightBack\\data\\reference\\wsi\\source_wsis\\TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5.svs",
+  "query_slide_id": "TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5_a3188f191f622a7d",
+  "run_dir": "G:\\PathoInsightBack\\data\\runtime\\runs\\TCGA-AK-3450-01Z-00-DX1.84C9CCDE-F1FD-4BDC-B819-25078EF350A5_a3188f191f622a7d_20260627_175018"
+}

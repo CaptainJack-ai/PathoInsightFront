@@ -1,0 +1,7 @@
+{
+  "tcga_label": "TCGA-GBM",
+  "short_code": "GBM",
+  "query_wsi": "G:\\PathoInsightBack\\data\\reference\\wsi\\source_wsis\\TCGA-06-0133-01Z-00-DX2.fbda343a-e928-44d6-85a0-2080ced06dd9.svs",
+  "query_slide_id": "TCGA-06-0133-01A-01-BS1.605ba02c-2684-4bea-abbd-7ffd1d0a0c01_757904b0922133b6",
+  "run_dir": "G:\\PathoInsightBack\\data\\runtime\\runs\\TCGA-06-0133-01A-01-BS1.605ba02c-2684-4bea-abbd-7ffd1d0a0c01_757904b0922133b6_20260627_171124"
+}

@@ -1,0 +1,7 @@
+{
+  "tcga_label": "TCGA-LUAD",
+  "short_code": "LUAD",
+  "query_wsi": "G:\\PathoInsightBack\\data\\reference\\wsi\\source_wsis\\TCGA-86-6851-01A-01-TS1.17b19b68-834e-46da-9b9b-be5fd84e60b2.svs",
+  "query_slide_id": "TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54",
+  "run_dir": "G:\\PathoInsightBack\\data\\runtime\\runs\\TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54_20260627_180655"
+}

@@ -1,0 +1,65 @@
+{
+  "caseId": "read-case",
+  "items": [
+    {
+      "index": 1,
+      "diagnosis_text": "Carcinoma of upper rectum. Poorly differentiated. Tumor size 5.50 cm. pT3 pN2.",
+      "summary": "患者患有上段直肠癌，为低分化（Grade 3），肿瘤大小为5.50厘米，病理分期为pT3 pN2（肿瘤侵犯浆膜下层，区域淋巴结有转移）。"
+    },
+    {
+      "index": 2,
+      "diagnosis_text": "Carcinoma of upper rectum. Poorly differentiated. Tumor size 5.50 cm. pT3 pN2.",
+      "summary": "患者患有上段直肠癌，为低分化（Grade 3），肿瘤大小为5.50厘米，病理分期为pT3 pN2（肿瘤侵犯浆膜下层，区域淋巴结有转移）。"
+    },
+    {
+      "index": 3,
+      "diagnosis_text": "# 一、患者基本信息\n- 病理号：自动生成（由系统添加，你不要输出）\n- 姓名：留空\n- 性别：留空\n- 年龄：留空\n- 送检科室：病理科\n- 临床诊断：直肠腺癌（根据预测类别 TCGA-READ 及检索证据推断）\n- 标本类型：留空\n- 送检日期：留空\n- 报告日期：留空",
+      "summary": "一、患者基本信息\n- 病理号：自动生成（由系统添加，你不要输出）\n- 姓名：留空\n- 性别：留空\n- 年龄：留空\n- 送检科室：病理科\n- 临床诊断：直肠腺癌（根据预测类别 TCGA-READ 及检索"
+    },
+    {
+      "index": 4,
+      "diagnosis_text": "# 二、镜下所见\n![图1 HE ×200，显示肿瘤细胞呈巢状或片状排列，细胞核明显增大、深染且形态不规则，部分可见明显核仁，胞质较少，背景中可见炎性细胞浸润及坏死区域。](G:\\PathoInsightBack\\data\\runtime\\runs\\TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_cdf13d2f565f2592_20260627_190326\\similar\\patches\\sim_0005_f172c95a99_x58368_y20897.png)\n\n![图2 HE ×200，显示正常直肠黏膜结构，腺体呈规则圆形或椭圆形排列，上皮细胞核位于基底部，染色均匀，无明显异型性，胞质丰富淡染，背景无显著炎症或纤维化改变。](G:\\PathoInsightBack\\data\\runtime\\runs\\TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_cdf13d2f565f2592_20260627_190326\\similar\\p",
+      "summary": "二、镜下所见\n![图1 HE ×200，显示肿瘤细胞呈巢状或片状排列，细胞核明显增大、深染且形态不规则，部分可见明显核仁，胞质较少，背景中可见炎性细胞浸润及坏死区域。](G:\\PathoInsight"
+    },
+    {
+      "index": 5,
+      "diagnosis_text": "# 三、免疫组化及特殊染色\n未提供免疫组化信息。",
+      "summary": "三、免疫组化及特殊染色\n未提供免疫组化信息。"
+    },
+    {
+      "index": 6,
+      "diagnosis_text": "# 四、病理诊断\n本病例为Query Case（TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_cdf13d2f565f2592），经综合分析高注意力区域图像、模型预测结果（TCGA-READ，概率0.9837）及检索到的相似病例报告，明确诊断为**上段直肠腺癌**。肿瘤组织表现为中至低分化（moderately to poorly differentiated），镜下可见肿瘤细胞呈巢状、片状或不规则腺样结构排列，细胞核明显增大、深染，形态不规则，部分伴明显核仁，核质比增高，提示增殖活跃；部分区域可见背靠背生长模式，伴有间质浸润和炎性细胞浸润，局部存在坏死灶，符合侵袭性恶性肿瘤特征。肿瘤侵犯范围广泛，已穿透肠壁肌层达浆膜下脂肪组织，符合pT3分期标准。区域淋巴结转移情况明确，共检出9枚淋巴结中有转移性病变，即pN2。切缘状态评估显示近端、远端及环周切缘均未见肿瘤累及，但肿瘤距离远端切缘仅2.7 cm，提示存在潜在风险。肿瘤最大径约为5.5 cm。另于近端切缘附近发现一腺瘤性息肉，直径约2×2 cm，属良性病变。目",
+      "summary": "四、病理诊断\n本病例为Query Case（TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_cdf13d2f565f2592）"
+    },
+    {
+      "index": 7,
+      "diagnosis_text": "# 五、备注\n本报告仅对送检标本负责，最终诊断需结合临床资料及其他检查结果综合判断。建议进一步完善分子检测（如MSI、KRAS、NRAS、BRAF等基因状态）以指导个体化治疗方案制定。",
+      "summary": "五、备注\n本报告仅对送检标本负责，最终诊断需结合临床资料及其他检查结果综合判断。建议进一步完善分子检测（如MSI、KRAS、NRAS、BRAF等基因状态）以指导个体化治疗方案制定。"
+    },
+    {
+      "index": 8,
+      "diagnosis_text": "相似病例 TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-4011-8d42-543efb5d1286_cdf13d2f565f2592",
+      "summary": "Slide: TCGA-AF-3911-01Z-00-DX1.03cf3e2a-1306-40..."
+    },
+    {
+      "index": 9,
+      "diagnosis_text": "",
+      "summary": ""
+    },
+    {
+      "index": 10,
+      "diagnosis_text": "",
+      "summary": ""
+    },
+    {
+      "index": 11,
+      "diagnosis_text": "",
+      "summary": ""
+    },
+    {
+      "index": 12,
+      "diagnosis_text": "",
+      "summary": ""
+    }
+  ]
+}

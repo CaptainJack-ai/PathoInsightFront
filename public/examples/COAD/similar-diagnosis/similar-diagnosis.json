@@ -1,0 +1,62 @@
+[
+  {
+    "index": 1,
+    "diagnosis_text": "病理诊断为腺癌，分级为2级。肿瘤病理分期为pT2 N0 Mx。淋巴结检查结果显示，0/13枚淋巴结见癌转移。",
+    "summary": "诊断为2级腺癌，肿瘤分期为pT2 N0 Mx，淋巴结状态为0/13枚阳性。"
+  },
+  {
+    "index": 2,
+    "diagnosis_text": "腺癌，中分化，pT3 N0。",
+    "summary": "患者诊断为中分化腺癌，病理分期为pT3 N0。"
+  },
+  {
+    "index": 3,
+    "diagnosis_text": "腺癌，中分化，pT3 pN1 Mx。",
+    "summary": "患者诊断为中分化腺癌，病理分期为pT3 pN1 Mx（肿瘤侵犯浆膜下层，1枚区域淋巴结转移，远处转移情况不明）。"
+  },
+  {
+    "index": 4,
+    "diagnosis_text": "腺癌，分级为3级，肿瘤大小为4.80厘米，病理分期为pT3 pN2b Mx，淋巴结状态为22/46枚阳性。",
+    "summary": "该病例为高级别（Grade 3）腺癌，肿瘤较大（4.80 cm），病理分期为pT3 pN2b Mx，淋巴结转移广泛（22/46枚阳性）。"
+  },
+  {
+    "index": 5,
+    "diagnosis_text": "病理诊断为腺癌，病理分期为 pT3 N2。",
+    "summary": "诊断为腺癌，病理分期为 pT3 N2。"
+  },
+  {
+    "index": 6,
+    "diagnosis_text": "病理诊断为腺癌，肿瘤大小为T3，淋巴结状态为0/36枚阳性，远处转移状态为Mx。",
+    "summary": "该病例为腺癌，病理分期为pT3 N0 Mx，肿瘤较大，36枚淋巴结均未见转移。"
+  },
+  {
+    "index": 7,
+    "diagnosis_text": "腺癌，中分化，pT3 N0。",
+    "summary": "该病例为腺癌，分级为G2（中分化），病理分期为pT3 N0，肿瘤大小未明确报告，淋巴结状态为阴性，ER/PR/HER2状态未提及。"
+  },
+  {
+    "index": 8,
+    "diagnosis_text": "腺癌，中分化，pT2 pN0 pMx。",
+    "summary": "患者诊断为中分化（Grade 2）腺癌，病理分期为 pT2 pN0 pMx，肿瘤大小未明确报告，淋巴结状态为阴性，ER/PR/HER2状态未提及。"
+  },
+  {
+    "index": 9,
+    "diagnosis_text": "腺癌，中分化，pT3a N0。",
+    "summary": "诊断为腺癌，分级为G2（中分化），病理分期为pT3a N0。"
+  },
+  {
+    "index": 10,
+    "diagnosis_text": "腺癌，病理分期为 pT3 pN1。",
+    "summary": "诊断为腺癌，病理分期为 pT3 pN1。"
+  },
+  {
+    "index": 11,
+    "diagnosis_text": "Invasive carcinoma of the colorectal type, moderately differentiated, with penetration of the muscularis propria (pT3), and no regional lymph node metastasis (pN0).",
+    "summary": "患者患有中分化结直肠型浸润性癌，肿瘤已穿透固有肌层（pT3），区域淋巴结未见转移（pN0）。"
+  },
+  {
+    "index": 12,
+    "diagnosis_text": "Invasive carcinoma of the colorectal type, moderately differentiated, with penetration of the muscularis propria (pT3), and no regional lymph node metastasis (pN0).",
+    "summary": "患者患有中分化结直肠型浸润性癌，肿瘤已穿透固有肌层（pT3），区域淋巴结未见转移（pN0）。"
+  }
+]

@@ -1,0 +1,334 @@
+{
+  "code": "LUAD",
+  "tcga_label": "TCGA-LUAD",
+  "query_slide_id": "TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54",
+  "run_dir": "G:\\PathoInsightBack\\data\\runtime\\runs\\TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54_20260627_180655",
+  "steps": {
+    "step1_query_upload": "data/dataforFront/LUAD/uploaded.webp",
+    "step2_classification": "G:\\PathoInsightBack\\data\\runtime\\runs\\TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54_20260627_180655\\query\\prediction.json",
+    "step3_query_high_attention": "data/dataforFront/LUAD/high-attention",
+    "step4_retrieval_mapping": "G:\\PathoInsightBack\\data\\runtime\\runs\\TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54_20260627_180655\\similar\\top_similar_patches.csv",
+    "step4_case_summary": "G:\\PathoInsightBack\\data\\runtime\\runs\\TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54_20260627_180655\\similar\\top_similar_cases.csv",
+    "step5_report": "data/dataforFront/LUAD/report/diagnosis-report.pdf",
+    "step5_reasoning_report": "data/dataforFront/LUAD/report/reasoning-report.pdf"
+  },
+  "counts": {
+    "patch_count": 12,
+    "similar_wsi_count": 12,
+    "diagnosis_item_count": 12
+  },
+  "flow_links": [
+    {
+      "index": 1,
+      "query_patch": {
+        "x": 14800,
+        "y": 26560,
+        "attention_score": 10.281903,
+        "image": "data/dataforFront/LUAD/high-attention/patch-1.webp"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54",
+        "case_id": "TCGA-86-6851",
+        "x": 37584,
+        "y": 25536,
+        "similarity": 1.0000005,
+        "attention_score": 9.614692,
+        "saved_patch_path": ""
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-1.webp"
+      },
+      "diagnosis": {
+        "diagnosis_text": "",
+        "summary": ""
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联"
+    },
+    {
+      "index": 2,
+      "query_patch": {
+        "x": 14800,
+        "y": 29120,
+        "attention_score": 9.793942,
+        "image": "data/dataforFront/LUAD/high-attention/patch-2.webp"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54",
+        "case_id": "TCGA-86-6851",
+        "x": 38096,
+        "y": 28864,
+        "similarity": 1.0000004,
+        "attention_score": 9.949695,
+        "saved_patch_path": ""
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-2.webp"
+      },
+      "diagnosis": {
+        "diagnosis_text": "",
+        "summary": ""
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联"
+    },
+    {
+      "index": 3,
+      "query_patch": {
+        "x": 14800,
+        "y": 31424,
+        "attention_score": 9.770772,
+        "image": "data/dataforFront/LUAD/high-attention/patch-3.webp"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54",
+        "case_id": "TCGA-86-6851",
+        "x": 22480,
+        "y": 33216,
+        "similarity": 1.0000004,
+        "attention_score": 9.98793,
+        "saved_patch_path": ""
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-3.webp"
+      },
+      "diagnosis": {
+        "diagnosis_text": "",
+        "summary": ""
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联"
+    },
+    {
+      "index": 4,
+      "query_patch": {
+        "x": 15056,
+        "y": 24512,
+        "attention_score": 10.159392,
+        "image": "data/dataforFront/LUAD/high-attention/patch-4.webp"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54",
+        "case_id": "TCGA-86-6851",
+        "x": 35024,
+        "y": 28096,
+        "similarity": 1.0000004,
+        "attention_score": 10.619091,
+        "saved_patch_path": ""
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-4.webp"
+      },
+      "diagnosis": {
+        "diagnosis_text": "",
+        "summary": ""
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联"
+    },
+    {
+      "index": 5,
+      "query_patch": {
+        "x": 15056,
+        "y": 29376,
+        "attention_score": 10.10051,
+        "image": "data/dataforFront/LUAD/high-attention/patch-5.webp"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54",
+        "case_id": "TCGA-86-6851",
+        "x": 21968,
+        "y": 20416,
+        "similarity": 1.0000004,
+        "attention_score": 9.495788,
+        "saved_patch_path": ""
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-5.webp"
+      },
+      "diagnosis": {
+        "diagnosis_text": "",
+        "summary": ""
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联"
+    },
+    {
+      "index": 6,
+      "query_patch": {
+        "x": 15056,
+        "y": 30400,
+        "attention_score": 9.538389,
+        "image": "data/dataforFront/LUAD/high-attention/patch-6.webp"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54",
+        "case_id": "TCGA-86-6851",
+        "x": 23760,
+        "y": 32192,
+        "similarity": 1.0000004,
+        "attention_score": 9.805181,
+        "saved_patch_path": ""
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-6.webp"
+      },
+      "diagnosis": {
+        "diagnosis_text": "",
+        "summary": ""
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联"
+    },
+    {
+      "index": 7,
+      "query_patch": {
+        "x": 15312,
+        "y": 29376,
+        "attention_score": 9.599568,
+        "image": "data/dataforFront/LUAD/high-attention/patch-7.webp"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54",
+        "case_id": "TCGA-86-6851",
+        "x": 43472,
+        "y": 28096,
+        "similarity": 1.0000004,
+        "attention_score": 9.780605,
+        "saved_patch_path": ""
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-7.webp"
+      },
+      "diagnosis": {
+        "diagnosis_text": "",
+        "summary": ""
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联"
+    },
+    {
+      "index": 8,
+      "query_patch": {
+        "x": 15312,
+        "y": 29632,
+        "attention_score": 9.9047165,
+        "image": "data/dataforFront/LUAD/high-attention/patch-8.webp"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54",
+        "case_id": "TCGA-86-6851",
+        "x": 15056,
+        "y": 30400,
+        "similarity": 1.0000004,
+        "attention_score": 9.538389,
+        "saved_patch_path": ""
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-8.webp"
+      },
+      "diagnosis": {
+        "diagnosis_text": "",
+        "summary": ""
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联"
+    },
+    {
+      "index": 9,
+      "query_patch": {
+        "x": 15824,
+        "y": 27328,
+        "attention_score": 10.260829,
+        "image": "data/dataforFront/LUAD/high-attention/patch-9.webp"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54",
+        "case_id": "TCGA-86-6851",
+        "x": 37584,
+        "y": 30912,
+        "similarity": 1.0000002,
+        "attention_score": 10.206247,
+        "saved_patch_path": ""
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-9.webp"
+      },
+      "diagnosis": {
+        "diagnosis_text": "",
+        "summary": ""
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联"
+    },
+    {
+      "index": 10,
+      "query_patch": {
+        "x": 16080,
+        "y": 26816,
+        "attention_score": 10.343473,
+        "image": "data/dataforFront/LUAD/high-attention/patch-10.webp"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54",
+        "case_id": "TCGA-86-6851",
+        "x": 21200,
+        "y": 31936,
+        "similarity": 1.0000002,
+        "attention_score": 9.819157,
+        "saved_patch_path": ""
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-10.webp"
+      },
+      "diagnosis": {
+        "diagnosis_text": "",
+        "summary": ""
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联"
+    },
+    {
+      "index": 11,
+      "query_patch": {
+        "x": 16080,
+        "y": 27072,
+        "attention_score": 9.857146,
+        "image": "data/dataforFront/LUAD/high-attention/patch-11.webp"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54",
+        "case_id": "TCGA-86-6851",
+        "x": 52688,
+        "y": 24768,
+        "similarity": 1.0000002,
+        "attention_score": 10.07634,
+        "saved_patch_path": ""
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-11.webp"
+      },
+      "diagnosis": {
+        "diagnosis_text": "",
+        "summary": ""
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联"
+    },
+    {
+      "index": 12,
+      "query_patch": {
+        "x": 16336,
+        "y": 10432,
+        "attention_score": 9.447123,
+        "image": "data/dataforFront/LUAD/high-attention/patch-12.webp"
+      },
+      "retrieved_patch": {
+        "slide_id": "TCGA-86-6851-01Z-00-DX1.0b13e600-fd7b-44a2-9ec2-26e9938fb7bc_c81079aa41720c54",
+        "case_id": "TCGA-86-6851",
+        "x": 49360,
+        "y": 28864,
+        "similarity": 1.0000002,
+        "attention_score": 9.444772,
+        "saved_patch_path": ""
+      },
+      "similar_wsi": {
+        "image": "data/dataforFront/LUAD/similar-wsi/similar-12.webp"
+      },
+      "diagnosis": {
+        "diagnosis_text": "",
+        "summary": ""
+      },
+      "mapping_note": "query_patch 与 retrieved_patch 通过特征相似度检索关联"
+    }
+  ]
+}

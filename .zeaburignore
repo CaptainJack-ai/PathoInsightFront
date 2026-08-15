@@ -1,0 +1,7 @@
+# 上传到 Zeabur 时忽略本地产物/依赖/历史，只传源码与 public 资源
+node_modules
+.git
+dist
+.history
+.vercel
+*.log

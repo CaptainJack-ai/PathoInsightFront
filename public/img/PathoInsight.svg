@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="980" height="560" viewBox="0 0 980 560" style="background: #020617; background-color: #020617; color-scheme: dark;">
+  <defs/>
+  <rect fill="#020617" width="100%" height="100%" x="0" y="0" style="fill: #020617;"/>
+  <g style="filter: drop-shadow(rgba(61, 69, 116, 0.35) 2px 2px 1.5px);">
+    <g data-cell-id="0">
+      <g data-cell-id="1">
+        <g data-cell-id="hZ0qtt_d9p1K_JWHcrq6-1">
+          <rect x="390" y="20" width="200" height="60" rx="10" ry="10" fill="#0b1220" stroke="#cbd5e1" stroke-width="2.2"/>
+          <text x="490" y="55" fill="#e2e8f0" font-family="Helvetica" font-size="12" text-anchor="middle">测试 WSI 病理切片输入</text>
+        </g>
+
+        <g data-cell-id="x_JH54flKNlc-T58W39L-21">
+          <path d="M 490 80 L 490 108.63" fill="none" stroke="#cbd5e1" stroke-width="2.2" stroke-miterlimit="10"/>
+          <path d="M 490 113.88 L 486.5 106.88 L 490 108.63 L 493.5 106.88 Z" fill="#cbd5e1" stroke="#cbd5e1" stroke-width="2.2"/>
+        </g>
+
+        <g data-cell-id="x_JH54flKNlc-T58W39L-2">
+          <rect x="340" y="120" width="300" height="60" rx="10" ry="10" fill="#0b1220" stroke="#cbd5e1" stroke-width="2.2"/>
+          <text x="490" y="156" fill="#e2e8f0" font-family="Helvetica" font-size="12" text-anchor="middle">用 CLAM 切 Patch，提取特征</text>
+        </g>
+
+        <g data-cell-id="x_JH54flKNlc-T58W39L-22">
+          <path d="M 490 180 L 490 200 L 260 200 L 260 218.63" fill="none" stroke="#cbd5e1" stroke-width="2.2" stroke-miterlimit="10"/>
+          <path d="M 260 223.88 L 256.5 216.88 L 260 218.63 L 263.5 216.88 Z" fill="#cbd5e1" stroke="#cbd5e1" stroke-width="2.2"/>
+        </g>
+
+        <g data-cell-id="x_JH54flKNlc-T58W39L-23">
+          <path d="M 490 180 L 490 218.63" fill="none" stroke="#cbd5e1" stroke-width="2.2" stroke-miterlimit="10"/>
+          <path d="M 490 223.88 L 486.5 216.88 L 490 218.63 L 493.5 216.88 Z" fill="#cbd5e1" stroke="#cbd5e1" stroke-width="2.2"/>
+        </g>
+
+        <g data-cell-id="x_JH54flKNlc-T58W39L-3">
+          <rect x="170" y="230" width="180" height="60" rx="10" ry="10" fill="#0b1220" stroke="#cbd5e1" stroke-width="2.2"/>
+          <text x="260" y="266" fill="#e2e8f0" font-family="Helvetica" font-size="12" text-anchor="middle">确定癌症类别</text>
+        </g>
+
+        <g data-cell-id="x_JH54flKNlc-T58W39L-4">
+          <rect x="380" y="230" width="300" height="60" rx="10" ry="10" fill="#0b1220" stroke="#cbd5e1" stroke-width="2.2"/>
+          <text x="530" y="262" fill="#e2e8f0" font-family="Helvetica" font-size="12" text-anchor="middle">高注意力 patch 坐标</text>
+          <text x="530" y="278" fill="#e2e8f0" font-family="Helvetica" font-size="12" text-anchor="middle">（测试数据的病灶区域）</text>
+        </g>
+
+        <g data-cell-id="x_JH54flKNlc-T58W39L-14">
+          <path d="M 260 290 L 260 308.63" fill="none" stroke="#cbd5e1" stroke-width="2.2" stroke-miterlimit="10"/>
+          <path d="M 260 313.88 L 256.5 306.88 L 260 308.63 L 263.5 306.88 Z" fill="#cbd5e1" stroke="#cbd5e1" stroke-width="2.2"/>
+        </g>
+
+        <g data-cell-id="x_JH54flKNlc-T58W39L-8">
+          <rect x="120" y="320" width="280" height="60" rx="10" ry="10" fill="#0b1220" stroke="#cbd5e1" stroke-width="2.2"/>
+          <text x="260" y="352" fill="#e2e8f0" font-family="Helvetica" font-size="12" text-anchor="middle">类内病例数据的高注意力得分 patch</text>
+          <text x="260" y="368" fill="#e2e8f0" font-family="Helvetica" font-size="12" text-anchor="middle">（已知数据的病灶区域）</text>
+        </g>
+
+        <g data-cell-id="x_JH54flKNlc-T58W39L-24">
+          <path d="M 680 260 L 745 260 L 745 300 L 773.63 300" fill="none" stroke="#cbd5e1" stroke-width="2.2" stroke-miterlimit="10"/>
+          <path d="M 778.88 300 L 771.88 303.5 L 773.63 300 L 771.88 296.5 Z" fill="#cbd5e1" stroke="#cbd5e1" stroke-width="2.2"/>
+        </g>
+
+        <g data-cell-id="x_JH54flKNlc-T58W39L-25">
+          <path d="M 400 350 L 745 350 L 745 300 L 773.63 300" fill="none" stroke="#cbd5e1" stroke-width="2.2" stroke-miterlimit="10"/>
+          <path d="M 778.88 300 L 771.88 303.5 L 773.63 300 L 771.88 296.5 Z" fill="#cbd5e1" stroke="#cbd5e1" stroke-width="2.2"/>
+        </g>
+
+        <g data-cell-id="x_JH54flKNlc-T58W39L-10">
+          <rect x="790" y="270" width="160" height="60" rx="10" ry="10" fill="#0b1220" stroke="#cbd5e1" stroke-width="2.2"/>
+          <text x="870" y="306" fill="#e2e8f0" font-family="Helvetica" font-size="12" text-anchor="middle">对比相似度</text>
+        </g>
+
+        <g data-cell-id="x_JH54flKNlc-T58W39L-11">
+          <path d="M 870 330 L 870 388.63" fill="none" stroke="#cbd5e1" stroke-width="2.2" stroke-miterlimit="10"/>
+          <path d="M 870 393.88 L 866.5 386.88 L 870 388.63 L 873.5 386.88 Z" fill="#cbd5e1" stroke="#cbd5e1" stroke-width="2.2"/>
+        </g>
+
+        <g data-cell-id="x_JH54flKNlc-T58W39L-12">
+          <rect x="690" y="400" width="260" height="52" rx="8" ry="8" fill="#0b1220" stroke="#cbd5e1" stroke-width="2.2"/>
+          <text x="820" y="431" fill="#e2e8f0" font-family="Helvetica" font-size="12" text-anchor="middle">匹配到的已知病例对应的诊断报告</text>
+        </g>
+
+        <g data-cell-id="x_JH54flKNlc-T58W39L-19">
+          <path d="M 690 426 L 570 426 L 570 498.63" fill="none" stroke="#cbd5e1" stroke-width="2.2" stroke-miterlimit="10"/>
+          <path d="M 570 503.88 L 566.5 496.88 L 570 498.63 L 573.5 496.88 Z" fill="#cbd5e1" stroke="#cbd5e1" stroke-width="2.2"/>
+        </g>
+
+        <g data-cell-id="x_JH54flKNlc-T58W39L-17">
+          <path d="M 220 290 L 220 304 L 90 304 L 90 492 L 220 492 L 220 498.63" fill="none" stroke="#cbd5e1" stroke-width="2.2" stroke-miterlimit="10"/>
+          <path d="M 220 503.88 L 216.5 496.88 L 220 498.63 L 223.5 496.88 Z" fill="#cbd5e1" stroke="#cbd5e1" stroke-width="2.2"/>
+        </g>
+
+        <g data-cell-id="oAYl1xrsKvpd-2X3e7sC-2">
+          <path d="M 530 290 L 530 498.63" fill="none" stroke="#cbd5e1" stroke-width="2.2" stroke-miterlimit="10"/>
+          <path d="M 530 503.88 L 526.5 496.88 L 530 498.63 L 533.5 496.88 Z" fill="#cbd5e1" stroke="#cbd5e1" stroke-width="2.2"/>
+        </g>
+
+        <g data-cell-id="x_JH54flKNlc-T58W39L-20">
+          <rect x="120" y="510" width="550" height="46" rx="8" ry="8" fill="#0b1220" stroke="#cbd5e1" stroke-width="2.2"/>
+          <text x="395" y="538" fill="#e2e8f0" font-family="Helvetica" font-size="12" text-anchor="middle">大模型生成最终诊断报告</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
