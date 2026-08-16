@@ -1,0 +1,28 @@
+# PathoInsight 系统使用指南
+
+## 常用页面链接
+- 切片处理页面：[点击上传WSI]({{BASE}}/slice-processing)
+- 系统流程图：[查看流程图]({{BASE}}/ai-diagram)
+- 病理工作流：[进入工作流]({{BASE}}/workflow)
+
+## 问答
+Q: 如何使用？
+A: 打开 PathoInsight 前端页面 {{BASE}} 后，右下角会出现 Raggy 鸭子。点击鸭子打开对话框，输入问题或点击常见问题即可提问。关闭对话框后鸭子会重新显示。
+
+Q: 哪里上传WSI？
+A: 您可以在 [切片处理页面]({{BASE}}/slice-processing) 上传您的病理切片文件。
+
+Q: 如何查看系统架构图？
+A: 请访问 [系统流程图]({{BASE}}/ai-diagram) 查看完整的系统流程。
+
+Q: 进入系统工作流？
+A: 点击 [工作流]({{BASE}}/workflow) 即可进入系统主界面。
+
+Q: 系统支持哪些癌种识别？
+A: 系统支持十大癌种：乳腺癌(BRCA)、肺腺癌(LUAD)、肺鳞癌(LUSC)、肾透明细胞癌(KIRC)、结直肠癌(COAD/READ)、头颈部鳞状细胞癌(HNSC)、胃腺癌(STAD)、前列腺腺癌(PRAD)、胶质母细胞瘤(GBM)。更多信息请参考 [工作流页面]({{BASE}}/workflow)。
+
+Q: 需要提供什么文件？
+A: 请上传标准的 .svs 格式病理切片文件。您可以在 [切片处理页面]({{BASE}}/slice-processing) 上传。
+
+Q: 生成报告需要多久？
+A: 单张WSI从上传到报告生成大约需要3分钟。处理进度可在 [工作流页面]({{BASE}}/workflow) 实时查看。

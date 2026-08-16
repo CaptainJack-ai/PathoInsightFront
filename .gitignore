@@ -16,6 +16,11 @@ dist-ssr
 .vscode/*
 !.vscode/extensions.json
 .history
+
+# 本地浏览器扩展（含密钥，不提交）
+/patho-assistant-extension/
+# 助手后端本地密钥
+/patho-assistant-api/.env
 .idea
 .DS_Store
 *.suo
@@ -25,6 +30,3 @@ dist-ssr
 *.sw?
 .vercel
 .env*.local
-
-# AppleDouble / macOS �����ļ�
-._*
