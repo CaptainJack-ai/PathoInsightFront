@@ -16,11 +16,6 @@ dist-ssr
 .vscode/*
 !.vscode/extensions.json
 .history
-
-# 鏈湴娴忚鍣ㄦ墿灞曪紙鍚瘑閽ワ紝涓嶆彁浜わ級
-/patho-assistant-extension/
-# 鍔╂墜鍚庣鏈湴瀵嗛挜
-/patho-assistant-api/.env
 .idea
 .DS_Store
 *.suo
@@ -30,3 +25,9 @@ dist-ssr
 *.sw?
 .vercel
 .env*.local
+
+# AppleDouble / macOS 垃圾文件
+._*
+
+# 本地打包备份，不上传
+public/workflow-cases.zip
