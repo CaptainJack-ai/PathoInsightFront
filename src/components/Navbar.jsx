@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import gsap from "gsap";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useWindowScroll } from "react-use";
 import { useEffect, useRef, useState } from "react";
 
 import { ROUTE_PATHS } from "../routes/paths";
@@ -26,17 +25,11 @@ const NavBar = () => {
   // Refs for audio and navigation container
   const audioElementRef = useRef(null);
   const navContainerRef = useRef(null);
-  const topHoverTimeoutRef = useRef(null);
   const pendingSectionRef = useRef("");
 
-  const { y: currentScrollY } = useWindowScroll();
-  const [isNavVisible, setIsNavVisible] = useState(true);
-  const [isWorkflowNavVisible, setIsWorkflowNavVisible] = useState(true);
-  const [isTopHoverActive, setIsTopHoverActive] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
-  const navVisible =
-    isMobileMenuOpen || isTopHoverActive || (isWorkflowPage ? isWorkflowNavVisible : isNavVisible);
+  // 导航栏始终显示，不再随滚动隐藏/上滑唤出，操作更稳定
+  const navVisible = true;
 
   // Toggle audio and visual indicator
   const toggleAudioIndicator = () => {
@@ -52,20 +45,6 @@ const NavBar = () => {
       audioElementRef.current.pause();
     }
   }, [isAudioPlaying]);
-
-  useEffect(() => {
-    if (isWorkflowPage) return;
-
-    if (currentScrollY === 0) {
-      setIsNavVisible(true);
-    } else if (currentScrollY > lastScrollY) {
-      setIsNavVisible(false);
-    } else if (currentScrollY < lastScrollY) {
-      setIsNavVisible(true);
-    }
-
-    setLastScrollY(currentScrollY);
-  }, [currentScrollY, isWorkflowPage, lastScrollY]);
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
@@ -127,58 +106,6 @@ const NavBar = () => {
       document.body.style.overflow = "";
     };
   }, [isMobileMenuOpen]);
-
-  useEffect(() => {
-    const onMouseMove = (event) => {
-      if (event.clientY <= 24) {
-        if (topHoverTimeoutRef.current) {
-          window.clearTimeout(topHoverTimeoutRef.current);
-          topHoverTimeoutRef.current = null;
-        }
-        setIsTopHoverActive(true);
-        return;
-      }
-
-      if (topHoverTimeoutRef.current) return;
-
-      topHoverTimeoutRef.current = window.setTimeout(() => {
-        setIsTopHoverActive(false);
-        topHoverTimeoutRef.current = null;
-      }, 3000);
-    };
-
-    const canUseHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-    if (!canUseHover) {
-      setIsTopHoverActive(false);
-      return;
-    }
-
-    window.addEventListener("mousemove", onMouseMove);
-    return () => {
-      if (topHoverTimeoutRef.current) {
-        window.clearTimeout(topHoverTimeoutRef.current);
-      }
-      window.removeEventListener("mousemove", onMouseMove);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (!isWorkflowPage) {
-      setIsWorkflowNavVisible(true);
-      return;
-    }
-
-    const onWorkflowNavVisibility = (event) => {
-      const visible = Boolean(event?.detail?.visible);
-      setIsWorkflowNavVisible(visible);
-    };
-
-    window.addEventListener("workflow-nav-visibility", onWorkflowNavVisibility);
-
-    return () => {
-      window.removeEventListener("workflow-nav-visibility", onWorkflowNavVisibility);
-    };
-  }, [isWorkflowPage]);
 
   useEffect(() => {
     gsap.to(navContainerRef.current, {
